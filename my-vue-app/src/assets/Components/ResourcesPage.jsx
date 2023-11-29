@@ -2,6 +2,7 @@ import './ResourcesPage.css';
 
 function ResourcesPage() {
   return (
+    <>
     <div className="box-container">
       <div className="box-item">
         {renderFlipBox(
@@ -36,6 +37,7 @@ function ResourcesPage() {
         )}
       </div>
     </div>
+    </>
   );
 }
 

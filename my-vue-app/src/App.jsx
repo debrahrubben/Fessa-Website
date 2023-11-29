@@ -8,10 +8,10 @@ import HomePage from './assets/Components/HomePage';
 import AboutPage from './assets/Components/AboutPage';
 import ResourcesPage from './assets/Components/ResourcesPage';
 import GalleryPage from './assets/Components/GalleryPage';
-import ExtrasPage from './assets/Components/ExtrasPage';
 import Footer from './assets/Components/Footer';
 import AccessoriesPage from './assets/Components/Accessories';
 import HallOfFamePage from './assets/Components/HallOfFamePage';
+import YourWayAround from './assets/Components/YourWayAround'
 
 function App() {
 
@@ -24,9 +24,9 @@ function App() {
         <Route  path="/about" element={<AboutPage />} />
         <Route  path="/resources" element={<ResourcesPage />} />
         <Route  path="/gallery" element={<GalleryPage />} />
-        <Route  path="/extras" element={<ExtrasPage />} />
 		<Route  path="/accessories" element={<AccessoriesPage />} />
 		<Route  path="/Hall_of_Fame" element={<HallOfFamePage />} />
+		<Route  path="/Your_Way_Around" element={<YourWayAround />} />
 				</Routes>
 < Footer/>
 			</BrowserRouter>

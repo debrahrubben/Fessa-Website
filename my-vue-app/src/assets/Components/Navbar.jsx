@@ -98,7 +98,7 @@ const Navigator = () => {
           </Link>
           <NavLink to="/resources" style={aStyle}>Resources</NavLink>
           <NavLink to="/gallery" style={aStyle}>Gallery</NavLink>
-          <NavLink to="/extras" style={aStyle} onClick={handleDropdownToggle} >
+          <NavLink to="/" style={aStyle} onClick={handleDropdownToggle} >
             <NavDropdown
               title="Extras"
               id="basic-nav-dropdown"
@@ -111,11 +111,11 @@ const Navigator = () => {
   <NavLink to="/Hall_of_Fame" style={dropdownItemStyle}>Hall of Fame</NavLink>
 </NavDropdown.Item>
 
-<NavDropdown.Item as={LinkContainer} to="/your-way-around" style={dropdownItemStyle}>
-  <NavLink to="/your-way-around" style={dropdownItemStyle}>Your Way Around</NavLink>
+<NavDropdown.Item as={LinkContainer} to="/your_way_around" style={dropdownItemStyle}>
+  <NavLink to="/extras" style={dropdownItemStyle}>Your Way Around</NavLink>
 </NavDropdown.Item>
 
-<NavDropdown.Divider />
+
 
 <NavDropdown.Item as={LinkContainer} to="/accessories" style={dropdownItemStyle}>
   <NavLink to="/accessories" style={dropdownItemStyle}>Merchandise</NavLink>
