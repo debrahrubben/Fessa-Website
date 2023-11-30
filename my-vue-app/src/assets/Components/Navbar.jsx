@@ -100,7 +100,7 @@ const Navigator = () => {
           <NavLink to="/gallery" style={aStyle}>Gallery</NavLink>
           <NavLink to="/" style={aStyle} onClick={handleDropdownToggle} >
             <NavDropdown
-              title="Extras"
+               title="Extras" 
               id="basic-nav-dropdown"
               style={dropdownStyle}
               show={isDropdownOpen}
@@ -110,6 +110,7 @@ const Navigator = () => {
               <NavDropdown.Item as={LinkContainer} to="/Hall_of_Fame" style={dropdownItemStyle}>
   <NavLink to="/Hall_of_Fame" style={dropdownItemStyle}>Hall of Fame</NavLink>
 </NavDropdown.Item>
+
 
 <NavDropdown.Item as={LinkContainer} to="/your_way_around" style={dropdownItemStyle}>
   <NavLink to="/extras" style={dropdownItemStyle}>Your Way Around</NavLink>

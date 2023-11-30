@@ -71,10 +71,6 @@ const Footer = () => {
             <li style={liStyle}><a href="#" style={linkStyle}>Opportunites</a></li>
           </ul>
         </div>
-
-        <div className="row" style={mediaQueryStyle}>
-          Faculty Of Education Copyright © 2023  || Designed By: Guy and Rubben
-        </div>
       </div>
     </footer>
   );
