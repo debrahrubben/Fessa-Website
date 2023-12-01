@@ -48,7 +48,7 @@ const GalleryPage = () => {
   return (
     <div style={componentStyle}>
       <ImageList
-  sx={{ width: '100%', height: '100%' }}
+  sx={{ width: '500', height: '450' }}
   variant="quilted"
   cols={3}
   rowHeight={180}
