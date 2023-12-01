@@ -1,17 +1,17 @@
+
+
 // GalleryPage.jsx
 
-import { Gallery } from 'react-grid-gallery';
-import imageData from './imageData';
+import { ImageList, ImageListItem } from '@mui/material';
 import backgroundimg from '../images/backgroundimg.jpg'; // Import your local background image
+import imageData from './imageData'; // Assuming you have an itemData array
 
 const GalleryPage = () => {
   const componentStyle = {
-    paddingTop: '90px', // Adjust the value as needed
-    textAlign: 'center', // Center the content
-    backgroundImage: `url(${backgroundimg})`, // Set the background image
-   
-    backgroundPosition: 'center', // Optional: Adjust the background position
-     // Adjust as needed
+    paddingTop: '90px',
+    textAlign: 'center',
+    backgroundImage: `url(${backgroundimg})`,
+    backgroundPosition: 'center',
   };
 
   const buttonStyle = {
@@ -44,30 +44,40 @@ const GalleryPage = () => {
     willChange: 'box-shadow, transform',
     fontSize: '18px',
   };
- 
-
-  // Apply a white border to each image
-  const customImageStyle = {
-   // Adjust the value as needed
-    
-  };
 
   return (
     <div style={componentStyle}>
-      <div >
-        <Gallery images={imageData} imageStyle={customImageStyle}
-        enableImageSelection={false} />
-      </div>
+      <ImageList
+  sx={{ width: '100%', height: '100%' }}
+  variant="quilted"
+  cols={3}
+  rowHeight={180}
+>
+  {imageData.map((item) => (
+    <ImageListItem key={item.src} cols={item.cols || 1} rows={item.rows || 1}>
+      <img
+        src={item.src}  // Use item.src instead of item.img
+        alt={item.caption}
+        loading="lazy"
+      />
+    </ImageListItem>
+  ))}
+</ImageList>
 
       {/* Button with an anchor tag */}
-      <a href="https://drive.google.com/drive/folders/1upSfAc1DWIGUjsuGTQCHsZ27rchWqciY?usp=sharing" target="_blank" rel="noopener noreferrer">
-      <button
-        style={{ ...buttonStyle }}
-        onClick={() => {
-          // Add your button click logic here
-        }}
-      >Get More Images on Google Drive
-</button>
+      <a
+        href="https://drive.google.com/drive/folders/1upSfAc1DWIGUjsuGTQCHsZ27rchWqciY?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <button
+          style={{ ...buttonStyle }}
+          onClick={() => {
+            // Add your button click logic here
+          }}
+        >
+          Get More Images on Google Drive
+        </button>
       </a>
     </div>
   );
