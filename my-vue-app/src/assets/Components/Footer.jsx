@@ -44,12 +44,6 @@ const Footer = () => {
     margin: '0 30px',
   };
 
-  const mediaQueryStyle = {
-    textAlign: 'left',
-    padding: '5%',
-     color: 'grey',
-     fontSize: '30%'
-  };
 
 
   return (
@@ -68,7 +62,7 @@ const Footer = () => {
             <li style={liStyle}><a href="#" style={linkStyle}>Education Policy</a></li>
             <li style={liStyle}><a href="#" style={linkStyle}>Privacy Policy</a></li>
             <li style={liStyle}><a href="#" style={linkStyle}>Kumasi </a></li>
-            <li style={liStyle}><a href="#" style={linkStyle}>Opportunites</a></li>
+
           </ul>
         </div>
       </div>

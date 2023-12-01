@@ -1,5 +1,5 @@
 import './ResourcesPage.css';
-
+import { useMediaQuery } from 'react-responsive';
 function ResourcesPage() {
   return (
     <>

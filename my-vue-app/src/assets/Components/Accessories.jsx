@@ -11,7 +11,7 @@ const Accessories = ({ cards }) => {
     backgroundColor: 'rgb(17, 50, 91)',
     display: 'flex',
     justifyContent: 'space-around',
-    padding: '90px',  // Adjust padding for smaller screens
+    paddingTop:'90px',  // Adjust padding for smaller screens
     flexWrap: 'wrap',  // Allow cards to wrap to the next line on smaller screens
   };
 

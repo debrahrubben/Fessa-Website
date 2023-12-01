@@ -10,15 +10,24 @@ import { LinkContainer } from 'react-router-bootstrap';
 const Navigator = () => {
   const [isMobileView, setIsMobileView] = useState(window.innerWidth < 768);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [scrolling, setScrolling] = useState(false);
   const navRef = useRef(null);
 
   useEffect(() => {
     const handleResize = () => {
       setIsMobileView(window.innerWidth < 768);
     };
+    const handleScroll = () => {
+      setScrolling(window.scrollY > 0);
+    };
+
 
     window.addEventListener('resize', handleResize);
+    window.addEventListener('scroll', handleScroll);
+
+ 
     return () => {
+      window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('resize', handleResize);
     };
   }, []);
@@ -48,16 +57,17 @@ const Navigator = () => {
   const handleDropdownToggle = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
-
   const headerStyle = {
-    backgroundColor: '#17223A',
-    boxShadow: '0 0 25px 0 black',
-    
+    backgroundColor: scrolling ? 'rgba(23, 34, 58, 0.5)' : '#17223A',
+    backdropFilter: scrolling ? 'blur(10px)' : 'none',
+    boxShadow: scrolling ? '0 0 25px 0 black' : 'none',
     position: 'fixed',
     width: '100%',
     top: 0,
     zIndex: 1000,
+    transition: 'background-color 0.3s, backdrop-filter 0.3s, box-shadow 0.3s',
   };
+  
   
   const imgStyle = {
     height: isMobileView ? '42px' : '60px', // Adjust the height for mobile view
@@ -82,7 +92,13 @@ const Navigator = () => {
     color: '#bcc4d6',
     fontSize: isMobileView ? '90%' : '150%', // Adjust the percentage accordingly
   };
+  
 
+  
+  const activeLinkStyle = {
+    backgroundColor: 'rgba(172, 30, 30, 0.1)', // Adjust the background color for active links
+    // Add any other styles you want for active links
+  };
   
   return (
     <Navbar style={headerStyle} expand="lg" variant="dark">
@@ -97,12 +113,9 @@ const Navigator = () => {
           <Link smooth to="/#home-header" style={aStyle}>
             Home
           </Link>
-          <Link smooth to="/#news-section" style={aStyle}>
-            News
-          </Link>
           <NavLink to="/resources" style={aStyle}>Resources</NavLink>
           <NavLink to="/gallery" style={aStyle}>Gallery</NavLink>
-          <NavLink to="/" style={aStyle} onClick={handleDropdownToggle} >
+          <NavLink to="/" style={aStyle} onClick={handleDropdownToggle}  activeStyle={activeLinkStyle} >
             <NavDropdown
                title="Extras" 
               id="basic-nav-dropdown"
@@ -112,7 +125,7 @@ const Navigator = () => {
               
             >
               <NavDropdown.Item as={LinkContainer} to="/Hall_of_Fame" style={dropdownItemStyle}>
-  <NavLink to="/Hall_of_Fame" style={dropdownItemStyle}>Hall of Fame</NavLink>
+  <NavLink to="/Hall_of_Fame"  style={{ ...dropdownItemStyle, ...activeLinkStyle }}>Hall of Fame</NavLink>
 </NavDropdown.Item>
 
 

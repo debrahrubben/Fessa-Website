@@ -9,7 +9,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     background-color:transparent;
-    width: 60%; /* Adjust the width as needed */
+    width: 50%; /* Adjust the width as needed */
     margin: 0 auto; /* Center the slider on the screen */
   }
   
@@ -105,3 +105,8 @@
     height: auto;
   }
   
+  @media (max-width: 767px) {
+    .container__slider {
+      width: 100%; /* Adjust the width for mobile view */
+    }
+  }
