@@ -86,7 +86,7 @@ const Navigator = () => {
         <img src={logo2} alt="Logo 2" style={imgStyle} />
         <img src={logo} alt="Fessa Logo" style={imgStyle} />
       </Navbar.Brand>
-      <h1 style={{ color: '#bcc4d6', fontSize: '150%', }}>Faculty Of Educations</h1>
+      <h1 style={{ color: '#bcc4d6', fontSize: '150%', }}>Faculty Of Education</h1>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto" style={ulStyle} ref={navRef}>
