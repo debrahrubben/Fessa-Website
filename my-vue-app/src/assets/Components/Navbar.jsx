@@ -80,7 +80,7 @@ const Navigator = () => {
   };
   const h1Style = {
     color: '#bcc4d6',
-    fontSize: isMobileView ? '60%' : '150%', // Adjust the percentage accordingly
+    fontSize: isMobileView ? '90%' : '150%', // Adjust the percentage accordingly
   };
 
   
