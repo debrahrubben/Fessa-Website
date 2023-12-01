@@ -1,3 +1,4 @@
+import React from 'react';
 
 const News = () => {
   const newsData = [
@@ -7,7 +8,6 @@ const News = () => {
       title: 'This is the third news',
       description: [
         'Dig into the freshest veggies of the season! This salad-in-a-jar features a mixture of leafy greens and seasonal vegetables, fresh from the farmer\'s market.',
-       
       ]
     },
     {
@@ -16,7 +16,6 @@ const News = () => {
       title: 'This is the second news',
       description: [
         'Dig into the freshest veggies of the season! This salad-in-a-jar features a mixture of leafy greens and seasonal vegetables, fresh from the farmer\'s market.',
-        
       ]
     },
     {
@@ -25,25 +24,20 @@ const News = () => {
       title: 'This is the third news',
       description: [
         'Dig into the freshest veggies of the season! This salad-in-a-jar features a mixture of leafy greens and seasonal vegetables, fresh from the farmer\'s market.',
-       
       ]
     },
-    
     // Add more news items as needed
   ];
 
   return (
     <div style={mainStyle} id="news-section">
-      <h3 style={{color:'white', paddingLeft:'40px'}}>News</h3>
+      <h3 style={{ color: 'white', paddingLeft: '40px' }}>News</h3>
       <ul style={cardsStyle} className="cards">
         {newsData.map((newsItem, index) => (
           <li key={index} style={cardsItemStyle} className="cards_item">
             <div style={cardStyle} className="card">
               <div style={cardImageStyle} className="card_image">
-                <img
-                  src={newsItem.imageSrc}
-                  alt={newsItem.altText}
-                />
+                <img src={newsItem.imageSrc} alt={newsItem.altText} />
               </div>
               <div style={cardContentStyle} className="card_content">
                 <h2 style={cardTitleStyle} className="card_title">
@@ -66,7 +60,6 @@ const News = () => {
 // Styles remain the same
 
 const mainStyle = {
-  
   margin: '0 auto',
   background: 'rgb(17, 50, 91)',
 };
@@ -101,7 +94,7 @@ const cardTitleStyle = {
 
 const cardTextStyle = {
   lineHeight: '1.2rem',
-  backgroundColor:'white'
+  backgroundColor: 'white',
 };
 
 const cardStyle = {

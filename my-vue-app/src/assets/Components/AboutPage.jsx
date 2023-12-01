@@ -1,5 +1,7 @@
+
+import localLogo from '../images/logo.png';
 import { useState } from 'react';
-import localLogo from '../images/logo.png'; // Import the local image
+
 const AboutPage = () => {
   const [showMore, setShowMore] = useState(false);
 
@@ -10,13 +12,13 @@ const AboutPage = () => {
   return (
     <div style={styles.container}>
       <div style={styles.logoContainer}>
-        {/* Use the imported local image */}
         <img src={localLogo} alt="Company Logo" style={styles.logo} />
       </div>
       <div style={styles.infoContainer}>
+        <h1 style={{ color: 'grey' }}> ABOUT US</h1>
         <p style={styles.introText}>
-        <h1 style={{color:'grey'}}> ABOUT US</h1>
-				 About the Department of Teacher Education
+       
+			
  Teaching and learning at various levels of educational systems across the globe has evolved. 
  This has been occasioned by the massive transformation in science and technology which has led to the explosion of knowledge.
  More critically, research in neuroscience and educational psychology has greatly influenced our understanding about human behaviour and how humans learn. 
@@ -325,18 +327,18 @@ const styles = {
     flexDirection: 'column',
     alignItems: 'center',
     paddingTop: '135px',
-    color:'white'
-   
+    color: 'white',
   },
   logoContainer: {
     marginBottom: '20px',
   },
   logo: {
-    width: '100px', // Adjust the size as needed
+    width: '100px',
     height: 'auto',
   },
   infoContainer: {
-    maxWidth: '600px', // Adjust the width as needed
+    maxWidth: '600px',
+    padding: '0 15px', // Add padding to improve spacing on smaller screens
   },
   introText: {
     marginBottom: '20px',

@@ -8,7 +8,8 @@ const Header = () => {
     backgroundColor: backgroundColor,
     color: 'white',  // Text color to be visible against the background
     paddingTop: '135px',  // Adjusted padding to leave space at the top
-    paddingBottom: '0',  // No padding at the bottom
+    paddingBottom: '0px', // No padding at the bottom
+   
 
 
 
@@ -20,7 +21,8 @@ const Header = () => {
     backgroundColor: 'rgba(255, 255, 255, 0.1)', // Semi-transparent white background
     borderRadius: '10px', // Optional: Add border-radius for a rounded look
     padding: '20px',
-    marginBottom: '20px', // Optional: Add padding for spacing
+     
+   // Optional: Add padding for spacing
   };
 
   return (
