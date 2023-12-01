@@ -26,6 +26,7 @@
     "react-icons": "^4.12.0",
     "react-leaflet": "^4.2.1",
     "react-photo-album": "^2.3.0",
+    "react-responsive": "^9.0.2",
     "react-responsive-carousel": "^3.2.23",
     "react-responsive-masonry": "^2.1.7",
     "react-router-bootstrap": "^0.26.2",
