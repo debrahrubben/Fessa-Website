@@ -11,18 +11,22 @@ import ezekiel from '../images/HallofFameImages/ezekiel.jpg'
 import Rubben from '../images/HallofFameImages/Rubben.jpg'
 import Grace from '../images/HallofFameImages/Grace Abena Bossman.jpg'
 
+import { experimentalStyled as styled } from '@mui/material/styles';
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Unstable_Grid2';
 
 const HallOfFamePage = () => {
-  const containerStyle = {
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'center',
-    paddingTop: '90px',
-    backgroundImage:
-      'url("https://images.unsplash.com/photo-1615414047026-802692414b79?q=80&w=1769&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
-    backgroundRepeat: 'repeat',
-    
-  };
+  const Item = styled(Paper)({
+    backgroundColor: 'transparent',  // Set the background color directly
+    padding: '5px',
+    textAlign: 'center',
+    color: 'white',
+    minWidth: '160px',
+    maxWidth: '310px',
+    width: '100%',
+    fontSize: '10px',
+  });
 
   const cardData = [
     {
@@ -113,190 +117,60 @@ const HallOfFamePage = () => {
     // Add more card data as needed
   ];
 
-  const imageFitStyle = {
-    maxWidth: '100%',
-    height: 'auto',
-  };
-  const quoteStyle = {
-    marginTop: '5px', // Adjusted margin
-  };
-  const figureStyle = {
-    fontFamily: "'Raleway', Arial, sans-serif",
-    position: 'relative',
-    overflow: 'hidden',
-    margin: '10px',
-    minWidth: '220px',
-    maxWidth: '310px',
-    width: '100%',
-    background: 'rgb(17, 50, 91)',
-    color: '#bcc4d6',
-    textAlign: 'center',
-    boxShadow: '0 0 5px rgba(0, 0, 0, 0.15)',
-    fontSize: '14px',
-    marginRight: '10px',
-  };
-
-  const imageStyle = {
-    position: 'relative',
-    borderBottom: '4px solid #34495e',
-    zIndex: '1',
-  };
-
-  const imagePStyle = {
-    fontWeight: '500',
-    margin: '0',
-    padding: '0 15px',
-    lineHeight: '1.4em',
-    position: 'absolute',
-    top: '50%',
-    width: '100%',
-    color: '#ffffff',
-    transform: 'translateY(-50%)',
-    opacity: '0',
-    fontStyle: 'italic',
-  };
-
-  const figcaptionStyle = {
-    backgroundColor: 'rgb(17, 50, 91)',
-    padding: '15px',
-  };
-
-  const h3Style = {
-    margin: '0 0 5px',
-    textTransform: 'uppercase',
-    fontWeight: '400',
-    textAlign: 'center', 
-    marginTop: '30px',
-    marginBottom: '20px',
-     color:'white', 
-     fontSize:'small',
-
-  };
-
-  const h3SpanStyle = {
-    fontWeight: '800',
-  };
-
-  const h2Style = {
-    color: 'white',
-    position: 'relative',
-    fontSize: '1.5rem', // Adjusted font size
-    marginTop: '20px', // Adjusted margin top
-    marginBottom: '10px', // Adjusted margin bottom
-    textAlign: 'center',
-    zIndex: 1, // Ensure the text is on top of the pseudo-element
-  };
-  
-  const h2BackgroundStyle = {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    backgroundColor: 'transparent', // Adjust the background color and alpha as needed
-    backdropFilter: 'blur(10px)', // Adjust the blur value as needed
-    zIndex: -1,
-  };
-  
-
-
   return (
-    <div style={containerStyle}>
-      {/* Header for the first 3 cards */}
-      <h2 style={h2Style}> <span style={h2BackgroundStyle}></span>Header for the First 3 Cards</h2>
-      <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
-        {cardData.slice(0, 6).map((card) => (
-          <figure key={card.id} style={figureStyle}>
-            <div style={imageStyle}>
-              <img
-                src={card.imageSrc}
-                alt={`sample${card.id}`}
-                style={{ ...imageFitStyle, width: '100%', height: '100%' }}
-              />
-              <p style={imagePStyle}>{card.quote}</p>
-            </div>
-            <figcaption style={figcaptionStyle}>
-              <h3 style={h3Style}>
-                {card.name}
-                <span style={h3SpanStyle}> {card.role}</span>
-              </h3>
-              <p style={quoteStyle}>{card.quote}</p>
-            </figcaption>
-          </figure>
+    <Box sx={{ flexGrow: 1, backgroundImage: 'url("https://images.unsplash.com/photo-1651437524278-b37b83a6e6d3?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")', paddingTop:'70px' }}>
+      <Grid container spacing={4} columns={{ xs: 4, sm: 8, md: 12 }}>
+        {cardData.map((card) => (
+          <Grid xs={2} sm={4} md={4} key={card.id}>
+            <Item>
+              <div style={{ position: 'relative', borderBottom: '2px solid #34495e', zIndex: '1' }}>
+                <img
+                  src={card.imageSrc}
+                  alt={`sample${card.id}`}
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                />
+                <p
+                  style={{
+                    fontWeight: '400',
+                    margin: '0',
+                    padding: '0 15px',
+                    lineHeight: '1.4em',
+                    position: 'absolute',
+                    top: '50%',
+                    width: '100%',
+                    color: '#ffffff',
+                    transform: 'translateY(-50%)',
+                    opacity: '0',
+                    fontStyle: 'italic',
+                  }}
+                >
+                  {card.quote}
+                </p>
+              </div>
+              <figcaption style={{ backgroundColor: 'rgb(17, 50, 91)', padding: '01px' }}>
+                <h3
+                  style={{
+                    margin: '0 0 5px',
+                    textTransform: 'uppercase',
+                    fontWeight: '400',
+                    textAlign: 'center',
+                    marginTop: '10px',
+                    marginBottom: '10px',
+                    color: 'white',
+                    fontSize: 'small',
+                  }}
+                >
+                  {card.name}
+                  <span style={{ fontWeight: '700', }}> {card.role}</span>
+                </h3>
+                <p style={{ marginTop: '5px', color: 'white' }}>{card.quote}</p>
+              </figcaption>
+            </Item>
+          </Grid>
         ))}
-      </div>
-
-      
-      <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
-        {cardData.slice(6, 8).map((card) => (
-          <figure key={card.id} style={figureStyle}>
-            <div style={imageStyle}>
-              <img
-                src={card.imageSrc}
-                alt={`sample${card.id}`}
-                style={{ ...imageFitStyle, width: '100%', height: '100%' }}
-              />
-              <p style={imagePStyle}>{card.quote}</p>
-            </div>
-            <figcaption style={figcaptionStyle}>
-              <h3 style={h3Style}>
-                {card.name}
-                <span style={h3SpanStyle}> {card.role}</span>
-              </h3>
-              <p style={quoteStyle}>{card.quote}</p>
-            </figcaption>
-          </figure>
-        ))}
-      </div>
-
-      
-      <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
-        {cardData.slice(8, 10).map((card) => (
-          <figure key={card.id} style={figureStyle}>
-            <div style={imageStyle}>
-              <img
-                src={card.imageSrc}
-                alt={`sample${card.id}`}
-                style={{ ...imageFitStyle, width: '100%', height: '100%' }}
-              />
-                           <p style={imagePStyle}>{card.quote}</p>
-            </div>
-            <figcaption style={figcaptionStyle}>
-              <h3 style={h3Style}>
-                {card.name}
-                <span style={h3SpanStyle}> {card.role}</span>
-              </h3>
-              <p style={quoteStyle}>{card.quote}</p>
-            </figcaption>
-          </figure>
-        ))}
-      </div>
-    
-
-      <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
-        {cardData.slice(10, 12).map((card) => (
-          <figure key={card.id} style={figureStyle}>
-            <div style={imageStyle}>
-              <img
-                src={card.imageSrc}
-                alt={`sample${card.id}`}
-                style={{ ...imageFitStyle, width: '100%', height: '100%' }}
-              />
-                           <p style={imagePStyle}>{card.quote}</p>
-            </div>
-            <figcaption style={figcaptionStyle}>
-              <h3 style={h3Style}>
-                {card.name}
-                <span style={h3SpanStyle}> {card.role}</span>
-              </h3>
-              <p style={quoteStyle}>{card.quote}</p>
-            </figcaption>
-          </figure>
-        ))}
-      </div>
-    </div>
+      </Grid>
+    </Box>
   );
 };
 
 export default HallOfFamePage;
-

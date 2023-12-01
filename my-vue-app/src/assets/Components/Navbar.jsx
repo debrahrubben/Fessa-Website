@@ -36,7 +36,7 @@ const Navigator = () => {
   const ulStyle = {
     listStyle: 'none',
     margin: 0,
-    padding: 0,
+    padding: '2px 0px 0px 20px',
     display: 'flex',
     flexDirection: isMobileView ? 'row' : 'row',
   };
