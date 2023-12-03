@@ -7,7 +7,7 @@ import Mintah from '../images/HallofFameImages/Kenseng Mintah vice.jpg'
 import Bonsu from '../images/HallofFameImages/Kwame Bonsu.jpg'
 import Umar from '../images/HallofFameImages/Mohammed Umar Nadra.jpg'
 import Nartey from '../images/HallofFameImages/Naomi Nartey Mateykie.jpg'
-import ezekiel from '../images/HallofFameImages/ezekiel.jpg'
+import Shadrack from '../images/HallofFameImages/Shadrack.jpg'
 import Rubben from '../images/HallofFameImages/Rubben.jpg'
 import Grace from '../images/HallofFameImages/Grace Abena Bossman.jpg'
 
@@ -108,9 +108,9 @@ const HallOfFamePage = () => {
     },
     {
       id: 12,
-      imageSrc: ezekiel,
+      imageSrc: Shadrack,
       quote: "Sometimes I think the surest sign that intelligent life exists elsewhere in the universe is that none of it has tried to contact us.",
-      name: 'Ezekiel',
+      name: 'Duah Shadrack Amponsah',
       role: 'Fessa Web Developer',
     },
 
