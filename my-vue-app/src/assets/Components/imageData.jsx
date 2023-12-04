@@ -19,6 +19,7 @@ import img17 from '../GalleryImages/img17.jpg';
 import img18 from '../GalleryImages/img18.jpg';
 import img19 from '../GalleryImages/img19.jpg';
 import img20 from '../GalleryImages/img20.jpg';
+import img21 from '../GalleryImages/img21.jpg';
 
 const imageData = [
     {
@@ -83,6 +84,9 @@ const imageData = [
     },
     {
       src: img20,
+    },
+    {
+      src: img21,
     },
   ];
   export default imageData;

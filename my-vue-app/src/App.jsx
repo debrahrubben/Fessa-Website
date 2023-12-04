@@ -4,7 +4,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { BrowserRouter, Routes, Route,} from "react-router-dom";
 
 import Navigator from './assets/Components/Navbar';
-import HomePage from './assets/Components/HomePage';
+import HomePage from './assets/Components/Homepage/HomePage';
 import AboutPage from './assets/Components/AboutPage';
 import ResourcesPage from './assets/Components/ResourcesPage';
 import GalleryPage from './assets/Components/GalleryPage';

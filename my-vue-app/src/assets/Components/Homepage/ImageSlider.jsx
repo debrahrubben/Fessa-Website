@@ -1,6 +1,6 @@
-import images from "./data/images";
+import images from "./Sliderimages/images";
 
-import CustomSlider from "./components/custom.slider";
+import CustomSlider from "./slidercomponents/custom.slider";
 
 
 

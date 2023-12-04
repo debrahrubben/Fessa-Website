@@ -39,7 +39,6 @@
     "react-scroll": "^1.9.0",
     "react-simple-image-slider": "^2.4.1",
     "styled-components": "^6.1.1",
-    "vite-plugin-require": "^1.1.13",
     "vue-styled-components": "^1.6.0"
   },
   "devDependencies": {
