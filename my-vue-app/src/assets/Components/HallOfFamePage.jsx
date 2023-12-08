@@ -110,7 +110,7 @@ const HallOfFamePage = () => {
       imageSrc: Shadrack,
       quote: "Sometimes I think the surest sign that intelligent life exists elsewhere in the universe is that none of it has tried to contact us.",
       name: 'Duah Shadrack Amponsah',
-      role: 'Fessa Web Developer',
+      role: 'Fessa Web Master',
     },
 
     // Add more card data as needed
@@ -144,6 +144,7 @@ const HallOfFamePage = () => {
                     }}
                   >
                     {card.name}
+                    <br />
                     <span style={{ fontWeight: '700' }}> {card.role}</span>
                   </h3>
                   <p style={{ marginTop: '5px', color: 'white' }}>{card.quote}</p>
