@@ -14,7 +14,7 @@ const Navigator = () => {
   const [scrolling, setScrolling] = useState(false);
   const navRef = useRef(null);
   const navigate = useNavigate();
-  const handleH1Click = () => {
+ const handleH1Click = () => {
     // Navigate to the home screen when the h1 element is clicked
     navigate('/');
   };
