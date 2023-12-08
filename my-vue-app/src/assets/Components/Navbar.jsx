@@ -2,9 +2,10 @@ import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { HashLink as Link } from 'react-router-hash-link';
 import logo2 from '../images/logo2.png';
 import logo from '../images/logo.png';
-import { NavLink } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 import { useState, useEffect, useRef } from 'react';
 import { LinkContainer } from 'react-router-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 
 const Navigator = () => {
@@ -12,7 +13,11 @@ const Navigator = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [scrolling, setScrolling] = useState(false);
   const navRef = useRef(null);
-
+  const navigate = useNavigate();
+  const handleH1Click = () => {
+    // Navigate to the home screen when the h1 element is clicked
+    navigate('/');
+  };
   useEffect(() => {
     const handleResize = () => {
       setIsMobileView(window.innerWidth < 768);
@@ -106,7 +111,9 @@ const Navigator = () => {
         <img src={logo2} alt="Logo 2" style={imgStyle} />
         <img src={logo} alt="Fessa Logo" style={imgStyle} />
       </Navbar.Brand>
-      <h1 style={h1Style}>Faculty Of Education</h1>
+      <Link to="/" onClick={handleH1Click}>
+        <h1 style={h1Style}>Faculty Of Education</h1>
+      </Link>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto" style={ulStyle} ref={navRef}>
