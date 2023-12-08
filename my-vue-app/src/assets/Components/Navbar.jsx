@@ -96,6 +96,8 @@ const Navigator = () => {
   const h1Style = {
     color: '#bcc4d6',
     fontSize: isMobileView ? '90%' : '150%', // Adjust the percentage accordingly
+    cursor: 'pointer', // Add cursor pointer for better UX
+  display: 'inline-block', // Ensures that the cursor pointer applies correctly
   };
   
 
