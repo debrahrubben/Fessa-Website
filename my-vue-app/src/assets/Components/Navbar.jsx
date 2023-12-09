@@ -1,16 +1,17 @@
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav, } from 'react-bootstrap';
 import { HashLink as Link } from 'react-router-hash-link';
 import logo2 from '../images/logo2.png';
 import logo from '../images/logo.png';
-import { NavLink} from "react-router-dom";
 import { useState, useEffect, useRef } from 'react';
-import { LinkContainer } from 'react-router-bootstrap';
+import {  Button, Menu, MenuItem } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
+import Fade from '@mui/material/Fade';
+
 
 
 const Navigator = () => {
   const [isMobileView, setIsMobileView] = useState(window.innerWidth < 768);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
   const [scrolling, setScrolling] = useState(false);
   const navRef = useRef(null);
   const navigate = useNavigate();
@@ -40,29 +41,17 @@ const Navigator = () => {
   
   const ulStyle = {
     listStyle: 'none',
-    margin: 0,
-    padding: '2px 0px 0px 10px',
-    
+    margin: '0px',
+    padding: '0px',
+    justifyContent: isMobileView ? 'center' : 'flex-start', // Center items for mobile view
     display: 'flex',
     flexDirection: isMobileView ? 'row' : 'row',
   };
 
-  const handleClickOutside = (event) => {
-    if (navRef.current && !navRef.current.contains(event.target)) {
-      setIsDropdownOpen(false);
-    }
-  };
+  
 
-  useEffect(() => {
-    document.addEventListener('click', handleClickOutside);
-    return () => {
-      document.removeEventListener('click', handleClickOutside);
-    };
-  }, []);
 
-  const handleDropdownToggle = () => {
-    setIsDropdownOpen(!isDropdownOpen);
-  };
+  
   const headerStyle = {
     backgroundColor: scrolling ? 'rgba(23, 34, 58, 0.5)' : '#17223A',
     backdropFilter: scrolling ? 'blur(10px)' : 'none',
@@ -83,17 +72,11 @@ const Navigator = () => {
   const aStyle = {
     color: 'white',
     textDecoration: 'none',
-    marginRight: '15px', // Adjusted margin for spacing
+    fontSize:isMobileView ? '75%' : '100%', // Adjusted margin for spacing
   };
   
-  const dropdownStyle = {
-   padding:'0px',
-    color: 'white',
-  };
   
-  const dropdownItemStyle = {
-    color: '#17223A',
-  };
+
   const h1Style = {
     color: '#bcc4d6',
     fontSize: isMobileView ? '90%' : '150%', // Adjust the percentage accordingly
@@ -106,6 +89,17 @@ const Navigator = () => {
   const activeLinkStyle = {
     backgroundColor: 'rgba(172, 30, 30, 0.1)', // Adjust the background color for active links
     // Add any other styles you want for active links
+  };
+
+
+  const [anchorEl, setAnchorEl] = useState(null);
+ 
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
   };
   
   return (
@@ -120,37 +114,52 @@ const Navigator = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto" style={ulStyle} ref={navRef}>
-          <Link smooth to="/#home-header" style={aStyle}>
-            Home
-          </Link>
-          <NavLink to="/resources" style={aStyle}>Resources</NavLink>
-          <NavLink to="/gallery" style={aStyle}>Gallery</NavLink>
-          <NavLink to="/" style={aStyle} onClick={handleDropdownToggle}  activeStyle={activeLinkStyle} >
-            <NavDropdown
-               title="Extras" 
-              id="basic-nav-dropdown"
-              style={dropdownStyle}
-              show={isDropdownOpen}
-              onHide={() => setIsDropdownOpen(false)}
-              
-            >
-              <NavDropdown.Item as={LinkContainer} to="/Hall_of_Fame" style={dropdownItemStyle}>
-  <NavLink to="/Hall_of_Fame"  style={{ ...dropdownItemStyle, ...activeLinkStyle }}>Hall of Fame</NavLink>
-</NavDropdown.Item>
-
-
-<NavDropdown.Item as={LinkContainer} to="/your_way_around" style={dropdownItemStyle}>
-  <NavLink to="/extras" style={dropdownItemStyle}>Explore</NavLink>
-</NavDropdown.Item>
-
-
-
-<NavDropdown.Item as={LinkContainer} to="/accessories" style={dropdownItemStyle}>
-  <NavLink to="/accessories" style={dropdownItemStyle}>Merchandise</NavLink>
-</NavDropdown.Item>
-            </NavDropdown>
-          </NavLink>
-          <NavLink to="/about" style={aStyle}>About</NavLink>
+        <Button color="inherit" style={aStyle} component={Link} to="/#home-header">
+              Home
+            </Button>
+            <Button color="inherit" style={aStyle} component={Link} to="/resources">
+              Resources
+            </Button>
+            <Button color="inherit" style={aStyle} component={Link} to="/gallery">
+              Gallery
+            </Button>
+          <Button
+            color="inherit"
+            style={aStyle}
+            onClick={handleClick}
+            aria-controls="extras-menu"
+            aria-haspopup="true"
+            activeStyle={activeLinkStyle}
+          >
+            Extras
+          </Button>
+          <Menu
+            id="extras-menu"
+            anchorEl={anchorEl}
+            open={Boolean(anchorEl)}
+            onClose={handleClose}
+            style={{ marginTop: '10px', }}
+            PaperProps={{
+              style: {
+                background: '#17223A', // Add your desired background color here
+              },
+            }}
+  TransitionComponent={Fade} // You can use Fade transition or any other transition component
+  TransitionProps={{ timeout: 600 }}
+          >
+            <MenuItem component={Link} to="/Hall_of_Fame" onClick={handleClose} style={aStyle}>
+              Hall of Fame
+            </MenuItem>
+            <MenuItem component={Link} to="/your_way_around" onClick={handleClose} style={aStyle}>
+              Explore
+            </MenuItem>
+            <MenuItem component={Link} to="/accessories" onClick={handleClose} style={aStyle}>
+              Merchandise
+            </MenuItem>
+          </Menu>
+          <Button color="inherit" style={aStyle} component={Link} to="/about">
+              About
+            </Button>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
