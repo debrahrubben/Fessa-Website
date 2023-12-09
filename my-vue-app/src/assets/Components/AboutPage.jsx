@@ -39,8 +39,6 @@ const AboutPage = () => {
  Our focus is to build and strengthen capacity in STEM education while paying attention to the promotion of gender and social inclusion strategies that make the teachers and educational professionals we train sensitive in addressing all barriers to learning in various learning contexts in order to achieve the Sustainable Development Goals.
  We have a strong, experienced and dynamic faculty with expertise in various areas of specialization who conduct cutting edge research that inform policy and practice in Ghana. 
  They are always poised to support you succeed in your chosen career and also partner both internal and external organizations in developing workable solutions to the myriad of challenges in education locally and globally.  
- 
-                 
 
         </p>
         {showMore ? (
