@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { FaFacebook, FaTwitter } from 'react-icons/fa';
 import { MdPhone, MdEmail } from 'react-icons/md';
 
