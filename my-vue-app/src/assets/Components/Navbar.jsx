@@ -41,7 +41,8 @@ const Navigator = () => {
   const ulStyle = {
     listStyle: 'none',
     margin: 0,
-    padding: '2px 0px 0px 20px',
+    padding: '2px 0px 0px 10px',
+    
     display: 'flex',
     flexDirection: isMobileView ? 'row' : 'row',
   };
@@ -86,7 +87,7 @@ const Navigator = () => {
   };
   
   const dropdownStyle = {
-    marginLeft: '15px', // Adjusted margin for spacing
+   padding:'0px',
     color: 'white',
   };
   
@@ -139,7 +140,7 @@ const Navigator = () => {
 
 
 <NavDropdown.Item as={LinkContainer} to="/your_way_around" style={dropdownItemStyle}>
-  <NavLink to="/extras" style={dropdownItemStyle}>Your Way Around</NavLink>
+  <NavLink to="/extras" style={dropdownItemStyle}>Explore</NavLink>
 </NavDropdown.Item>
 
 
