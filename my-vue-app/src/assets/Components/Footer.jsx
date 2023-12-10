@@ -29,6 +29,7 @@ const Footer = () => {
     color: 'gray',
     transition: '0.5s',
     margin: '0 10px',
+    fontSize:'80%'
   };
 
   const ulStyle = {

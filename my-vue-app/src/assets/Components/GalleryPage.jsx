@@ -17,7 +17,7 @@ const GalleryPage = () => {
   };
 
   const componentStyle = {
-    paddingTop: '78px',
+    paddingTop: '83px',
     textAlign: 'center',
     backgroundImage: `url(${backgroundimg})`,
     backgroundPosition: 'center',
