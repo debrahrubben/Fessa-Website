@@ -324,7 +324,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    paddingTop: '90px',
+    paddingTop: '103px',
     color: 'white',
   },
   logoContainer: {

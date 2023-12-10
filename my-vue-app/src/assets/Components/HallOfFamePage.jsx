@@ -119,7 +119,7 @@ const HallOfFamePage = () => {
  
   const renderGridAndHeaders = (startIndex, endIndex, headerText) => (
     <Box >
-      <h2 style={{ textAlign: 'center', color:'#bcc4d6',backdropFilter: 'blur(5px)', padding:'20px 0px 40px 0px' }}>{headerText}</h2>
+      <h2 style={{ textAlign: 'center', color:'#bcc4d6',backdropFilter: 'blur(5px)', padding:'2px 0px 40px 0px' }}>{headerText}</h2>
       <Grid container spacing={4} columns={{ xs: 4, sm: 8, md: 12 }} >
         {cardData.slice(startIndex, endIndex).map((card) => (
           <Grid xs={2} sm={4} md={4} key={card.id} style={{ display: 'flex', justifyContent: 'center', position: 'relative',  }}>
@@ -158,7 +158,7 @@ const HallOfFamePage = () => {
   );
 
   return (
-    <Box sx={{ flexGrow: 1, backgroundImage: 'url("https://images.unsplash.com/photo-1651437524278-b37b83a6e6d3?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")', paddingTop: '70px', }}>
+    <Box sx={{ flexGrow: 1, backgroundImage: 'url("https://images.unsplash.com/photo-1651437524278-b37b83a6e6d3?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")', paddingTop: '95px', }}>
       {renderGridAndHeaders(0, 6, 'Executives')}
       {renderGridAndHeaders(6, 8, 'Predecessors')}
       {renderGridAndHeaders(10, cardData.length, 'Remarkable People')}

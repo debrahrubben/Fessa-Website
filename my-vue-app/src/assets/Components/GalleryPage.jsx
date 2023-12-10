@@ -1,6 +1,6 @@
 
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { ImageList, ImageListItem, Dialog, DialogContent, Button } from '@mui/material';
 import backgroundimg from '../images/backgroundimg.jpg';
 import imageData from './imageData';
@@ -17,7 +17,7 @@ const GalleryPage = () => {
   };
 
   const componentStyle = {
-    paddingTop: '90px',
+    paddingTop: '78px',
     textAlign: 'center',
     backgroundImage: `url(${backgroundimg})`,
     backgroundPosition: 'center',
@@ -25,6 +25,9 @@ const GalleryPage = () => {
 
   return (
     <div style={componentStyle}>
+       <h1 style={{ textAlign: 'center',  color:'white', fontSize:'large' }}>
+        Gallery
+      </h1>
       <ImageList sx={{ width: '500', height: '450' }} variant="quilted" cols={3} rowHeight={180}>
         {imageData.map((item) => (
           <ImageListItem key={item.src} cols={item.cols || 1} rows={item.rows || 1}>
@@ -52,7 +55,7 @@ const GalleryPage = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Button variant="contained" style={{ marginTop: '16px' }}>
+        <Button variant="contained" style={{ marginTop: 'px', marginBottom:'7px', }}>
           Get More Images on Google Drive
         </Button>
       </a>
