@@ -1,66 +1,57 @@
+import { useEffect, useRef } from "react";
 
+function GalleryPage() {
+    const styles = {
+        container: {
+          width: '100%',
+          maxWidth: '1024px',
+          padding: '0 1em',
+          margin: '3em auto',
+        },
+        
+        title: {
+          textAlign: 'center',
+         paddingTop:'40px',
+          color:'rgb(188, 196, 214)',
+        }
+      };
+  const galleryRef = useRef();
 
-import { useState } from 'react';
-import { ImageList, ImageListItem, Dialog, DialogContent, Button } from '@mui/material';
-import backgroundimg from '../images/backgroundimg.jpg';
-import imageData from './imageData';
-
-const GalleryPage = () => {
-  const [selectedImage, setSelectedImage] = useState(null);
-
-  const openModal = (imageSrc) => {
-    setSelectedImage(imageSrc);
-  };
-
-  const closeModal = () => {
-    setSelectedImage(null);
-  };
-
-  const componentStyle = {
-    paddingTop: '83px',
-    textAlign: 'center',
-    backgroundImage: `url(${backgroundimg})`,
-    backgroundPosition: 'center',
-  };
+  useEffect(() => {
+    if (window && galleryRef.current) {
+      window.cloudinary
+        .galleryWidget({
+          container: galleryRef.current,
+          cloudName: "dgpxvazru", // Replace this with your Cloudinary cloud name
+          aspectRatio: "16:9",
+          mediaAssets: [
+            { tag: "fessa", transformation: { crop: "fill" } },
+          ],
+        })
+        .render();
+    }
+  }, []);
 
   return (
-    <div style={componentStyle}>
-       <h1 style={{ textAlign: 'center',  color:'white', fontSize:'large' }}>
-        Gallery
-      </h1>
-      <ImageList sx={{ width: '500', height: '450' }} variant="quilted" cols={3} rowHeight={180}>
-        {imageData.map((item) => (
-          <ImageListItem key={item.src} cols={item.cols || 1} rows={item.rows || 1}>
-            <img
-              src={item.src}
-              alt={item.caption}
-              loading="lazy"
-              onClick={() => openModal(item.src)}
-              style={{ cursor: 'pointer' }}
-            />
-          </ImageListItem>
-        ))}
-      </ImageList>
+    <main className="main" style={{backgroundColor:'rgb(17, 50, 91)'}}>
+    <div className="container" style={styles.container}>
+        <h1 className="title" style={styles.title}>
+          Gallery
+        </h1>
+      </div>
 
-      {/* Modal */}
-      <Dialog open={Boolean(selectedImage)} onClose={closeModal} maxWidth="md">
-        <DialogContent>
-          <img src={selectedImage} alt="Maximized" style={{ width: '100%', height: 'auto' }} />
-        </DialogContent>
-      </Dialog>
+      <div className="container" style={styles.container}>
+        <div ref={galleryRef} />
+      </div>
 
-      {/* Button with an anchor tag */}
-      <a
-        href="https://drive.google.com/drive/folders/1upSfAc1DWIGUjsuGTQCHsZ27rchWqciY?usp=sharing"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Button variant="contained" style={{ marginTop: 'px', marginBottom:'7px', }}>
-          Get More Images on Google Drive
-        </Button>
-      </a>
-    </div>
+      <div className="container">
+        <h2>Resources</h2>
+        <p>
+          <a href="https://github.com/colbyfayock/cloudinary-examples/tree/main/examples/react-product-gallery">See the code on github.com.</a>
+        </p>
+      </div>
+    </main>
   );
-};
+}
 
 export default GalleryPage;
