@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { Button } from '@mui/material';
 
 function GalleryPage() {
     const styles = {
@@ -44,12 +45,17 @@ function GalleryPage() {
         <div ref={galleryRef} />
       </div>
 
-      <div className="container">
-        <h2>Resources</h2>
-        <p>
-          <a href="https://github.com/colbyfayock/cloudinary-examples/tree/main/examples/react-product-gallery">See the code on github.com.</a>
-        </p>
-      </div>
+      <div className="container" style={{textAlign:'center'}}>
+      <a
+        href="https://drive.google.com/drive/folders/1upSfAc1DWIGUjsuGTQCHsZ27rchWqciY?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Button variant="contained" style={{ marginBottom:'7px', }}>
+          Get More Images on Google Drive
+        </Button>
+      </a>
+    </div>
     </main>
   );
 }
