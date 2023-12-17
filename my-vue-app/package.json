@@ -34,6 +34,7 @@
     "react-router-hash-link": "^2.4.3",
     "react-scroll": "^1.9.0",
     "react-simple-image-slider": "^2.4.1",
+    "react-vertical-timeline-component": "^3.6.0",
     "styled-components": "^6.1.1",
     "vue-styled-components": "^1.6.0"
   },
