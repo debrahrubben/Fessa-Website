@@ -1,106 +1,72 @@
-
-// News.jsx
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import WorkIcon from '@mui/icons-material/Work'; // Import the Work icon from Material-UI
-import SchoolIcon from '@mui/icons-material/School'; // Import the School icon from Material-UI
-import StarIcon from '@mui/icons-material/Star'; // Import the Star icon from Material-UI
+
+import logo from '../../images/logo.png'; // Import your logo
+import logo2 from '../../images/logo2.png';
+
+const TimelineItem = ({ className, date, imageSrc, iconStyle, title, subtitle, content, icon }) => (
+  <VerticalTimelineElement
+    className={className}
+    date={date}
+    iconStyle={iconStyle}
+    icon={icon}
+  >
+    <h3 className="vertical-timeline-element-title">{title}</h3>
+    <h5 className="vertical-timeline-element-subtitle">{subtitle}</h5>
+    <div style={{ backgroundImage: `url(${imageSrc})`, backgroundSize: 'cover', width: '100%', height: '200px' }} />
+    <p>{content}</p>
+  </VerticalTimelineElement>
+);
 
 export default function News() {
+  const logoStyle = {
+    width: '100%', // Set the desired width
+    height: 'fit', // Set the desired height
+    objectFit: 'cover', // Preserve aspect ratio and cover the space
+  };
+
   return (
-   
-    
+    <div  style={{background: '#17223A',}}>
     <VerticalTimeline>
-      <VerticalTimelineElement
+      {/* Work Experience */}
+      <TimelineItem
         className="vertical-timeline-element--work"
-        contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
         date="2011 - present"
-        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-        icon={<WorkIcon />}
-      >
-        <h3 className="vertical-timeline-element-title">Creative Director</h3>
-        <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-        <p>
-          Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-        </p>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        date="2010 - 2011"
-        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-        icon={<WorkIcon />}
-      >
-        <h3 className="vertical-timeline-element-title">Art Director</h3>
-        <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-        <p>
-          Creative Direction, User Experience, Visual Design, SEO, Online Marketing
-        </p>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        date="2008 - 2010"
-        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-        icon={<WorkIcon />}
-      >
-        <h3 className="vertical-timeline-element-title">Web Designer</h3>
-        <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
-        <p>
-          User Experience, Visual Design
-        </p>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        date="2006 - 2008"
-        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-        icon={<WorkIcon />}
-      >
-        <h3 className="vertical-timeline-element-title">Web Designer</h3>
-        <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-        <p>
-          User Experience, Visual Design
-        </p>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
+        icon={<img src={logo} alt="fessa logo" style={logoStyle} />}
+        title="News Title"
+        subtitle="author"
+        imageSrc='https://assets.codepen.io/652/photo-1468777675496-5782faaea55b.jpeg'
+        content=" this is where the actual news go. Strategy, Social Media"
+      />
+
+      {/* Add more work experience items here using TimelineItem */}
+      
+      {/* Education */}
+      <TimelineItem
         className="vertical-timeline-element--education"
         date="April 2013"
-        iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-        icon={<SchoolIcon />}
-      >
-        <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-        <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-        <p>
-          Strategy, Social Media
-        </p>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--education"
-        date="November 2012"
-        iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-        icon={<SchoolIcon />}
-      >
-        <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
-        <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-        <p>
-          Creative Direction, User Experience, Visual Design
-        </p>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--education"
-        date="2002 - 2006"
-        iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-        icon={<SchoolIcon />}
-      >
-        <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
-        <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-        <p>
-          Creative Direction, Visual Design
-        </p>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-        icon={<StarIcon />}
+        icon={<img src={logo2} alt="knust logo" style={logoStyle} />}
+        title="News Title"
+        subtitle="author"
+        imageSrc='https://assets.codepen.io/652/photo-1468777675496-5782faaea55b.jpeg'
+        content=" this is where the actual news go. Strategy, Social Media"
       />
+
+      {/* Add more education items here using TimelineItem */}
+
+      {/* Additional Item */}
+      <TimelineItem
+        className="vertical-timeline-element--education"
+        date="April 2013"
+        icon={<img src={logo} alt="fessa Logo" style={logoStyle} />}
+        title="News Title"
+        subtitle="author"
+        imageSrc='https://assets.codepen.io/652/photo-1468777675496-5782faaea55b.jpeg'
+        content=" this is where the actual news go. Strategy, Social Media"
+      />
+
+      {/* Add more items as needed using TimelineItem */}
     </VerticalTimeline>
+    </div>
   );
 }

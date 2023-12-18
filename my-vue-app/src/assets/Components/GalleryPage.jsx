@@ -45,13 +45,15 @@ function GalleryPage() {
         <div ref={galleryRef} />
       </div>
 
+
+
       <div className="container" style={{textAlign:'center'}}>
       <a
         href="https://drive.google.com/drive/folders/1upSfAc1DWIGUjsuGTQCHsZ27rchWqciY?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Button variant="contained" style={{ marginBottom:'7px', }}>
+        <Button variant="contained" style={{ marginBottom:'70px', }}>
           Get More Images on Google Drive
         </Button>
       </a>
