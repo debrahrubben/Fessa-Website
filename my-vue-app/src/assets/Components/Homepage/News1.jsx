@@ -13,8 +13,13 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import avatarSrc from '../../images/logo.png'
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 
-const RecipeReviewCard = ({ title, subheader, imageSrc, altText, content, morecontent }) => {
+import logo2 from '../../images/logo2.png';
+
+
+const TimelineItem = ({icon, className, date, iconStyle, title, subheader, imageSrc, altText, content, morecontent }) => {
   const [expanded, setExpanded] = React.useState(false);
 
   const handleExpandClick = () => {
@@ -23,6 +28,12 @@ const RecipeReviewCard = ({ title, subheader, imageSrc, altText, content, moreco
   const localAvatarSrc = avatarSrc;
 
   return (
+    <VerticalTimelineElement
+    className={className}
+    date={date}
+    iconStyle={iconStyle}
+    icon={icon}
+  >
     <Card sx={{ maxWidth: 345 }} style={{ backgroundColor: 'rgb(188, 196, 214)' }}>
       <CardHeader
         avatar={
@@ -65,12 +76,15 @@ const RecipeReviewCard = ({ title, subheader, imageSrc, altText, content, moreco
         </CardContent>
       </Collapse>
     </Card>
+    </VerticalTimelineElement>
   );
 };
 
 const News = () => {
   const newsData = [
     {
+      date: "2011 - present",
+      icon: <img src={logo2} alt="fessa logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
       imageSrc: 'https://assets.codepen.io/652/photo-1468777675496-5782faaea55b.jpeg',
       altText: 'mixed vegetable salad in a mason jar.',
       title: 'This is the first news',
@@ -79,6 +93,8 @@ const News = () => {
     morecontent: 'dkjcsjfv jkvnjnvkd'
     },
     {
+      date: "2011 - present",
+      icon: <img src={logo2} alt="fessa logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
       imageSrc: 'https://assets.codepen.io/652/photo-1468777675496-5782faaea55b.jpeg',
       altText: 'mixed vegetable salad in a mason jar.',
       title: 'This is the first news',
@@ -87,6 +103,8 @@ const News = () => {
     morecontent: 'dkjcsjfv jkvnjnvkd'
     },
     {
+      date: "2011 - present",
+      icon: <img src={logo2} alt="fessa logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
       imageSrc: 'https://assets.codepen.io/652/photo-1468777675496-5782faaea55b.jpeg',
       altText: 'mixed vegetable salad in a mason jar.',
       title: 'This is the first news',
@@ -99,13 +117,15 @@ const News = () => {
   return (
     <div style={{ margin: '0 auto', background: 'rgb(17, 50, 91)', padding: '20px' }} id="news-section">
       <h3 style={{ color: 'white', paddingLeft: '40px' }}>News</h3>
+      <VerticalTimeline>
       <Grid container spacing={2}>
         {newsData.map((newsItem, index) => (
           <Grid key={index} item xs={12} sm={6} md={4}>
-            <RecipeReviewCard {...newsItem} />
+             <TimelineItem key={index} {...newsItem} />
           </Grid>
         ))}
       </Grid>
+      </VerticalTimeline>
     </div>
   );
 };
