@@ -15,7 +15,11 @@ const images = [
     {
       imgURL: image3,
       imgAlt: "details-slide-3"
-    }
+    },
+    {
+      imgURL: 'https://pbs.twimg.com/media/F9hMNGtXUAEKqbr?format=jpg&name=900x900',
+      imgAlt: "details-slide-4"
+    },
   ];
 
   export default images;

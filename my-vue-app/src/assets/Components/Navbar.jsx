@@ -109,7 +109,7 @@ const Navigator = () => {
         <img src={logo} alt="Fessa Logo" style={imgStyle} />
       </Navbar.Brand>
       <Link to="/" onClick={handleH1Click}>
-        <h1 style={h1Style}>Faculty Of Education</h1>
+        <h1 style={h1Style}>Faculty Of Educational Studies</h1>
       </Link>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">

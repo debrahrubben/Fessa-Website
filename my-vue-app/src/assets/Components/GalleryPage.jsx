@@ -53,7 +53,7 @@ function GalleryPage() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Button variant="contained" style={{ marginBottom:'70px', }}>
+        <Button variant="contained" style={{ marginBottom:'120px', }}>
           Get More Images on Google Drive
         </Button>
       </a>

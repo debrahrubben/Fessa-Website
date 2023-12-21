@@ -49,31 +49,31 @@ const TimelineItem = ({ className, date, imageSrc, iconStyle, title, subtitle, c
 const NewsTimeline = () => {
   const newsData = [
     {
-      date: <div style={{color:'white'}}>2011 - present</div>,
-      icon: <img src={logo} alt="fessa logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
-      title: "News Title",
-      subtitle: "author",
-      imageSrc: 'https://assets.codepen.io/652/photo-1468777675496-5782faaea55b.jpeg',
-      content: "This is where the actual news go. Strategy, Social Media",
-      morecontent: 'dkjcsjfv jkvnjnvkd'
-    },
-    {
-      date: <div style={{color:'white'}}>2011 - present</div>,
+      date: <div style={{color:'white'}}>20th December</div>,
       icon: <img src={logo2} alt="fessa logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
-      title: "News Title",
-      subtitle: "author",
-      imageSrc: 'https://assets.codepen.io/652/photo-1468777675496-5782faaea55b.jpeg',
-      content: "This is where the actual news go. Strategy, Social Media",
-      morecontent: 'dkjcsjfv jkvnjnvkd'
+      title: "Arrival of Continuing Students",
+      subtitle: "KNUST adminstration",
+      imageSrc: 'https://pbs.twimg.com/media/FmdHwJRX0AMXEtz?format=jpg&name=4096x4096',
+      content: "Continuing students are expected to arrive on campus on Saturday, January 13, 2024",
+      morecontent: 'Learners are expected to report early in order to carry out any necessary activity.... '
     },
     {
-      date: <div style={{color:'white'}}>2011 - present</div>,
+      date: <div style={{color:'white'}}>20th December</div>,
+      icon: <img src={logo2} alt="fessa logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
+      title: "Biometric Registration",
+      subtitle: "KNUST Adminstration",
+      imageSrc: 'https://media.licdn.com/dms/image/C4E22AQGJEAfAT5Av7Q/feedshare-shrink_800/0/1627113100712?e=2147483647&v=beta&t=N5oDb76IPjmWErwvwCLR5iDV-7T__6WrGCZHEdOrueM',
+      content: "Biometric Registration for continuing students and Lectures begins on Monday, January 15, 2024 to Monday, February 5, 2024.",
+      morecontent: 'Students are expected to register in time else they wont be enrolled for the Academic Semester. Teaching also begins on Monday January 15'
+    },
+    {
+      date: <div style={{color:'white'}}>20th December</div>,
       icon: <img src={logo} alt="fessa logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
-      title: "News Title",
-      subtitle: "author",
-      imageSrc: 'https://assets.codepen.io/652/photo-1468777675496-5782faaea55b.jpeg',
-      content: "This is where the actual news go. Strategy, Social Media",
-      morecontent: 'dkjcsjfv jkvnjnvkd'
+      title: "Mr. President, congratulations🥳. ",
+      subtitle: "FESSA News Hub",
+      imageSrc: 'https://pbs.twimg.com/media/F9cb84dWoAEUuib?format=jpg&name=900x900',
+      content: "",
+      morecontent: ''
     },
     // Add more news items as needed
   ];
