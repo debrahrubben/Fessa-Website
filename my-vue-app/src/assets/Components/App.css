@@ -1,0 +1,146 @@
+body{margin-top:20px;}
+.product_list {
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+    padding: 20px;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    box-shadow: 0 20px 27px 0 rgb(0 0 0 / 5%);
+}
+
+.product_list .card-header {
+    border-radius: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.product_list .card-header .btn-link {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+    border: none;
+    border-radius: 0;
+    position: relative;
+    background-color: #ffffff;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+.product_list .card-header .btn-link:hover,
+.product_list .card-header .btn-link:focus {
+    text-decoration: none;
+    box-shadow: none;
+}
+
+.product_list .card-header .btn-link:after {
+    content: "\f078";
+    font: normal normal normal 14px/1 FontAwesome;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    line-height: normal;
+    width: 30px;
+    height: 30px;
+    background-color: #2f2f2f;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 14px;
+    transition: 0.5s all;
+    background-image: none;
+}
+
+.product_list .card-header .btn-link.collapsed:after {
+    transform: translateY(-50%) rotate(0deg);
+}
+
+.product_list .card-header .btn-link .list_block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+
+.product_list .card-header .btn-link .list_block .list_image {
+    width: 135px;
+    margin-right: 25px;
+    height: 130px;
+}
+
+.product_list .card-header .btn-link .list_block .list_text {
+    width: calc(100% - 160px);
+    padding-right: 40px;
+}
+
+.product_list .card-header .btn-link .list_block .list_text .subtitle {
+    margin-bottom: 4px;
+    color: #c7a379;;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.product_list .card-header .btn-link .list_block .list_text .title {
+    margin-bottom: 10px;
+}
+
+.product_list .card-header .btn-link .list_block .list_text .text {
+    font-size: 14px;
+    color: #7f7f7f;
+    margin: 0;
+}
+
+.product_list .card-body {
+    padding: 15px;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.product_list .list_block_item {
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+    padding: 20px 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.product_list .list_block_item a {
+    display: block;
+}
+
+.product_list .list_block_item a img {
+    width: 70px;
+    margin-bottom: 10px;
+    height: 60px;
+}
+
+.product_list .list_block_item a .category {
+    color: #7f7f7f;
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: normal;
+    font-weight: 500;
+}
+
+.product_list .list_block_item a .title {
+    line-height: normal;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.product_list .list_block_item a .title strong {
+    color: #c7a379;;
+}
+.image-fit-contain {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+a:{
+    text-decoration:none;
+}
