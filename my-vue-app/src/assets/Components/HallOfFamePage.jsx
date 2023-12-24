@@ -99,7 +99,7 @@ function HallOfFamePage() {
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341034/HallofFame/islamic%202023.jpg', category: '2022/2023 Executives', Name: '', Position: '' },
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341032/HallofFame/welfare%202023.jpg', category: '2022/2023 Executives', Name: '', Position: '' },
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341025/HallofFame/wocom%202023.jpg', category: '2022/2023 Executives', Name: '', Position: '' },
-      { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341025/HallofFame/audit%202023.jpg', category: '2022/2023 Executives', Name: '', Position: '' },
+      { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341025/HallofFame/audit%202023.jpg', category: '2022/2023 Executives',},
     
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341046/HallofFame/Kwame_Bonsu_art2oi.jpg', category: '2021/2022 Executives', Name: 'Kwame Bonsu', Position: 'President' },
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341043/HallofFame/Grace_Abena_Bossman_pgbsjx.jpg', category: '2021/2022 Executives', Name: 'Grace Abena Bossman', Position: 'General Secretary' },
@@ -125,7 +125,7 @@ function HallOfFamePage() {
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341046/HallofFame/IMG-20231223-WA0012_qhiblh.jpg', category: 'Lecturers', Name: 'Ohemaa Saguwaah Yeboah', Position: '' },
 
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341041/HallofFame/Rubben_fmuzzl.jpg', category: 'Remarkable People', Name: 'Rubben Debrah', Position: 'FESSA Web Developer' },
-      { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341040/HallofFame/Shadrack_e3wfib.jpg', category: 'Remarkable People', Name: 'Duah Shadrack Amponsah', Position: 'FESSA Web Maaster' },
+      { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341040/HallofFame/Shadrack_e3wfib.jpg', category: 'Remarkable People', Name: 'Duah Shadrack Amponsah', Position: 'FESSA Website Admin' },
 
       // Add more categories and items as needed
     ];
