@@ -24,8 +24,8 @@ const TimelineItem = ({ className, date, imageSrc, iconStyle, title, subtitle, c
       iconStyle={iconStyle}
       icon={icon}
     >
-      <h3 className="vertical-timeline-element-title">{title}</h3>
-      <h5 className="vertical-timeline-element-subtitle" >{subtitle}</h5>
+      <h4 className="vertical-timeline-element-title">{title}</h4>
+      <i className="vertical-timeline-element-subtitle" >{subtitle}</i>
       <div style={{ backgroundImage: `url(${imageSrc})`, backgroundSize: 'cover', width: '100%', height: '200px' }} />
       <p>{content}</p>
       <div>

@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
  // Import a separate CSS file for styling
 
 // Import your local images
-import card1Image from '../images/Jersey1.png';
-import card2Image from '../images/Jersey2.png';
+
 
 const Accessories = ({ cards }) => {
   const containerStyle = {
@@ -91,8 +90,8 @@ const Accessories = ({ cards }) => {
       <div style={beforeStyle}></div>
       <div style={imgBoxStyle}>
         {/* Use local images here */}
-        {index === 0 ? <img src={card1Image} alt={`card-${index}`} style={{ height: '300px', width: 'auto' }} /> : null}
-        {index === 1 ? <img src={card2Image} alt={`card-${index}`} style={{ height: '300px', width: 'auto' }} /> : null}
+        {index === 0 ? <img src={'https://res.cloudinary.com/dgpxvazru/image/upload/v1703384590/Slide/Jersey1_bi87hw.png'} alt={`card-${index}`} style={{ height: '300px', width: 'auto' }} /> : null}
+        {index === 1 ? <img src={'https://res.cloudinary.com/dgpxvazru/image/upload/v1703384590/Slide/Jersey2_o0epqo.png'} alt={`card-${index}`} style={{ height: '300px', width: 'auto' }} /> : null}
       </div>
       <div style={contentBoxStyle}>
         <h3 style={{ ...textStyle, fontWeight: '500', textTransform: 'uppercase' }}>{card.title}</h3>

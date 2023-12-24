@@ -6,13 +6,11 @@ function GalleryPage() {
         container: {
           width: '100%',
           maxWidth: '1024px',
-          padding: '0 1em',
-          margin: '3em auto',
+
         },
-        
+
         title: {
           textAlign: 'center',
-         paddingTop:'40px',
           color:'rgb(188, 196, 214)',
         }
       };
@@ -34,7 +32,7 @@ function GalleryPage() {
   }, []);
 
   return (
-    <main className="main" style={{backgroundColor:'rgb(17, 50, 91)'}}>
+    <main className="main" style={{backgroundColor:'rgb(17, 50, 91)', paddingTop:'90px',}}>
     <div className="container" style={styles.container}>
         <h1 className="title" style={styles.title}>
           Gallery
@@ -53,7 +51,7 @@ function GalleryPage() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Button variant="contained" style={{ marginBottom:'120px', }}>
+        <Button variant="contained" style={{ marginBottom:'120px', marginTop:'60px', }}>
           Get More Images on Google Drive
         </Button>
       </a>

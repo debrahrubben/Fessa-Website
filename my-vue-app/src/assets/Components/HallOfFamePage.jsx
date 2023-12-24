@@ -1,24 +1,58 @@
-
 import './HallofFame.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { experimentalStyled as styled } from '@mui/material/styles';
+import { Box, Grid, Paper } from '@mui/material';
 function ListBlockItem({ imgSrc, title, discount }) {
-  return (
-    <div className="list-block-item">
-      <img src={imgSrc} className="image-fit-contain" alt="img" />
-      <h6 className="title">{title}</h6>
-      <p className="discount"><strong>{discount}</strong></p>
-    </div>
+    const Item = styled(Paper)({
+        backgroundColor: 'rgb(17, 50, 91)',  // Set the background color directly
+        textAlign: 'center',
+        color: 'white',
+        minWidth: '160px',
+        maxWidth: '310px',
+        width: '100%',
+        fontSize: '10px',
+        padding:'3px',
+    marginTop:'30px',
+      });
+    return (
+     <Box>
+     <Grid container spacing={1} columns={{ xs: 4, sm: 8, md: 2 }} >
+         <Grid xs={4} sm={4} md={4}  style={{ display: 'flex', justifyContent: 'center', position: 'relative',  }}>
+           <Item>
+             <div style={{ position: 'relative', borderBottom: '2px solid #34495e', zIndex: '1', }}>
+               <img
+                 src={imgSrc} className="image-fit-contain" alt="img"
+                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+               />
+ <figcaption style={{ backgroundColor: 'rgb(17, 50, 91)', padding: '01px' }}>
+                  <h3
+                    style={{
+                      margin: '0 0 5px',
+                      textTransform: 'uppercase',
+                      fontWeight: '400',
+                      textAlign: 'center',
+                      marginTop: '10px',
+                      marginBottom: '10px',
+                      color: 'white',
+                      fontSize: 'small',
+                    }}
+                  >
+                    {title}
+                    <br />
+                    <span style={{ fontWeight: '700' }}> {discount}</span>
+                  </h3>
+                  
+                </figcaption>
+             </div>
+           </Item>
+         </Grid>
+       
+     </Grid>
+   </Box>
   );
 }
 
-function renderListItems(items) {
-  return items.map((item, index) => (
-    <div key={index} className="col-sm-4 col-6">
-      <ListBlockItem {...item} />
-    </div>
-  ));
-}
+
 
 // ... (imports and ListBlockItem component)
 function HallOfFamePage() {
@@ -111,15 +145,17 @@ function HallOfFamePage() {
   const uniqueCategories = Object.keys(categoryItemsMap);
 
   return (
-    <div style={{ paddingTop: '90px' }}>
-      <div className="container">
-        <div className="row accordion" id="accordion">
+    <div style={{ paddingTop: '90px', backgroundColor:'rgb(17, 50, 91)', paddingBottom:'50px'}}>
+      <div className="container" >
+        <div className="row accordion" id="accordion" >
           {uniqueCategories.map((category, index) => (
             <div key={index} className="col-xl-6">
               <div className="row">
                 <div className="col-lg-12">
-                  <div className="card accordion-item product_list">
-                    <div className="card-header accordion-header">
+                  <div
+                    className="card accordion-item product_list" style={{ backgroundColor:'rgb(188, 196, 214)'}}
+                  >
+                    <div className="card-header accordion-header" >
                       <div
                         className="btn btn-link accordion-button"
                         data-bs-toggle="collapse"
@@ -127,11 +163,6 @@ function HallOfFamePage() {
                         aria-expanded={index === 0 ? 'true' : 'false'}
                       >
                         <div className="list_image">
-                          <img
-                            src="https://www.bootdey.com/image/320x320/FF69B4/000000"
-                            className="image-fit-contain"
-                            alt="category-img"
-                          />
                         </div>
                         <h5 className="title">{category}</h5>
                       </div>

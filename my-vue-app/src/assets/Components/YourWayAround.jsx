@@ -17,11 +17,11 @@ const YourWayAround = () => {
   };
 
   return (
-    <div style={{paddingTop:'90px', backgroundColor:'rgb(17, 50, 91)'}}>
+    <div style={{paddingTop:'90px', backgroundColor:'rgb(17, 50, 91)', paddingBottom:'50px',}}>
       <h1 style={{ textAlign: 'center', marginTop: '30px', marginBottom: '20px', color:'white', fontSize:'small' }}>
         Blue Marker is the department location
       </h1>
-      <div id="map-container" style={{ ...mapContainerStyle, margin: '0 auto' }}>
+      <div id="map-container" style={{ ...mapContainerStyle, margin: '0 auto', }}>
         <MapContainer center={position} zoom={17} style={mapContainerStyle}>
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

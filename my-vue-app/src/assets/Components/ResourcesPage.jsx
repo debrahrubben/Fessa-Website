@@ -1,10 +1,4 @@
 import './ResourcesPage.css';
-import level100Image from '../images/level100.avif';
-import level200Image from '../images/level200.jpg';
-import level300Image from '../images/level300.avif';
-import level400Image from '../images/level400.avif';
-
-
 
 function ResourcesPage() {
   return (
@@ -12,7 +6,7 @@ function ResourcesPage() {
     <div className="box-container">
   <div className="box-item">
     {renderFlipBox(
-      level100Image,
+      'https://res.cloudinary.com/dgpxvazru/image/upload/v1703383163/level/level100_vwdtsn.avif',
       'Level 100',
       'Find all the electronic materials you need.',
       'https://drive.google.com/drive/folders/1gEn4tBZeH2rFAo9hv2JfuMCqXC1EavJO?usp=drive_link'
@@ -20,7 +14,7 @@ function ResourcesPage() {
   </div>
   <div className="box-item">
     {renderFlipBox(
-      level200Image,
+      'https://res.cloudinary.com/dgpxvazru/image/upload/v1703383163/level/level200_adgtxy.jpg',
       'Level 200',
       'Find all the electronic materials you need.',
       'https://drive.google.com/drive/folders/1--_HIn58bDlEJc09HPVQnDOPgdchb2xP?usp=drive_link'
@@ -28,7 +22,7 @@ function ResourcesPage() {
   </div>
   <div className="box-item">
     {renderFlipBox(
-      level300Image,
+      'https://res.cloudinary.com/dgpxvazru/image/upload/v1703383162/level/level300_arnxsb.avif',
       'Level 300',
       'Find all the electronic materials you need.',
       'https://drive.google.com/drive/folders/1-1vTnCxjYiiE-pxC56BWYBfPbxHkbaLK?usp=drive_link'
@@ -36,7 +30,7 @@ function ResourcesPage() {
   </div>
   <div className="box-item">
     {renderFlipBox(
-      level400Image,
+     'https://res.cloudinary.com/dgpxvazru/image/upload/v1703383162/level/level400_lm9vm0.avif',
       'Level 400',
       'Find all the electronic materials you need.',
       'https://drive.google.com/drive/folders/1--vTmpI3yNo8sRF8SXtmC35eJsawpB9y?usp=drive_link'

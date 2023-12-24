@@ -1,19 +1,16 @@
-import image1 from '../../../images/details-slide-1.jpg';
-import image2 from '../../../images/details-slide-2.jpg';
-import image3 from '../../../images/details-slide-3.jpg';
 
 
 const images = [
     {
-      imgURL: image1,
+      imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703384591/Slide/details-slide-1_koxegc.jpg',
       imgAlt: "details-slide-1"
     },
     {
-      imgURL: image2,
+      imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703384592/Slide/details-slide-2_qwtl7d.jpg',
       imgAlt: "details-slide-2"
     },
     {
-      imgURL: image3,
+      imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703384591/Slide/details-slide-3_buydm4.jpg',
       imgAlt: "details-slide-3"
     },
     {
