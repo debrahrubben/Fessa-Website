@@ -1,0 +1,12 @@
+/* Default styles for desktop */
+.main {
+    height: auto; /* 100% of viewport height */
+  }
+  
+  /* Styles for mobile devices */
+  @media only screen and (max-width: 768px) {
+    .main {
+      height: 88vh; /* 88% of viewport height */
+    }
+  }
+  

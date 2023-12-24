@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Button } from '@mui/material';
+import './galleryheight.css'
 
 function GalleryPage() {
     const styles = {
@@ -32,7 +33,7 @@ function GalleryPage() {
   }, []);
 
   return (
-    <main className="main" style={{backgroundColor:'rgb(17, 50, 91)', paddingTop:'120px', height:'88vh',}}>
+    <main className="main" style={{backgroundColor:'rgb(17, 50, 91)', paddingTop:'120px',}}>
     <div className="container" style={styles.container}>
         <h1 className="title" style={styles.title}>
           Gallery
