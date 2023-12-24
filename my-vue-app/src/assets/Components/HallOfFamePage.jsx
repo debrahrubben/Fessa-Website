@@ -145,7 +145,7 @@ function HallOfFamePage() {
   const uniqueCategories = Object.keys(categoryItemsMap);
 
   return (
-    <div style={{ paddingTop: '90px', backgroundColor:'rgb(17, 50, 91)', paddingBottom:'50px'}}>
+    <div style={{ paddingTop: '90px', backgroundColor:'rgb(17, 50, 91)',  height:'88vh',}}>
       <div className="container" >
         <div className="row accordion" id="accordion" >
           {uniqueCategories.map((category, index) => (

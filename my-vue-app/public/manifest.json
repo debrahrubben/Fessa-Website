@@ -4,8 +4,8 @@
     "description": "Faculty Of Educational Studies Student Association (Fessa)",
     "start_url": "/",
     "display": "standalone",
-    "background_color": "white",
-    "theme_color": "black",
+    "background_color": "#17223A",
+    "theme_color": "rgb(17, 50, 91)",
     "icons": [
       {
         "src": "https://res.cloudinary.com/dgpxvazru/image/upload/v1703384591/Slide/logo_pzlfnc.png",

@@ -326,6 +326,7 @@ const styles = {
     alignItems: 'center',
     paddingTop: '103px',
     color: 'white',
+    
   },
   logoContainer: {
     marginBottom: '20px',
@@ -351,6 +352,8 @@ const styles = {
     border: 'none',
     borderRadius: '5px',
     cursor: 'pointer',
+    marginBottom:'10px',
+    
   },
 };
 

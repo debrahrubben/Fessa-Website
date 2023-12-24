@@ -12,6 +12,8 @@ const Footer = () => {
     background: '#17223A',
     fontFamily: 'Play, sans-serif',
     textAlign: 'center',
+    marginTop: 'auto',
+
   };
 
   const rowStyle = {
