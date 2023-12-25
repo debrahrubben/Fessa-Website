@@ -57,12 +57,12 @@ function ListBlockItem({ imgSrc, title, discount }) {
 // ... (imports and ListBlockItem component)
 function HallOfFamePage() {
     const itemsData = [
-      { imgSrc:'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341042/HallofFame/Dennis_Asare_ejqgpo.jpg', category: '2024/2025 Executives', Name: 'Dennis Asare', Position: 'President' },
-      { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341045/HallofFame/Jeremiah_Ampah_mllnrz.jpg', category: '2024/2025 Executives', Name: 'Jeremiah Ampah', Position: 'Vice President' },
-      { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341042/HallofFame/Naomi_Nartey_Mateykie_vy2guc.jpg', category: '2024/2025 Executives', Name: 'Naomi Nartey Mateykie', Position: 'General Secretary' },
-      { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341046/HallofFame/Frimpong_Eric_Osei_sojptm.jpg', category: '2024/2025 Executives', Name: 'Frimpong Eric Osei', Position: 'Financial Secretary' },
-      { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341043/HallofFame/Bernice_Afi_Agbanyo_tvrfzw.jpg', category: '2024/2025 Executives', Name: 'Bernice Afi Agbanyo', Position: 'Wocom' },
-      { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341041/HallofFame/Mohammed_Umar_Nadra_loetbw.jpg', category: '2024/2025 Executives', Name: 'Mohammed Umar Nadra', Position: 'Organising Secretary' },
+      { imgSrc:'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341042/HallofFame/Dennis_Asare_ejqgpo.jpg', category: '2023/2024 Executives', Name: 'Dennis Asare', Position: 'President' },
+      { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341045/HallofFame/Jeremiah_Ampah_mllnrz.jpg', category: '2023/2024 Executives', Name: 'Jeremiah Ampah', Position: 'Vice President' },
+      { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341042/HallofFame/Naomi_Nartey_Mateykie_vy2guc.jpg', category: '2023/2024 Executives', Name: 'Naomi Nartey Mateykie', Position: 'General Secretary' },
+      { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341046/HallofFame/Frimpong_Eric_Osei_sojptm.jpg', category: '2023/2024 Executives', Name: 'Frimpong Eric Osei', Position: 'Financial Secretary' },
+      { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341043/HallofFame/Bernice_Afi_Agbanyo_tvrfzw.jpg', category: '2023/2024 Executives', Name: 'Bernice Afi Agbanyo', Position: 'Wocom' },
+      { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341041/HallofFame/Mohammed_Umar_Nadra_loetbw.jpg', category: '2023/2024 Executives', Name: 'Mohammed Umar Nadra', Position: 'Organising Secretary' },
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341038/HallofFame/wocom1_czbvc6.jpg', category: '2023/2024 Executives', Name: '', Position: '' },
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341037/HallofFame/wocom2_mli4nj.jpg', category: '2023/2024 Executives', Name: '', Position: '' },
       { imgSrc:'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341038/HallofFame/wocom3_z96gnx.jpg', category: '2023/2024 Executives', Name: '', Position: '' },
