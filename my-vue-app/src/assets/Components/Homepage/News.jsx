@@ -23,6 +23,7 @@ const TimelineItem = ({ className, date, imageSrc, iconStyle, title, subtitle, c
       
       iconStyle={iconStyle}
       icon={icon}
+      
     >
       <div>
       <a href={Weblink} style={{ textDecoration: 'none', color: 'black' }}>
@@ -43,11 +44,8 @@ const TimelineItem = ({ className, date, imageSrc, iconStyle, title, subtitle, c
         </IconButton>
       </div>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent>
-          {morecontent}
-        </CardContent>
+      {morecontent}
       </Collapse>
-      
     </VerticalTimelineElement>
   );
 };
@@ -55,7 +53,7 @@ const TimelineItem = ({ className, date, imageSrc, iconStyle, title, subtitle, c
 const NewsTimeline = () => {
   const newsData = [
     {
-      date: <div style={{color:'white'}}>20th December</div>,
+      date: <div style={{color:'rgb(188, 196, 214)'}}>20th December</div>,
       icon: <img src={logo2} alt="fessa logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
       title: "Arrival of Continuing Students",
       subtitle: "KNUST adminstration",
@@ -65,7 +63,7 @@ const NewsTimeline = () => {
       Weblink:'https://twitter.com/KNUSTNotice/status/1731158737241387207',
     },
     {
-      date: <div style={{color:'white'}}>20th December</div>,
+      date: <div style={{color:'rgb(188, 196, 214)'}}>20th December</div>,
       icon: <img src={logo2} alt="fessa logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
       title: "Biometric Registration",
       subtitle: "KNUST Adminstration",
@@ -75,7 +73,7 @@ const NewsTimeline = () => {
       Weblink:'https://x.com/VOICE_of_KNUST/status/1659865185543233537?s=20',
     },
     {
-      date: <div style={{color:'white'}}>20th December</div>,
+      date: <div style={{color:'rgb(188, 196, 214)'}}>20th December</div>,
       icon: <img src={logo} alt="fessa logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
       title: "Mr. President, congratulations🥳. ",
       subtitle: "FESSA News Hub",
@@ -89,7 +87,7 @@ const NewsTimeline = () => {
 
   return (
     <div style={{ background: '#17223A' }}>
-      <VerticalTimeline>
+      <VerticalTimeline >
         {newsData.map((newsItem, index) => (
           <TimelineItem key={index} {...newsItem} />
         ))}

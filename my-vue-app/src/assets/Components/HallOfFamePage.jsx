@@ -2,6 +2,8 @@ import './HallofFame.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { experimentalStyled as styled } from '@mui/material/styles';
 import { Box, Grid, Paper } from '@mui/material';
+import { useState } from 'react';
+
 function ListBlockItem({ imgSrc, title, discount }) {
     const Item = styled(Paper)({
         backgroundColor: 'rgb(17, 50, 91)',  // Set the background color directly
@@ -14,11 +16,30 @@ function ListBlockItem({ imgSrc, title, discount }) {
         padding:'3px',
     marginTop:'30px',
       });
+      
+      const [tapCount, setTapCount] = useState(0);
+
+      const handleImageTap = () => {
+        // Check if the tapped image is the specific person's image
+        if (title === 'Rubben Debrah') {
+          setTapCount((prevCount) => prevCount + 1);
+    
+          if (tapCount + 1 === 5) {
+            alert(`Dufie i am sorry for everything, i did say some shit stuff this is not the first nor second time. 
+            Those things i said are not my true intentions i said them out of anger to hurt you.
+             Im not with you because of your kindness i was with you before you started being kind. 
+             If we learn to respect each other we will live in harmony. 
+             im once again sorry for the pain i cause you.`);
+            // Reset tap count after displaying the message
+            setTapCount(0);
+          }
+        }
+      };
     return (
      <Box>
      <Grid container spacing={1} columns={{ xs: 4, sm: 8, md: 2 }} >
          <Grid xs={4} sm={4} md={4}  style={{ display: 'flex', justifyContent: 'center', position: 'relative',  }}>
-           <Item>
+           <Item onClick={handleImageTap}>
              <div style={{ position: 'relative', borderBottom: '2px solid #34495e', zIndex: '1', }}>
                <img
                  src={imgSrc} className="image-fit-contain" alt="img"
