@@ -44,7 +44,9 @@ const TimelineItem = ({ className, date, imageSrc, iconStyle, title, subtitle, c
         </IconButton>
       </div>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
+        <CardContent>
       {morecontent}
+      </CardContent>
       </Collapse>
     </VerticalTimelineElement>
   );

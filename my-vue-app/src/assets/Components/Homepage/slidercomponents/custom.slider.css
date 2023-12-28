@@ -89,12 +89,20 @@
   }
   
   .slider__item-active-5 {
-    transform: translateX(-300%);
-  }
+    transform: translateX(-400%);
+    -webkit-transform: translateX(-400%);
+    -moz-transform: translateX(-400%);
+    -ms-transform: translateX(-400%);
+    -o-transform: translateX(-400%);
+}
   
   .slider__item-active-6 {
-    transform: translateX(-300%);
-  }
+    transform: translateX(-500%);
+    -webkit-transform: translateX(-500%);
+    -moz-transform: translateX(-500%);
+    -ms-transform: translateX(-500%);
+    -o-transform: translateX(-500%);
+}
   
   .slider__item-active-7 {
     transform: translateX(-300%);
