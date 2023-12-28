@@ -15,6 +15,7 @@ const HomePage = () => {
         </div> {/* end of slider-container */}
       </div> {/* end of outer-container */}
    <News />
+   
     </div>
   )
 }
