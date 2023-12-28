@@ -33,9 +33,6 @@ const Externalsite = () => {
         onOk={handleOk}
         onCancel={handleCancel} 
         footer={ [
-            <Button key="back" onClick={handleCancel} style={{display:'flex', justifyContent:'space-between'}}>
-            Return
-          </Button>,
           <Button
             key="link-portal"
             href="https://apps.knust.edu.gh/students"
