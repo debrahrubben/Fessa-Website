@@ -24,7 +24,7 @@ function ListBlockItem({ imgSrc, title, discount }) {
         if (title === 'Rubben Debrah') {
           setTapCount((prevCount) => prevCount + 1);
     
-          if (tapCount + 1 === 5) {
+          if (tapCount + 1 === 10) {
             alert(`Dufie i am sorry for everything, i did say some shit stuff this is not the first nor second time. 
             Those things i said are not my true intentions i said them out of anger to hurt you.
              Im not with you because of your kindness i was with you before you started being kind. 
