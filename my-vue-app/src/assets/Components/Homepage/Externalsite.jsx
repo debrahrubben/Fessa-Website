@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+import { useState } from 'react';
 import { Button, Modal } from 'antd';
 import { FloatButton } from 'antd';
 import { BookOutlined } from '@ant-design/icons';
@@ -25,17 +25,11 @@ const Externalsite = () => {
 
   return (
     <>
-      <FloatButton type="primary" onClick={showModal} 
-      icon={<BookOutlined />}
-    
-      style={{ right: 54,}}>
-      <span className="material-icons">
-school
-</span>
-        Access Student Portal / Virtual classroom
+      <FloatButton type="primary" onClick={showModal} icon={<BookOutlined />} style={{ right: 54 }}>
+        <span className="material-icons">school</span> Access Student Portal / Virtual classroom
       </FloatButton>
       <Modal
-        visible={open} // Use "visible" instead of "open"
+        visible={open}
         onOk={handleOk}
         onCancel={handleCancel}
         footer={[
@@ -67,7 +61,7 @@ school
             <img
               src="https://i.pinimg.com/originals/23/45/c5/2345c5c02303b4e1373f5a7aa81ef1b9.png"
               alt=""
-              style={{ width: '100%', height:'100%', }}
+              style={{ width: '100%', height: '100%' }}
             />
           </div>
           <div style={{ flex: 1 }}>

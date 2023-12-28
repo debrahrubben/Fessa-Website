@@ -3,6 +3,7 @@ import '@fortawesome/fontawesome-free/css/all.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { BrowserRouter, Routes, Route,} from "react-router-dom";
 import { FloatButton } from 'antd';
+import Externalsite from './assets/Components/Homepage/Externalsite';
 
 
 import Navigator from './assets/Components/Navbar';
@@ -31,7 +32,10 @@ function App() {
 		<Route  path="/Your_Way_Around" element={<YourWayAround />} />
 				</Routes>
 < Footer/>
+<FloatButton.Group>
+<Externalsite></Externalsite>
 <FloatButton.BackTop />
+</FloatButton.Group>
 			</BrowserRouter>
 		</>
 	);

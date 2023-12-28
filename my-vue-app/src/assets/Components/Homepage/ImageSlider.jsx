@@ -1,6 +1,5 @@
 import images from "./Sliderimages/images";
 import CustomSlider from "./slidercomponents/custom.slider";
-import Externalsite from "./Externalsite";
 
 
 
@@ -13,7 +12,7 @@ const ImageSlider = () => {
         })}
       </CustomSlider>
     <div style={{textAlign:'center',}}>
-<Externalsite></Externalsite>
+
 </div>
     </div>
   )
