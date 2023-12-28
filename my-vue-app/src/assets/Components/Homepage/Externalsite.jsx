@@ -28,12 +28,12 @@ const Externalsite = () => {
       <FloatButton type="primary" onClick={showModal} icon={<BookOutlined />} style={{ right: 54 }}>
         <span className="material-icons">school</span> Access Student Portal / Virtual classroom
       </FloatButton>
-      <Modal
+      <Modal 
         visible={open}
         onOk={handleOk}
-        onCancel={handleCancel}
-        footer={[
-          <Button key="back" onClick={handleCancel}>
+        onCancel={handleCancel} 
+        footer={ [
+            <Button key="back" onClick={handleCancel} style={{display:'flex', justifyContent:'space-between'}}>
             Return
           </Button>,
           <Button
@@ -56,7 +56,7 @@ const Externalsite = () => {
           </Button>,
         ]}
       >
-        <div style={{ display: 'flex' }}>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           <div style={{ flex: 1, marginRight: '10px' }}>
             <img
               src="https://i.pinimg.com/originals/23/45/c5/2345c5c02303b4e1373f5a7aa81ef1b9.png"
