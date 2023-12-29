@@ -1,6 +1,5 @@
-import images from "./Sliderimages/images";
-import CustomSlider from "./slidercomponents/custom.slider";
-
+import images from "./images";
+import CustomSlider from "./custom.slider";
 
 
 const ImageSlider = () => {

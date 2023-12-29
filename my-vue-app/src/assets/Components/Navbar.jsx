@@ -150,10 +150,10 @@ const Navigator = () => {
             <MenuItem component={Link} to="/Hall_of_Fame" onClick={handleClose} style={aStyle}>
               Hall of Fame
             </MenuItem>
-            <MenuItem component={Link} to="/your_way_around" onClick={handleClose} style={aStyle}>
+            <MenuItem component={Link} to="/Explore" onClick={handleClose} style={aStyle}>
               Explore
             </MenuItem>
-            <MenuItem component={Link} to="/accessories" onClick={handleClose} style={aStyle}>
+            <MenuItem component={Link} to="/Mech" onClick={handleClose} style={aStyle}>
               Merchandise
             </MenuItem>
           </Menu>

@@ -1,6 +1,6 @@
 import Header from './Header'
 import News from './News'
-import ImageSlider from "./ImageSlider";
+import ImageSlider from "./slidercomponents/ImageSlider";
 
 const HomePage = () => {
 

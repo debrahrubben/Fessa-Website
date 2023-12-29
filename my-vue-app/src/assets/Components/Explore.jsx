@@ -2,7 +2,7 @@
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
-const YourWayAround = () => {
+const Explore = () => {
   const position = [6.681939, -1.573379]; // Coordinates from the Google Maps link
 
   const mapContainerStyle = {
@@ -39,4 +39,4 @@ const YourWayAround = () => {
   );
 };
 
-export default YourWayAround;
+export default Explore;

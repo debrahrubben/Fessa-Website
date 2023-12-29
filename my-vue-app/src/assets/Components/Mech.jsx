@@ -116,7 +116,7 @@ Accessories.propTypes = {
   ).isRequired,
 };
 
-const AccessoriesPage = () => {
+const Mech = () => {
   return (
     <div>
       {/* Your other components */}
@@ -140,4 +140,4 @@ const AccessoriesPage = () => {
   );
 };
 
-export default AccessoriesPage;
+export default Mech;

@@ -9,12 +9,12 @@ import Externalsite from './assets/Components/Homepage/Externalsite';
 import Navigator from './assets/Components/Navbar';
 import HomePage from './assets/Components/Homepage/HomePage';
 import AboutPage from './assets/Components/AboutPage';
-import ResourcesPage from './assets/Components/ResourcesPage';
-import GalleryPage from './assets/Components/GalleryPage';
+import ResourcesPage from './assets/Components/ResourcePage/ResourcesPage';
+import GalleryPage from './assets/Components/GalleryPage/GalleryPage';
 import Footer from './assets/Components/Footer';
-import AccessoriesPage from './assets/Components/Accessories';
-import HallOfFamePage from './assets/Components/HallOfFamePage';
-import YourWayAround from './assets/Components/YourWayAround'
+import Mech from './assets/Components/Mech';
+import HallOfFamePage from './assets/Components/HallofFame/HallOfFamePage';
+import Explore from './assets/Components/Explore'
 
 function App() {
 
@@ -27,9 +27,9 @@ function App() {
         <Route  path="/about" element={<AboutPage />} />
         <Route  path="/resources" element={<ResourcesPage />} />
         <Route  path="/gallery" element={<GalleryPage />} />
-		<Route  path="/accessories" element={<AccessoriesPage />} />
+		<Route  path="/Mech" element={<Mech />} />
 		<Route  path="/Hall_of_Fame" element={<HallOfFamePage />} />
-		<Route  path="/Your_Way_Around" element={<YourWayAround />} />
+		<Route  path="/Explore" element={<Explore />} />
 				</Routes>
 < Footer/>
 <FloatButton.Group>
