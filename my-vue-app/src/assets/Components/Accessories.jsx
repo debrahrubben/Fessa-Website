@@ -132,7 +132,7 @@ const AccessoriesPage = () => {
           },
           {
             title: 'Diary And Pen',
-            price: 'Free',
+            price: '45 Cedis',
           },
         ]}
       />
