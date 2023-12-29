@@ -90,8 +90,8 @@ const Accessories = ({ cards }) => {
       <div style={beforeStyle}></div>
       <div style={imgBoxStyle}>
         {/* Use local images here */}
-        {index === 0 ?  <img src={'https://res.cloudinary.com/dgpxvazru/image/upload/v1703416133/Slide/lacoste%20white.png'} alt={`card-${index}`} style={{ height: '240px', width: 'auto' }} /> : null}
-        {index === 1 ? <img src={'https://res.cloudinary.com/dgpxvazru/image/upload/v1703416133/Slide/lacoste%20blue.png'} alt={`card-${index}`} style={{ height: '231px', width: 'auto' }} /> : null}
+        {index === 0 ?  <img src={'https://res.cloudinary.com/dgpxvazru/image/upload/v1703416133/Mech/lacoste%20white.png'} alt={`card-${index}`} style={{ height: '240px', width: 'auto' }} /> : null}
+        {index === 1 ? <img src={'https://res.cloudinary.com/dgpxvazru/image/upload/v1703416133/Mech/lacoste%20blue.png'} alt={`card-${index}`} style={{ height: '231px', width: 'auto' }} /> : null}
         {index === 2 ? <img src={'https://res.cloudinary.com/dgpxvazru/image/upload/v1703788575/Mech/photo_2023-12-28_18-29-16_vmpat4.jpg'} alt={`card-${index}`} style={{ height: '231px', width: 'auto' }} /> : null}
       </div>
       <div style={contentBoxStyle}>
