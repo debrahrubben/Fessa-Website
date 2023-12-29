@@ -92,6 +92,7 @@ const Accessories = ({ cards }) => {
         {/* Use local images here */}
         {index === 0 ?  <img src={'https://res.cloudinary.com/dgpxvazru/image/upload/v1703416133/Slide/lacoste%20white.png'} alt={`card-${index}`} style={{ height: '240px', width: 'auto' }} /> : null}
         {index === 1 ? <img src={'https://res.cloudinary.com/dgpxvazru/image/upload/v1703416133/Slide/lacoste%20blue.png'} alt={`card-${index}`} style={{ height: '231px', width: 'auto' }} /> : null}
+        {index === 2 ? <img src={'https://res.cloudinary.com/dgpxvazru/image/upload/v1703788575/Mech/photo_2023-12-28_18-29-16_vmpat4.jpg'} alt={`card-${index}`} style={{ height: '231px', width: 'auto' }} /> : null}
       </div>
       <div style={contentBoxStyle}>
         <h3 style={{ ...textStyle, fontWeight: '500', textTransform: 'uppercase' }}>{card.title}</h3>
@@ -128,6 +129,10 @@ const AccessoriesPage = () => {
           {
             title: 'Blue Lacoste',
             price: '70 Cedis',
+          },
+          {
+            title: 'Diary And Pen',
+            price: 'Free',
           },
         ]}
       />
