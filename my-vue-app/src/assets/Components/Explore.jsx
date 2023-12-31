@@ -1,6 +1,14 @@
 
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
+import L from 'leaflet';
+
+const icon = L.icon({
+  iconUrl: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703964670/tinyimages/marker-removebg-preview_1_we6suh.png',
+  shadowUrl: '/images/marker-shadow.png',
+  iconSize: [50, 50], // change this to make the icon smaller or larger
+});
+
 
 const Explore = () => {
   const position = [6.681939, -1.573379]; // Coordinates from the Google Maps link
@@ -19,7 +27,7 @@ const Explore = () => {
   return (
     <div style={{paddingTop:'90px', backgroundColor:'rgb(17, 50, 91)',minHeight:'88vh'}}>
       <h1 style={{ textAlign: 'center', marginTop: '30px', marginBottom: '20px', color:'white', fontSize:'small' }}>
-        Blue Marker is the department location
+        The red Pin mark`s the faculty location
       </h1>
       <div id="map-container" style={{ ...mapContainerStyle, margin: '0 auto', }}>
         <MapContainer center={position} zoom={17} style={mapContainerStyle}>
@@ -27,10 +35,10 @@ const Explore = () => {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           />
-          <Marker position={position}>
+          <Marker position={position} icon={icon}>
             <Popup style={popupStyle}>
-              <strong>Department of Education</strong> <br />
-              This is where the Department is situated
+              <strong>Faculty of Educational Studies</strong> <br />
+              This is where the faculty is situated, closer to publishing studies building
             </Popup>
           </Marker>
         </MapContainer>
