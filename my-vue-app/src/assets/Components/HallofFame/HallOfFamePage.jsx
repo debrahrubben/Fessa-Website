@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { experimentalStyled as styled } from '@mui/material/styles';
 import { Box, Grid, Paper } from '@mui/material';
 import { useState } from 'react';
-import { calc } from 'antd/es/theme/internal';
 
 function ListBlockItem({ imgSrc, title, discount }) {
     const Item = styled(Paper)({
@@ -79,6 +78,9 @@ function ListBlockItem({ imgSrc, title, discount }) {
 // ... (imports and ListBlockItem component)
 function HallOfFamePage() {
     const itemsData = [
+
+
+      // 2022/2023 Executives
       { imgSrc:'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341042/HallofFame/Dennis_Asare_ejqgpo.jpg', category: '2023/2024 Executives', Name: 'Dennis Asare', Position: 'President' },
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341045/HallofFame/Jeremiah_Ampah_mllnrz.jpg', category: '2023/2024 Executives', Name: 'Jeremiah Ampah', Position: 'Vice President' },
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341042/HallofFame/Naomi_Nartey_Mateykie_vy2guc.jpg', category: '2023/2024 Executives', Name: 'Naomi Nartey Mateykie', Position: 'General Secretary' },
@@ -104,6 +106,8 @@ function HallOfFamePage() {
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341049/HallofFame/electorial2_sa5dfg.jpg', category: '2023/2024 Executives', Name: '', Position: '' },
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703358003/HallofFame/treasurer.jpg', category: '2023/2024 Executives', Name: '', Position: '' },
 
+
+// 2022/2023 Executives
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341042/HallofFame/Christian_Kerker_pobbf2.jpg', category: '2022/2023 Executives', Name: 'Christian Kerker', Position: 'President' },
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341043/HallofFame/Kenseng_Mintah_vice_vsqzsc.jpg', category: '2022/2023 Executives', Name: 'Kenseng Mintah', Position: 'Vice President' },
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341024/HallofFame/Ishmael.jpg', category: '2022/2023 Executives', Name: 'Ishmael Aidoo', Position: 'Organizing Secretary' },
@@ -122,14 +126,18 @@ function HallOfFamePage() {
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341032/HallofFame/welfare%202023.jpg', category: '2022/2023 Executives', Name: '', Position: '' },
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341025/HallofFame/wocom%202023.jpg', category: '2022/2023 Executives', Name: '', Position: '' },
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341025/HallofFame/audit%202023.jpg', category: '2022/2023 Executives',},
-    
+
+
+    // 2021/2022 Executives
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341046/HallofFame/Kwame_Bonsu_art2oi.jpg', category: '2021/2022 Executives', Name: 'Kwame Bonsu', Position: 'President' },
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341043/HallofFame/Grace_Abena_Bossman_pgbsjx.jpg', category: '2021/2022 Executives', Name: 'Grace Abena Bossman', Position: 'General Secretary' },
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341028/HallofFame/Fiahagbe.jpg', category: '2021/2022 Executives', Name: 'Fiahagbe Atsu Emmanuel', Position: 'Organising Sec' },
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341028/HallofFame/Hamza.jpg', category: '2021/2022 Executives', Name: 'Hamza Gariba Mawadda', Position: 'Women`s Commissioner' },
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341030/HallofFame/Baniba.jpg', category: '2021/2022 Executives', Name: 'Baniba Eli Kwame', Position: 'Financial Sec' },
 
-      { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341045/HallofFame/WinstonL.jpg', category: 'Lecturers', Name: 'Prof. Winston Kwame Abroampa', Position: 'Dean of Faculty of Education' },
+
+// lectures
+      { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341045/HallofFame/WinstonL.jpg', category: 'Lecturers', Name: 'Prof. Winston Kwame Abroampa',  Position: 'Dean of Faculty of Education' },
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341045/HallofFame/SwanzyL.jpg', category: 'Lecturers', Name: 'Dr Patrick Swanzy', Position: '' },
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341026/HallofFame/FrancisL.jpg', category: 'Lecturers', Name: 'Dr Francis Kwadwo Awuah', Position: 'Head of Department' },
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341045/HallofFame/EnuL.jpg', category: 'Lecturers', Name: 'Dr Justice Enu', Position: '' },
@@ -146,6 +154,16 @@ function HallOfFamePage() {
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341046/HallofFame/IMG-20231223-WA0011_gpjxfg.jpg', category: 'Lecturers', Name: 'Dr Prince Edem Dzakpasu', Position: '' },
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341046/HallofFame/IMG-20231223-WA0012_qhiblh.jpg', category: 'Lecturers', Name: 'Ohemaa Saguwaah Yeboah', Position: '' },
 
+
+
+// affiliated colleges
+      { imgSrc:'https://www.wesco.edu.gh/wp-content/uploads/2020/08/bg2.jpg', category: 'Affiliated Colleges', Name: 'Wesley College of Education', Position: 'Kumasi' },
+      { imgSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCfYf61rwgntiB4ytmHpgtUW7E4e7WN7_Q0Q&usqp=CAU', category: 'Affiliated Colleges', Name: 'E. P. College of Education', Position: 'Bimbilla' },
+      { imgSrc: 'https://th.bing.com/th/id/OIP.HOtMobuVq68H2duBJ1lM7gHaDU?rs=1&pid=ImgDetMain', category: 'Affiliated Colleges', Name: 'Tamale College of Education', Position: 'Tamale' },
+      { imgSrc: 'https://lh3.googleusercontent.com/p/AF1QipNnQYfC1szYVyuUi5lCdFWRuRwNHGj4JAKBOyW3=s1600-w400', category: 'Affiliated Colleges', Name: 'St Joseph College of Education', Position: 'Bechem' },
+
+
+// Remarkable people
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341041/HallofFame/Rubben_fmuzzl.jpg', category: 'Remarkable People', Name: 'Rubben Debrah', Position: 'FESSA Web Developer' },
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341040/HallofFame/Shadrack_e3wfib.jpg', category: 'Remarkable People', Name: 'Duah Shadrack Amponsah', Position: 'FESSA Website Admin' },
 
