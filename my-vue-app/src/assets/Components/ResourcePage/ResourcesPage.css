@@ -9,6 +9,7 @@
   width: 100%;
    padding-top: 105px;
   background-color: rgb(17, 50, 91);
+  min-height: 84vh;
 }
 
 @media screen and (min-width:780px) {

@@ -24,7 +24,8 @@ const Header = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className="text-container text-center" style={textContainerStyle}>
-              <h4 style={{ background: 'rgba(255, 255, 255, 0.2)', borderRadius: '10px', padding: '10px', color: '#17223A',  }}>Welcome to Faculty Of Educational Studies Students Association Website</h4>
+              <h4 style={{ background: 'rgba(255, 255, 255, 0.2)', borderRadius: '10px', padding: '10px', color: '#17223A',  }}>
+                Welcome to Faculty Of Educational Studies Students Association Portal</h4>
               <p className="p-large" >
               &quot;Education is the most powerful weapon which you can use to change the world.&quot; - Nelson Mandela
               </p>
