@@ -29,7 +29,7 @@ const TimelineItem = ({ className, date, imageSrc, iconStyle, title, subtitle, c
       <a href={Weblink} style={{ textDecoration: 'none', color: 'black' }}>
       <h4 className="vertical-timeline-element-title">{title}</h4>
       <i className="vertical-timeline-element-subtitle" >{subtitle}</i>
-      <div style={{ backgroundImage: `url(${imageSrc})`, backgroundSize: 'cover', width: '100%', height: '200px' }} />
+      <div style={{ backgroundImage: `url(${imageSrc})`, backgroundSize: 'cover', width: 'auto', height:'250px' }} />
       </a>
      <p>{content}</p>
      
@@ -86,7 +86,7 @@ const NewsTimeline = () => {
     },
     {
       date: <div style={{color:'rgb(188, 196, 214)'}}>20th December</div>,
-      icon: <img src={logo} alt="fessa logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
+      icon: <img src={logo} alt="fessa logo" style={{ width: '100%', height:'auto', objectFit: 'cover' }} />,
       title: "Mr. President, congratulations🥳. ",
       subtitle: "FESSA News Hub",
       imageSrc: 'https://pbs.twimg.com/media/F9cb84dWoAEUuib?format=jpg&name=900x900',
