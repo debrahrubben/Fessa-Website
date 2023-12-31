@@ -4,7 +4,7 @@ import { experimentalStyled as styled } from '@mui/material/styles';
 import { Box, Grid, Paper } from '@mui/material';
 import { useState } from 'react';
 
-function ListBlockItem({ imgSrc, title, discount }) {
+function ListBlockItem({ imgSrc, title, position, linkToSite }) {
     const Item = styled(Paper)({
         backgroundColor: 'rgb(17, 50, 91)',  // Set the background color directly
         textAlign: 'center',
@@ -60,7 +60,9 @@ function ListBlockItem({ imgSrc, title, discount }) {
                   >
                     {title}
                     <br />
-                    <span style={{ fontWeight: '700' }}> {discount}</span>
+                    <span style={{ fontWeight: '700' }}> {position}</span>
+                    <br />
+                    {linkToSite && <a href={linkToSite} target="_blank" rel="noopener noreferrer">Visit</a>}
                   </h3>
                   
                 </figcaption>
@@ -157,10 +159,10 @@ function HallOfFamePage() {
 
 
 // affiliated colleges
-      { imgSrc:'https://www.wesco.edu.gh/wp-content/uploads/2020/08/bg2.jpg', category: 'Affiliated Colleges', Name: 'Wesley College of Education', Position: 'Kumasi' },
-      { imgSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCfYf61rwgntiB4ytmHpgtUW7E4e7WN7_Q0Q&usqp=CAU', category: 'Affiliated Colleges', Name: 'E. P. College of Education', Position: 'Bimbilla' },
-      { imgSrc: 'https://th.bing.com/th/id/OIP.HOtMobuVq68H2duBJ1lM7gHaDU?rs=1&pid=ImgDetMain', category: 'Affiliated Colleges', Name: 'Tamale College of Education', Position: 'Tamale' },
-      { imgSrc: 'https://lh3.googleusercontent.com/p/AF1QipNnQYfC1szYVyuUi5lCdFWRuRwNHGj4JAKBOyW3=s1600-w400', category: 'Affiliated Colleges', Name: 'St Joseph College of Education', Position: 'Bechem' },
+      { imgSrc:'https://www.wesco.edu.gh/wp-content/uploads/2020/08/bg2.jpg', category: 'Affiliated Colleges', Name: 'Wesley College of Education', Position: 'Kumasi', linkToSite:'https://www.wesco.edu.gh/', },
+      { imgSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCfYf61rwgntiB4ytmHpgtUW7E4e7WN7_Q0Q&usqp=CAU', category: 'Affiliated Colleges', Name: 'E. P. College of Education', Position: 'Bimbilla' , linkToSite:'https://epcoebimbilla.edu.gh/',},
+      { imgSrc: 'https://th.bing.com/th/id/OIP.HOtMobuVq68H2duBJ1lM7gHaDU?rs=1&pid=ImgDetMain', category: 'Affiliated Colleges', Name: 'Tamale College of Education', Position: 'Tamale', linkToSite:'https://tace.edu.gh/', },
+      { imgSrc: 'https://lh3.googleusercontent.com/p/AF1QipNnQYfC1szYVyuUi5lCdFWRuRwNHGj4JAKBOyW3=s1600-w400', category: 'Affiliated Colleges', Name: 'St Joseph College of Education', Position: 'Bechem' , linkToSite:'https://www.joscobechem.edu.gh/',},
 
 
 // Remarkable people
@@ -179,7 +181,7 @@ function HallOfFamePage() {
       categoryItemsMap[category] = [];
     }
 
-    categoryItemsMap[category].push({ Name, imgSrc: item.imgSrc, Position: item.Position });
+    categoryItemsMap[category].push({ Name, imgSrc: item.imgSrc, Position: item.Position, linkToSite: item.linkToSite });
   });
 
   const uniqueCategories = Object.keys(categoryItemsMap);
@@ -216,7 +218,7 @@ function HallOfFamePage() {
                         <div className="row">
                           {categoryItemsMap[category].map((item, itemIndex) => (
                             <div key={itemIndex} className="col-sm-6 col-12">
-                              <ListBlockItem imgSrc={item.imgSrc} title={item.Name} discount={item.Position} />
+                              <ListBlockItem imgSrc={item.imgSrc} title={item.Name} position={item.Position} linkToSite={item.linkToSite}/>
                             </div>
                           ))}
                         </div>
