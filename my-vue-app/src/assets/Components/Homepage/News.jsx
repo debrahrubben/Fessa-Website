@@ -76,6 +76,16 @@ const NewsTimeline = () => {
     },
     {
       date: <div style={{color:'rgb(188, 196, 214)'}}>20th December</div>,
+      icon: <img src={logo2} alt="fessa logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
+      title: "Course Registration",
+      subtitle: "KNUST Adminstration",
+      imageSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703967244/tinyimages/photo_2023-12-30_20-09-08_ddcz33.jpg',
+      content: "Students who fail to register within stipulated period will automatically deemed deferred",
+      morecontent: 'All issues concerning course registration have been resolved. Students are encourage to go to their portal and register for their courses.',
+      Weblink:'https://x.com/VOICE_of_KNUST/status/1659865185543233537?s=20',
+    },
+    {
+      date: <div style={{color:'rgb(188, 196, 214)'}}>20th December</div>,
       icon: <img src={logo} alt="fessa logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
       title: "Mr. President, congratulations🥳. ",
       subtitle: "FESSA News Hub",
