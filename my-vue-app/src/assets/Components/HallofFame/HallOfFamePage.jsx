@@ -29,7 +29,7 @@ function ListBlockItem({ imgSrc, title, discount }) {
             alert(`Dufie i am sorry for everything, i did say some shit stuff this is not the first nor second time.
             Those things i said are not my true intentions i said them out of anger to hurt you.
              Im not with you because of your kindness i was with you before you started being kind.
-             If we learn to respect each other we will live in harmony.
+         
              im once again sorry for the pain i cause you.`);
             // Reset tap count after displaying the message
             setTapCount(0);
