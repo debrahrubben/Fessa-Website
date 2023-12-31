@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { experimentalStyled as styled } from '@mui/material/styles';
 import { Box, Grid, Paper } from '@mui/material';
 import { useState } from 'react';
+import { calc } from 'antd/es/theme/internal';
 
 function ListBlockItem({ imgSrc, title, discount }) {
     const Item = styled(Paper)({
@@ -166,7 +167,7 @@ function HallOfFamePage() {
   const uniqueCategories = Object.keys(categoryItemsMap);
 
   return (
-    <div style={{ paddingTop: '90px', backgroundColor:'rgb(17, 50, 91)',  height:'88vh',}}>
+    <div style={{ paddingTop: '90px', backgroundColor:'rgb(17, 50, 91)',  minHeight:'88vh',}}>
       <div className="container" >
         <div className="row accordion" id="accordion" >
           {uniqueCategories.map((category, index) => (

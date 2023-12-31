@@ -17,7 +17,7 @@ const Explore = () => {
   };
 
   return (
-    <div style={{paddingTop:'90px', backgroundColor:'rgb(17, 50, 91)', height:'88vh',}}>
+    <div style={{paddingTop:'90px', backgroundColor:'rgb(17, 50, 91)',minHeight:'88vh'}}>
       <h1 style={{ textAlign: 'center', marginTop: '30px', marginBottom: '20px', color:'white', fontSize:'small' }}>
         Blue Marker is the department location
       </h1>

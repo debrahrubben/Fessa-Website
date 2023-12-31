@@ -29,7 +29,7 @@ const Externalsite = () => {
         <span className="material-icons">school</span> Access Student Portal / Virtual classroom
       </FloatButton>
       <Modal 
-        visible={open}
+        open={open}
         onOk={handleOk}
         onCancel={handleCancel} 
         footer={ [
