@@ -85,11 +85,6 @@ const Navigator = () => {
   };
   
 
-  
-  const activeLinkStyle = {
-    backgroundColor: 'rgba(172, 30, 30, 0.1)', // Adjust the background color for active links
-    // Add any other styles you want for active links
-  };
 
 
   const [anchorEl, setAnchorEl] = useState(null);
@@ -129,7 +124,6 @@ const Navigator = () => {
             onClick={handleClick}
             aria-controls="extras-menu"
             aria-haspopup="true"
-            activeStyle={activeLinkStyle}
           >
             Extras
           </Button>

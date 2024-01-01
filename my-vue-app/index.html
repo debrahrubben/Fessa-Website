@@ -13,7 +13,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     <script>
       if ('serviceWorker' in navigator) {
-          navigator.serviceWorker.register('/service-worker.js')
+          navigator.serviceWorker.register('/service-worker.jsx')
               .then((registration) => {
                   console.log('Service Worker registered with scope:', registration.scope);
               })
@@ -41,7 +41,7 @@
         "@type": "Organization",
         "name": "FESSA",
         "url": "https://www.FESSA.com",
-        "logo": "https://www.yourcollegewebsite.com/path/to/logo.png",
+        "logo": "/src/assets//images/logo.png",
         "description": "Faculty Of Educational Studies Student Association (Fessa)  "
       }
     </script>
@@ -49,8 +49,8 @@
     <!-- Open Graph Tags -->
     <meta property="og:title" content="FESSA" />
     <meta property="og:description" content="Your College's Official Website - Explore campus life, programs, and more." />
-    <meta property="og:image" content="https://www.yourcollegewebsite.com/path/to/og-image.png" />
-    <meta property="og:url" content="https://www.yourcollegewebsite.com" />
+    <meta property="og:image" content="/src/assets//images/logo.png" />
+    <meta property="og:url" content="https://www.fessa.netlify.app" />
 
     <title>FESSA</title>
   </head>

@@ -16,8 +16,11 @@ self.addEventListener('install', (event) => {
 
 self.addEventListener('fetch', (event) => {
     event.respondWith(
-        caches.match(event.request).then((response) => {
-            return response || fetch(event.request);
+        fetch(event.request).catch((error) => {
+            console.error('Failed to fetch:', error);
+            // You can customize the response for failed fetches here
+            return new Response('Failed to fetch resource', { status: 500 });
         })
     );
 });
+
