@@ -15,6 +15,9 @@ self.addEventListener('install', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
+    if (event.request.url.includes('/browser-sync/')) {
+        return;
+    }
     event.respondWith(
         fetch(event.request).catch((error) => {
             console.error('Failed to fetch:', error);
