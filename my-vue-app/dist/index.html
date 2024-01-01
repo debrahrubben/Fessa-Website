@@ -11,6 +11,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.8.6/umd/react.production.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.8.6/umd/react-dom.production.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/service-worker.js')
+              .then((registration) => {
+                  console.log('Service Worker registered with scope:', registration.scope);
+              })
+              .catch((error) => {
+                  console.error('Service Worker registration failed:', error);
+              });
+      }
+  </script>
+  
+
 
     <!-- Meta Tags -->
     <meta charset="UTF-8" />
@@ -40,8 +53,8 @@
     <meta property="og:url" content="https://www.yourcollegewebsite.com" />
 
     <title>FESSA</title>
-    <script type="module" crossorigin src="/assets/index-11573938.js"></script>
-    <link rel="stylesheet" href="/assets/index-7cd68ff5.css">
+    <script type="module" crossorigin src="/assets/index-473896a7.js"></script>
+    <link rel="stylesheet" href="/assets/index-9f58fce0.css">
   </head>
   <body>
     <div id="root"></div>
