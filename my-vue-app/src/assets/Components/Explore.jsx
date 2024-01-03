@@ -2,6 +2,7 @@
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
+import ReactPlayer from 'react-player';
 
 const icon = L.icon({
   iconUrl: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703964670/tinyimages/marker-removebg-preview_1_we6suh.png',
@@ -15,7 +16,7 @@ const Explore = () => {
 
   const mapContainerStyle = {
     height: '400px',
-    width: '100%',
+    width: '80%',
     borderRadius: '10px',
     boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
   };
@@ -23,9 +24,16 @@ const Explore = () => {
   const popupStyle = {
     textAlign: 'center',
   };
-
+  const videoContainerStyle = {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: '70px',
+    paddingBottom: '40px',
+  };
   return (
-    <div style={{paddingTop:'90px', backgroundColor:'rgb(17, 50, 91)',minHeight:'88vh'}}>
+    <div style={{paddingTop:'90px', backgroundColor:'rgb(17, 50, 91)',minHeight:'100vh'}}>
       <h1 style={{ textAlign: 'center', marginTop: '30px', marginBottom: '20px', color:'white', fontSize:'small' }}>
         The red Pin mark`s the faculty location
       </h1>
@@ -42,7 +50,14 @@ const Explore = () => {
             </Popup>
           </Marker>
         </MapContainer>
+        
       </div>
+      <div style={videoContainerStyle}>
+        <ReactPlayer
+      url="https://youtu.be/eCMKBadpUKk?si=lk_hhHm9qgk57LpG"
+      controls={true}  // Show native player controls
+    />
+        </div>
     </div>
   );
 };

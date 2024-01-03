@@ -94,7 +94,7 @@ const Footer = () => {
 
         <div className="row" style={rowStyle}>
           <ul style={ulStyle}>
-            <li style={liStyle}><a href="#" style={linkStyle}><b>The Faculty</b></a></li>
+            
 
            <li style={liStyle}><Button type="primary" onClick={showModal} style={{ background: 'rgb(17, 50, 91)' }}>
               <span className="material-icons" style={{ fontSize: '1.1em', marginRight: '5px' }}>school</span>
