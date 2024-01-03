@@ -1,7 +1,7 @@
 import  { useState } from 'react';
 import { FaFacebook, FaTwitter } from 'react-icons/fa';
 import { MdPhone, MdEmail } from 'react-icons/md';
-import { Button, Modal } from 'antd';
+import { Button,} from 'antd';
 import CustomModal from './Modal';
 
 const Footer = () => {
@@ -70,7 +70,11 @@ const Footer = () => {
   const handleCancel = () => {
     setOpen(false);
   };
-
+  const handleAcademicCalendarClick = () => {
+    // Replace 'your-pdf-file.pdf' with the actual path to your PDF file
+    const pdfFilePath = 'https://drive.google.com/file/d/1hMFDdBwS7m3yZINJVixo1T41lWeitdqc/view?usp=sharing';
+    window.open(pdfFilePath, '_blank');
+  };
   return (
     <footer style={footerStyle}>
       <div className="footer">
@@ -97,7 +101,7 @@ const Footer = () => {
               Access Student Portal / Virtual classroom
             </Button></li><CustomModal open={open} handleOk={handleOk} handleCancel={handleCancel} loading={loading} />
       
-            <li style={liStyle}><a href="#" style={linkStyle}>Academic Calendar</a></li>
+            <li style={liStyle}><a href="#" style={linkStyle} onClick={handleAcademicCalendarClick}>Academic Calendar</a></li>
            <li style={liStyle}><a href="#" style={linkStyle}>Affiliate Colleges</a></li>
             <li style={liStyle}><a href="https://www.facebook.com/profile.php?id=61550739763548&mibextid=2JQ9oc" style={linkStyle}>FESSA News Hub</a></li>
 
