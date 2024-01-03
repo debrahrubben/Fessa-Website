@@ -1,6 +1,8 @@
 import  { useState } from 'react';
 import { FaFacebook, FaTwitter } from 'react-icons/fa';
 import { MdPhone, MdEmail } from 'react-icons/md';
+import { BookOutlined } from '@ant-design/icons';
+import { Button, Modal } from 'antd';
 
 const Footer = () => {
   const iconStyle = {
@@ -50,6 +52,26 @@ const Footer = () => {
     setShowPhoneNumber(!showPhoneNumber);
   };
 
+  const [loading, setLoading] = useState(false);
+  const [open, setOpen] = useState(false);
+
+  const showModal = () => {
+    setOpen(true);
+  };
+
+  const handleOk = () => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+      setOpen(false);
+    }, 3000);
+  };
+
+  const handleCancel = () => {
+    setOpen(false);
+  };
+
+
   return (
     <footer style={footerStyle}>
       <div className="footer">
@@ -73,9 +95,12 @@ const Footer = () => {
 
         <div className="row" style={rowStyle}>
           <ul style={ulStyle}>
-            <li style={liStyle}><a href="#" style={linkStyle}>Kwame Nkrumah University of Science and Technology, Kumasi</a></li>
-            <li style={liStyle}><a href="#" style={linkStyle}>Education Policy</a></li>
-            <li style={liStyle}><a href="#" style={linkStyle}>Privacy Policy</a></li>
+            
+            <li style={liStyle}><a href="#" style={linkStyle}><b>The Faculty</b></a></li>
+            <li style={liStyle}><a href="#" style={linkStyle}>Students Portal/Virtual Classroom</a></li>
+            <li style={liStyle}><a href="#" style={linkStyle}>Academic Calendar</a></li>
+           <li style={liStyle}><a href="#" style={linkStyle}>Affiliate Colleges</a></li>
+            <li style={liStyle}><a href="https://www.facebook.com/profile.php?id=61550739763548&mibextid=2JQ9oc" style={linkStyle}>FESSA News Hub</a></li>
           </ul>
         </div>
       </div>
