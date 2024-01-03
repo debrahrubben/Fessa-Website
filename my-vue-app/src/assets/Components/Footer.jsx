@@ -97,7 +97,7 @@ const Footer = () => {
             
             <li style={liStyle}><a href="#" style={linkStyle}><b>The Faculty</b></a></li>
 
-           <li style={liStyle}><Button type="primary" onClick={showModal} style={{ background: 'rgba(0, 0, 0, 0.1)',}}>
+           <li style={liStyle}><Button type="primary" onClick={showModal} style={{ background: 'rgb(17, 50, 91)',}}>
         <span className="material-icons"  style={{ fontSize: '1.1em', marginRight: '5px'}}>school</span> Access Student Portal / Virtual classroom
       </Button></li>
       <Modal 
