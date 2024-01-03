@@ -16,7 +16,7 @@ const Explore = () => {
 
   const mapContainerStyle = {
     height: '400px',
-    width: '80%',
+    width: 'auto',
     borderRadius: '10px',
     boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
   };
@@ -31,6 +31,11 @@ const Explore = () => {
     alignItems: 'center',
     marginTop: '70px',
     paddingBottom: '40px',
+    maxWidth: '100%', // Set maximum width to 100%
+    overflow: 'hidden',
+    width: '100%', // Set width to 100%
+    height: 'auto', // Maintain aspect ratio
+    
   };
   return (
     <div style={{paddingTop:'90px', backgroundColor:'rgb(17, 50, 91)',minHeight:'100vh'}}>
