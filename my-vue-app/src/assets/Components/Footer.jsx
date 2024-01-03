@@ -2,6 +2,7 @@ import  { useState } from 'react';
 import { FaFacebook, FaTwitter } from 'react-icons/fa';
 import { MdPhone, MdEmail } from 'react-icons/md';
 import { Button, Modal } from 'antd';
+import CustomModal from './Modal';
 
 const Footer = () => {
   const iconStyle = {
@@ -70,22 +71,17 @@ const Footer = () => {
     setOpen(false);
   };
 
-
   return (
     <footer style={footerStyle}>
       <div className="footer">
         <div className="row" style={rowStyle}>
           <a href="https://www.facebook.com/people/Faculty-of-Educational-Studies-Students-Association_FESSA_KNUST/61550762679826/?mibextid=ZbWKwL" style={linkStyle}><FaFacebook style={iconStyle} /></a>
-          
           {/* Replace Instagram with Call */}
           <a href="tel:+233322190745" style={linkStyle} onClick={handlePhoneClick}>
             <MdPhone style={iconStyle} />
           </a>
-          
           {showPhoneNumber && <span style={{ margin: '0 10px', color: 'white' }}>+233 322 190 745</span>}
-          
           <a href="https://twitter.com/FessaKnust" style={linkStyle}><FaTwitter style={iconStyle} /></a>
-          
           {/* Add Gmail icon and link */}
           <a href="mailto:fessa21@gmail.com" style={linkStyle}>
             <MdEmail style={iconStyle} />
@@ -94,12 +90,12 @@ const Footer = () => {
 
         <div className="row" style={rowStyle}>
           <ul style={ulStyle}>
-            
             <li style={liStyle}><a href="#" style={linkStyle}><b>The Faculty</b></a></li>
 
-           <li style={liStyle}><Button type="primary" onClick={showModal} style={{ background: 'rgb(17, 50, 91)',}}>
-        <span className="material-icons"  style={{ fontSize: '1.1em', marginRight: '5px'}}>school</span> Access Student Portal / Virtual classroom
-      </Button></li>
+           <li style={liStyle}><Button type="primary" onClick={showModal} style={{ background: 'rgb(17, 50, 91)' }}>
+              <span className="material-icons" style={{ fontSize: '1.1em', marginRight: '5px' }}>school</span>
+              Access Student Portal / Virtual classroom
+            </Button></li><CustomModal open={open} handleOk={handleOk} handleCancel={handleCancel} loading={loading} />
       <Modal 
         open={open}
         onOk={handleOk}
