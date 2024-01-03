@@ -11,66 +11,69 @@ const AboutPage = () => {
       <div style={styles.infoContainer}>
         <h1 style={{ color: 'grey' }}> ABOUT US</h1>
         <p style={styles.introText}>
+        <h4>Faculty of Educational Studies (KNUST)</h4>
+        <br />
 
-      <p>  Currently, Faculty of Educational Studies (KNUST) offers a 4-year B.Ed. degree in:
-B.Ed. JHS Education
+<p>Currently, Faculty of Educational Studies (KNUST) offers a 4-year B.Ed. degree in:</p>
 
-B.Ed JHS Education Options:
-1. Math & Science
-2. Math & ICT
-3. ICT & Science
-4. Social Studies & History 
-5. Visual Arts
-6. Geography
-7. Agricultural Science</p>
-<br />
+<h5>B.Ed. JHS Education</h5>
 
-Note:The JHS option provides applicants with the opportunity to specialize in a particular subject area to enable them to teach at the JHS level after graduation. The subjects include Integrated Science, Mathematics, ICT,  Visual Arts, Social Studies, Geography, Agricultural Science and History. 
+<p><strong>B.Ed JHS Education Options:</strong></p>
+<ol>
+    <li>Math & Science</li>
+    <li>Math & ICT</li>
+    <li>ICT & Science</li>
+    <li>Social Studies & History</li>
+    <li>Visual Arts</li>
+    <li>Geography</li>
+    <li>Agricultural Science</li>
+</ol>
 
-<br />
-<p>*ADMISSION/ENTRY REQUIREMENTS*
+<p><strong>Note:</strong> The JHS option provides applicants with the opportunity to specialize in a particular
+    subject area to enable them to teach at the JHS level after graduation. The subjects include Integrated Science,
+    Mathematics, ICT, Visual Arts, Social Studies, Geography, Agricultural Science, and History.</p>
+    <br />
 
-In order to gain admission to read the following  B.Ed JHS Education programme in KNUST:
-a.Mathematics
-b.Science
-c.I.C.T.
-d.Agricultural Science
-e.Visual Art
-f.History
-g.Geography
-h. Social Studies </p>
-<br />
-You must have the following requirements:
-<br />
-<p>A. WASSCE/SSSCE APPLICANTS
-Entry Requirements
+<h4>ADMISSION/ENTRY REQUIREMENTS</h4>
 
-Core Subjects: Credit passes in English Language, Mathematics, and Integrated Science.
+<p>In order to gain admission to read the following B.Ed JHS Education programme in KNUST:</p>
+<ul>
+    <li>Mathematics</li>
+    <li>Science</li>
+    <li>I.C.T.</li>
+    <li>Agricultural Science</li>
+    <li>Visual Art</li>
+    <li>History</li>
+    <li>Geography</li>
+    <li>Social Studies</li>
+</ul>
 
-Elective Subjects:Credit passes in any THREE (3) subjects from the following programmes: 
-i.Science, General Agriculture, and I.C.T. (for a-d)
-ii.Visual Art (fore)
-iii.General Arts including History or Geography, as may be applied (for f and g)
+<p><strong>You must have the following requirements:</strong></p>
 
-B. ‘A’ LEVEL APPLICANTS
-Entry Requirements
-
-•‘O’ Level or equivalent: Credit passes in FIVE(5) subjects including English Language 
-and Mathematics, and
-
-•‘A’ Level or equivalent: Credit passes in THREE(3) subjects from the following programmes:
-i.Science, General Agriculture, and I.C.T. (for a-d)
-ii.Visual Art (for e)
-iii.General Arts including History or Geography, as may be applied (for f and g).</p>
-<br />
-
-*ONLINE APPLICATION PROCEDURE*
-<br />
-<p>
-  <a href="https://apps.knust.edu.gh/admissions/" style={{textDecoration:'none',}}>Click here</a>
-
-
+<h5>A. WASSCE/SSSCE APPLICANTS</h5>
+<p><strong>Entry Requirements</strong></p>
+<p><strong>Core Subjects:</strong> Credit passes in English Language, Mathematics, and Integrated Science.</p>
+<p><strong>Elective Subjects:</strong> Credit passes in any THREE (3) subjects from the following programmes:
 </p>
+<ul>
+    <li>i. Science, General Agriculture, and I.C.T. (for a-d)</li>
+    <li>ii. Visual Art (for e)</li>
+    <li>iii. General Arts including History or Geography, as may be applied (for f and g)</li>
+</ul>
+
+<h6>B. ‘A’ LEVEL APPLICANTS</h6>
+<p><strong>Entry Requirements</strong></p>
+<p><strong>‘O’ Level or equivalent:</strong> Credit passes in FIVE(5) subjects including English Language and
+    Mathematics, and</p>
+<p><strong>‘A’ Level or equivalent:</strong> Credit passes in THREE(3) subjects from the following programmes:</p>
+<ul>
+    <li>i. Science, General Agriculture, and I.C.T. (for a-d)</li>
+    <li>ii. Visual Art (for e)</li>
+    <li>iii. General Arts including History or Geography, as may be applied (for f and g).</li>
+</ul>
+<br />
+<h5>ONLINE APPLICATION PROCEDURE</h5>
+<p>Click <a href="https://apps.knust.edu.gh/admissions/">here</a> for the online application procedure.</p>
         </p>
         <a href="https://fes.knust.edu.gh/">
         <button style={styles.readMoreButton} >Read More
