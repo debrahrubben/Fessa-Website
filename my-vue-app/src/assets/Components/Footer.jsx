@@ -3,6 +3,7 @@ import { FaFacebook, FaTwitter } from 'react-icons/fa';
 import { MdPhone, MdEmail } from 'react-icons/md';
 import { Button,} from 'antd';
 import CustomModal from './Modal';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const iconStyle = {
@@ -102,8 +103,10 @@ const Footer = () => {
             </Button></li><CustomModal open={open} handleOk={handleOk} handleCancel={handleCancel} loading={loading} />
       
             <li style={liStyle}><a href="#" style={linkStyle} onClick={handleAcademicCalendarClick}>Academic Calendar</a></li>
-           <li style={liStyle}><a href="#" style={linkStyle}>Affiliate Colleges</a></li>
-            <li style={liStyle}><a href="https://www.facebook.com/profile.php?id=61550739763548&mibextid=2JQ9oc" style={linkStyle}>FESSA News Hub</a></li>
+            <Link to="/affiliate-colleges" style={linkStyle}>
+            Affiliate Colleges
+          </Link>
+            <li style={liStyle} ><a href="https://www.facebook.com/profile.php?id=61550739763548&mibextid=2JQ9oc" style={linkStyle}>FESSA News Hub</a></li>
 
           </ul>
         </div>
