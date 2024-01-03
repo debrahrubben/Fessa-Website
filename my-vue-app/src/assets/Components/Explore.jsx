@@ -30,12 +30,8 @@ const Explore = () => {
     justifyContent: 'center',
     alignItems: 'center',
     marginTop: '70px',
-    paddingBottom: '40px',
-    maxWidth: '100%', // Set maximum width to 100%
-    overflow: 'hidden',
-    width: '100%', // Set width to 100%
-    height: 'auto', // Maintain aspect ratio
-    
+   
+
   };
   return (
     <div style={{paddingTop:'90px', backgroundColor:'rgb(17, 50, 91)',minHeight:'100vh'}}>
@@ -61,6 +57,8 @@ const Explore = () => {
         <ReactPlayer
       url="https://youtu.be/eCMKBadpUKk?si=lk_hhHm9qgk57LpG"
       controls={true}  // Show native player controls
+     width='95%'
+     height='auto'
     />
         </div>
     </div>
