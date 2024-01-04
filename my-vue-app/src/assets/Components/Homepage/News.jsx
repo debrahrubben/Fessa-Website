@@ -17,6 +17,7 @@ const TimelineItem = ({ className, date, imageSrc, iconStyle, title, subtitle, c
 
 
   return (
+    
     <VerticalTimelineElement 
       className={className}
       date={date}
@@ -26,6 +27,7 @@ const TimelineItem = ({ className, date, imageSrc, iconStyle, title, subtitle, c
       
     >
       <div>
+        
       <a href={Weblink} style={{ textDecoration: 'none', color: 'black' }}>
       <h4 className="vertical-timeline-element-title">{title}</h4>
       <i className="vertical-timeline-element-subtitle" >{subtitle}</i>
@@ -99,11 +101,15 @@ const NewsTimeline = () => {
 
   return (
     <div style={{ background: '#17223A' }}>
+      <div>
       <VerticalTimeline >
         {newsData.map((newsItem, index) => (
           <TimelineItem key={index} {...newsItem} />
         ))}
       </VerticalTimeline>
+      
+    </div>
+    <hr  style={{ height: '14px', border: 'none', backgroundColor: 'white' }}/>
     </div>
   );
 };

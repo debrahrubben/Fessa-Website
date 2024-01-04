@@ -42,10 +42,10 @@ const cardData = [
 
 export default function Affiliate() {
   return (
-    <Grid container spacing={3} style={{ paddingTop: '90px', backgroundColor:'rgb(17, 50, 91)',paddingLeft:'15px',}}>
+    <Grid container spacing={3} style={{ paddingTop: '90px', backgroundColor:'rgb(17, 50, 91)', paddingBottom:'30px',}}>
       {cardData.map((card, index) => (
-        <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
-          <Card sx={{ maxWidth: 345 }}>
+        <Grid item xs={12} sm={6} md={4} lg={3} key={index} style={{ display: 'flex', justifyContent: 'center', position: 'relative',  }}>
+          <Card sx={{ maxWidth: 345 }} style={{backgroundColor:'#17223A',color:'white'}}>
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -54,13 +54,13 @@ export default function Affiliate() {
                 alt={card.alt}
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography gutterBottom variant="h6" component="div">
                   {card.title}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2" color="rgb(188, 196, 214)">
                   {card.description}
                 </Typography>
-                <Link href={card.visitUrl} target="_blank" rel="noopener noreferrer"  style={{ textDecoration: 'none', color: 'rgb(17, 50, 91)' }}>
+                <Link href={card.visitUrl} target="_blank" rel="noopener noreferrer"  style={{ textDecoration: 'none', color: 'rgb(188, 196, 214)' }}>
                   Visit
                 </Link>
               </CardContent>
