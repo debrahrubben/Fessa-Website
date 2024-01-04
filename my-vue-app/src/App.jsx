@@ -31,7 +31,7 @@ function App() {
 		<Route  path="/Mech" element={<Mech />} />
 		<Route  path="/Hall_of_Fame" element={<HallOfFamePage />} />
 		<Route  path="/Explore" element={<Explore />} />
-		< Route path='/Affiliate_Colleges' element={<Affiliate />} />
+		< Route path='/affiliate-colleges' element={<Affiliate />} />
 				</Routes>
 < Footer/>
 <FloatButton.Group>

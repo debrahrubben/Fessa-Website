@@ -42,8 +42,8 @@ const Footer = () => {
   };
 
   const liStyle = {
-    display: 'inline-block',
-    margin: '0 30px',
+    display: 'block',
+    margin: '0 10px',
   };
 
   const [showPhoneNumber, setShowPhoneNumber] = useState(false);
@@ -102,11 +102,11 @@ const Footer = () => {
               Access Student Portal / Virtual classroom
             </Button></li><CustomModal open={open} handleOk={handleOk} handleCancel={handleCancel} loading={loading} />
       
-            <li style={liStyle}><a href="#" style={linkStyle} onClick={handleAcademicCalendarClick}>Academic Calendar</a></li>
-            <Link to="/affiliate-colleges" style={linkStyle}>
+            <li style={{...liStyle, fontSize:'150%',}} ><a href="#" style={linkStyle} onClick={handleAcademicCalendarClick}>Academic Calendar</a></li>
+          <Link to="/affiliate-colleges" style={{...linkStyle, fontSize:'140%',}}>
             Affiliate Colleges
           </Link>
-            <li style={liStyle} ><a href="https://www.facebook.com/profile.php?id=61550739763548&mibextid=2JQ9oc" style={linkStyle}>FESSA News Hub</a></li>
+            <li style={{...liStyle, fontSize:'150%',}} ><a href="https://www.facebook.com/profile.php?id=61550739763548&mibextid=2JQ9oc" style={linkStyle}>FESSA News Hub</a></li>
 
           </ul>
         </div>

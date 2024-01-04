@@ -158,14 +158,6 @@ function HallOfFamePage() {
 
 
 
-// affiliated colleges
-      { imgSrc:'https://www.wesco.edu.gh/wp-content/uploads/2020/08/bg2.jpg', category: 'Affiliated Colleges', Name: 'Wesley College of Education', Position: 'Kumasi', linkToSite:'https://www.wesco.edu.gh/', },
-      { imgSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCfYf61rwgntiB4ytmHpgtUW7E4e7WN7_Q0Q&usqp=CAU', category: 'Affiliated Colleges', Name: 'E. P. College of Education', Position: 'Bimbilla' , linkToSite:'https://epcoebimbilla.edu.gh/',},
-      { imgSrc: 'https://th.bing.com/th/id/OIP.HOtMobuVq68H2duBJ1lM7gHaDU?rs=1&pid=ImgDetMain', category: 'Affiliated Colleges', Name: 'Tamale College of Education', Position: 'Tamale', linkToSite:'https://tace.edu.gh/', },
-      { imgSrc: 'https://lh3.googleusercontent.com/p/AF1QipNnQYfC1szYVyuUi5lCdFWRuRwNHGj4JAKBOyW3=s1600-w400', category: 'Affiliated Colleges', Name: 'St Joseph College of Education', Position: 'Bechem' , linkToSite:'https://www.joscobechem.edu.gh/',},
-      { imgSrc: 'https://i0.wp.com/ictcatalogue.com/wp-content/uploads/2022/02/Akrokerri-College-of-Education-Admission-Online.png?fit=640%2C460&ssl=1', category: 'Affiliated Colleges', Name: 'Akrokerri College of Education', Position: 'Akrokerri College of Education is a teacher education college in Akrokerri (Adansi West District, Ashanti Region, Ghana). The college is located in Ashanti / Brong Ahafo zone. It is one of the about 46 public colleges of education in Ghana. The college participated in the DFID-funded T-TEL programme. It was accredited to tertiary institution in 2007 and was affiliated to Kwame Nkrumah University of Science and Technology (KNUST) in 2019.',},
-
-
 // Remarkable people
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341041/HallofFame/Rubben_fmuzzl.jpg', category: 'Remarkable People', Name: 'Rubben Debrah', Position: 'FESSA Web Developer' },
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341040/HallofFame/Shadrack_e3wfib.jpg', category: 'Remarkable People', Name: 'Duah Shadrack Amponsah', Position: 'FESSA Website Admin' },
