@@ -115,7 +115,7 @@ const Navigator = () => {
             <Button color="inherit" style={aStyle} component={Link} to="/resources">
               Resources
             </Button>
-            <Button color="inherit" style={aStyle} component={Link} to="/Attendance">
+            <Button color="inherit" style={aStyle} component="a" href="https://www.myattendancetracker.com/attendance" target="_blank" rel="noopener noreferrer">
               Attendance
             </Button>
           <Button

@@ -15,7 +15,7 @@ import Mech from './assets/Components/Mech';
 import HallOfFamePage from './assets/Components/HallofFame/HallOfFamePage';
 import Explore from './assets/Components/Explore'
 import Affiliate from './assets/Components/Affiliate';
-import Attendance from './assets/Components/Attendance';
+
 
 
 function App() {
@@ -33,7 +33,6 @@ function App() {
 		<Route  path="/Hall_of_Fame" element={<HallOfFamePage />} />
 		<Route  path="/Explore" element={<Explore />} />
 		< Route path='/affiliate-colleges' element={<Affiliate />} />
-		< Route path='/Attendance' element={<Attendance />} />
 				</Routes>
 < Footer/>
 <FloatButton.Group>
