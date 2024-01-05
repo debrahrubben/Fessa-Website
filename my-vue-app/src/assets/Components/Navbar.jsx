@@ -115,8 +115,8 @@ const Navigator = () => {
             <Button color="inherit" style={aStyle} component={Link} to="/resources">
               Resources
             </Button>
-            <Button color="inherit" style={aStyle} component={Link} to="/gallery">
-              Gallery
+            <Button color="inherit" style={aStyle} component={Link} to="/Attendance">
+              Attendance
             </Button>
           <Button
             color="inherit"
@@ -149,6 +149,9 @@ const Navigator = () => {
             </MenuItem>
             <MenuItem component={Link} to="/Mech" onClick={handleClose} style={aStyle}>
               Merchandise
+            </MenuItem>
+            <MenuItem component={Link} to="/gallery" onClick={handleClose} style={aStyle}>
+              Gallery
             </MenuItem>
           </Menu>
           <Button color="inherit" style={aStyle} component={Link} to="/about">
