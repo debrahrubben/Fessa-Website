@@ -46,6 +46,8 @@ const Navigator = () => {
     justifyContent: isMobileView ? 'center' : 'flex-start', // Center items for mobile view
     display: 'flex',
     flexDirection: isMobileView ? 'row' : 'row',
+    position: 'relative',
+    
   };
 
   
