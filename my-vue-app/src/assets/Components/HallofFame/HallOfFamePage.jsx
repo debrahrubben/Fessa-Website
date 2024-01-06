@@ -159,8 +159,8 @@ function HallOfFamePage() {
 
 
 // Remarkable people
-      { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341041/HallofFame/Rubben_fmuzzl.jpg', category: 'Remarkable People', Name: 'Rubben Debrah', Position: 'FESSA Web Developer' },
-      { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341040/HallofFame/Shadrack_e3wfib.jpg', category: 'Remarkable People', Name: 'Duah Shadrack Amponsah', Position: 'FESSA Website Admin' },
+      { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341041/HallofFame/Rubben_fmuzzl.jpg', category: 'Trailblazers', Name: 'Rubben Debrah', Position: 'FESSA Web Developer' },
+      { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341040/HallofFame/Shadrack_e3wfib.jpg', category: 'Trailblazers', Name: 'Duah Shadrack Amponsah', Position: 'FESSA Website Admin' },
 
       // Add more categories and items as needed
     ];
