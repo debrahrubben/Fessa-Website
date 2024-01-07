@@ -8,7 +8,7 @@ const Header = () => {
   const headerStyle = {
     backgroundColor: backgroundColor,
     color: 'white',  // Text color to be visible against the background
-    paddingTop: '90px',  // Adjusted padding to leave space at the top
+    paddingTop: '84px',  // Adjusted padding to leave space at the top
   // No padding at the bottom
   };
 

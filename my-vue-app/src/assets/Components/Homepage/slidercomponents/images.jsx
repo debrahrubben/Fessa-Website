@@ -10,7 +10,7 @@ const images = [
     imgAlt: "details-slide-5"
   },
   {
-    imgURL: ' https://res.cloudinary.com/dgpxvazru/image/upload/v1703724926/Slide/level_200_regis_jrzmyc.jpg',
+    imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1704577481/Slide/level_200_regis_jrzmyc.jpg',
     imgAlt: "details-slide-7"
   },
     {
