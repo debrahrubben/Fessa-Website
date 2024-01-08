@@ -42,7 +42,6 @@ const Navigator = () => {
   const ulStyle = {
     listStyle: 'none',
     margin: '0px',
-    padding: '0px',
     justifyContent: isMobileView ? '' : 'flex-start', // Center items for mobile view
     display: 'flex',
     flexDirection: isMobileView ? 'row' : 'row',
@@ -75,6 +74,7 @@ const Navigator = () => {
     color: 'white',
     textDecoration: 'none',
     fontSize:isMobileView ? '70%' : '100%', // Adjusted margin for spacing
+    
   };
   
   
