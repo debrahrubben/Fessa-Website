@@ -43,7 +43,7 @@ const Navigator = () => {
     listStyle: 'none',
     margin: '0px',
     padding: '0px',
-    justifyContent: isMobileView ? 'center' : 'flex-start', // Center items for mobile view
+    justifyContent: isMobileView ? '' : 'flex-start', // Center items for mobile view
     display: 'flex',
     flexDirection: isMobileView ? 'row' : 'row',
     position: 'relative',

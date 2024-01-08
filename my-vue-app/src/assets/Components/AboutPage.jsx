@@ -91,7 +91,6 @@ const styles = {
     alignItems: 'center',
     paddingTop: '85px',
     color: 'white',
-    
   },
   logoContainer: {
     marginBottom: '20px',
@@ -118,7 +117,6 @@ const styles = {
     borderRadius: '5px',
     cursor: 'pointer',
     marginBottom:'10px',
-    
   },
 };
 
