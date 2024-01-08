@@ -74,7 +74,7 @@ const Navigator = () => {
   const aStyle = {
     color: 'white',
     textDecoration: 'none',
-    fontSize:isMobileView ? '75%' : '100%', // Adjusted margin for spacing
+    fontSize:isMobileView ? '70%' : '100%', // Adjusted margin for spacing
   };
   
   
@@ -156,7 +156,7 @@ const Navigator = () => {
               Gallery
             </MenuItem>
           </Menu>
-          <Button color="inherit" style={aStyle} component={Link} to="/about">
+          <Button  color="inherit" style={aStyle} component={Link} to="/about">
               About
             </Button>
         </Nav>
