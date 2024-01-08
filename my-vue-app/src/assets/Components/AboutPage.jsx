@@ -89,7 +89,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    paddingTop: '103px',
+    paddingTop: '85px',
     color: 'white',
     
   },
