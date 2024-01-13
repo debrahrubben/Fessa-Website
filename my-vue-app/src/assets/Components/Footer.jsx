@@ -78,7 +78,7 @@ const Footer = () => {
   };
   const handleTimeTableClick = () => {
     // Replace 'your-pdf-file.pdf' with the actual path to your PDF file
-    const pdfFilePath = 'https://drive.google.com/file/d/1gQs2h-Zbt-rn5Zjj3JvWNLrYlyOVn5oJ/view?usp=drive_link';
+    const pdfFilePath = 'https://drive.google.com/file/d/1gQs2h-Zbt-rn5Zjj3JvWNLrYlyOVn5oJ/view?usp=sharing';
     window.open(pdfFilePath, '_blank');
   };
   return (
