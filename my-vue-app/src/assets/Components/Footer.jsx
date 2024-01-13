@@ -76,6 +76,11 @@ const Footer = () => {
     const pdfFilePath = 'https://drive.google.com/file/d/1hMFDdBwS7m3yZINJVixo1T41lWeitdqc/view?usp=sharing';
     window.open(pdfFilePath, '_blank');
   };
+  const handleTimeTableClick = () => {
+    // Replace 'your-pdf-file.pdf' with the actual path to your PDF file
+    const pdfFilePath = 'https://drive.google.com/file/d/1gQs2h-Zbt-rn5Zjj3JvWNLrYlyOVn5oJ/view?usp=drive_link';
+    window.open(pdfFilePath, '_blank');
+  };
   return (
     <footer style={footerStyle}>
       <div className="footer">
@@ -103,6 +108,7 @@ const Footer = () => {
             </Button></li><CustomModal open={open} handleOk={handleOk} handleCancel={handleCancel} loading={loading} />
       
             <li style={{...liStyle, fontSize:'150%',}} ><a href="#" style={linkStyle} onClick={handleAcademicCalendarClick}>Academic Calendar</a></li>
+            <li style={{...liStyle, fontSize:'150%',}} ><a href="#" style={linkStyle} onClick={handleTimeTableClick}>Undergraduate Time Table</a></li>
           <Link to="/affiliate-colleges" style={{...linkStyle, fontSize:'140%',}}>
             Affiliate Colleges
           </Link>
