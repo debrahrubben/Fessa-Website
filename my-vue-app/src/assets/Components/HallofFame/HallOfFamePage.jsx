@@ -25,11 +25,7 @@ function ListBlockItem({ imgSrc, title, position, linkToSite }) {
           setTapCount((prevCount) => prevCount + 1);
     
           if (tapCount + 1 === 10) {
-            alert(`Dufie i am sorry for everything, i did say some shit stuff this is not the first nor second time.
-            Those things i said are not my true intentions i said them out of anger to hurt you.
-             Im not with you because of your kindness i was with you before you started being kind.
-         
-             im once again sorry for the pain i cause you.`);
+            alert(`i only persevere when the people i love hurt me, i do not know if it is a good thing or a bad thing. i will make sure i channel the energy into something productive. Rubben, get rich and everything will be fine.`);
             // Reset tap count after displaying the message
             setTapCount(0);
           }
