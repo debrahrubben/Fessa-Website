@@ -25,7 +25,7 @@ function ListBlockItem({ imgSrc, title, position, linkToSite }) {
           setTapCount((prevCount) => prevCount + 1);
     
           if (tapCount + 1 === 10) {
-            alert(`i only persevere when the people i love hurt me, i do not know if it is a good thing or a bad thing. i will make sure i channel the energy into something productive. Rubben, get rich and everything will be fine. Your future self is proud of you`);
+            alert(`i only persevere when the people i love hurt me, i do not know if it is a good thing or a bad thing. i will make sure i channel the energy into something productive. Rubben, get rich and everything will be fine. Your future self is proud of you.`);
             // Reset tap count after displaying the message
             setTapCount(0);
           }
