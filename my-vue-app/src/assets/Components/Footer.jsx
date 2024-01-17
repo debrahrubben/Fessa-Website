@@ -31,7 +31,7 @@ const Footer = () => {
 
   const linkStyle = {
     textDecoration: 'none',
-    color: 'gray',
+    color: 'white',
     transition: '0.5s',
     margin: '0 10px',
     fontSize:'80%'
