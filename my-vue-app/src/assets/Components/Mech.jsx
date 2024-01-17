@@ -100,7 +100,7 @@ const Accessories = ({ cards }) => {
       <div style={contentBoxStyle}>
         <h3 style={{ ...textStyle, fontWeight: '500', textTransform: 'uppercase' }}>{card.title}</h3>
         <h2 style={priceStyle}>{card.price}</h2>
-        <a href="tel:+233322190745" style={linkStyle} onClick={handlePhoneClick}>
+        <a href="tel:+233240877549" style={linkStyle} onClick={handlePhoneClick}>
             <MdPhone style={iconStyle} />
           </a>
           {showPhoneNumber && <span style={{ margin: '0 10px', color: 'white' }}>+233 322 190 745</span>}
