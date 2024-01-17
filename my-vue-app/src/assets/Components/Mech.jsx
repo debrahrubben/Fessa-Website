@@ -1,8 +1,7 @@
-
+import  { useState } from 'react';
 import PropTypes from 'prop-types';
- // Import a separate CSS file for styling
+import { MdPhone } from 'react-icons/md';
 
-// Import your local images
 
 
 const Accessories = ({ cards }) => {
@@ -67,20 +66,24 @@ const Accessories = ({ cards }) => {
     fontWeight: '700',
     fontSize: '24px',
   };
+  const [showPhoneNumber, setShowPhoneNumber] = useState(false);
 
-  const buyStyle = {
-    position: 'relative',
-    top: '100px',
-    opacity: '0',
-    padding: '10px 30px',
-    marginTop: '15px',
-    color: '#000000',
+  const handlePhoneClick = () => {
+    // Toggle the visibility of the phone number
+    setShowPhoneNumber(!showPhoneNumber);
+  };
+
+  const linkStyle = {
     textDecoration: 'none',
-    background: '#009dff',
-    borderRadius: '30px',
-    textTransform: 'uppercase',
-    letterSpacing: '1px',
+    color: 'gray',
     transition: '0.5s',
+    margin: '0 10px',
+    fontSize:'80%',
+    marginTop:'10%',
+  };
+  const iconStyle = {
+    fontSize: '2em',
+    margin: '0 1%',
   };
   const cardHoverStyle = {
     ...cardStyle,
@@ -97,9 +100,10 @@ const Accessories = ({ cards }) => {
       <div style={contentBoxStyle}>
         <h3 style={{ ...textStyle, fontWeight: '500', textTransform: 'uppercase' }}>{card.title}</h3>
         <h2 style={priceStyle}>{card.price}</h2>
-        <a href="#" style={buyStyle}>
-          Buy Now
-        </a>
+        <a href="tel:+233322190745" style={linkStyle} onClick={handlePhoneClick}>
+            <MdPhone style={iconStyle} />
+          </a>
+          {showPhoneNumber && <span style={{ margin: '0 10px', color: 'white' }}>+233 322 190 745</span>}
       </div>
     </div>
   );
