@@ -28,13 +28,12 @@ const Header = () => {
               <h4 style={{ background: 'rgba(255, 255, 255, 0.2)', borderRadius: '10px', padding: '10px', color: '#17223A', }}>
                 Welcome to Faculty Of Educational Studies Students Association Portal</h4>
               <p className="p-large" >
-              &quot;Education is the most powerful weapon which you can use to change the world.&quot; - Nelson Mandela
+              &quot;The function of education is to teach one to think intensively and to think critically. Intelligence plus character - that is the goal of true education.&quot;- Martin Luther King Jr.
               </p>
             </div> {/* end of text-container */}
           </div> {/* end of col */}
         </div> {/* end of row */}
       </div> {/* end of container */}
-  
     </header>
   );
 };
