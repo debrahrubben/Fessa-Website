@@ -40,24 +40,15 @@ const DayText = styled('p')(({ theme }) => ({
   color: theme.palette.primary.contrastText,
 }));
 
-const Moon = styled('svg')(({ theme }) => ({
-  fontSize: 20,
-  position: 'absolute',
-  right: 15,
-  top: 15,
-  transition: 'all 0.3s ease-in-out',
-}));
 
 const Course = () => {
   return (
     <div style={{paddingTop:'90px',}}>
     <Card>
       <TimeText>
-        <span>11:11</span>
-        <TimeSubText>PM</TimeSubText>
+        <span>CourseCode</span>
       </TimeText>
-      <DayText>Wednesday, June 15th</DayText>
-      <Moon />
+      <DayText>CourseTitle</DayText>
     </Card>
     </div>
   );

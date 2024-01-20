@@ -10,6 +10,7 @@ function ResourcesPage() {
       'https://res.cloudinary.com/dgpxvazru/image/upload/v1703425767/level/level100_dqxgia.jpg',
       'Level 100',
       'Find all the electronic materials you need.',
+      '/resources/level100'
     )}
   </div>
   <div className="box-item">
@@ -17,6 +18,7 @@ function ResourcesPage() {
       'https://res.cloudinary.com/dgpxvazru/image/upload/v1703383163/level/level200_adgtxy.jpg',
       'Level 200',
       'Find all the electronic materials you need.',
+      '/resources/level200'
     )}
   </div>
   <div className="box-item">
@@ -24,6 +26,7 @@ function ResourcesPage() {
       'https://res.cloudinary.com/dgpxvazru/image/upload/v1703425768/level/level300_dmvwwe.jpg',
       'Level 300',
       'Find all the electronic materials you need.',
+      '/resources/level300'
     )}
   </div>
   <div className="box-item">
@@ -31,6 +34,7 @@ function ResourcesPage() {
      'https://res.cloudinary.com/dgpxvazru/image/upload/v1703425767/level/level400_rh8yg7.jpg',
       'Level 400',
       'Find all the electronic materials you need.',
+      '/resources/level400'
     )}
   </div>
 </div>
@@ -39,7 +43,7 @@ function ResourcesPage() {
   );
 }
 
-function renderFlipBox(imageUrl, header, description, ) {
+function renderFlipBox(imageUrl, header, description, linkTo) {
   return (
     <div className="flip-box">
       <div
@@ -67,7 +71,7 @@ function renderFlipBox(imageUrl, header, description, ) {
         <div className="inner color-white">
           <h3 className="flip-box-header">{header}</h3>
           <p>{description}</p>
-          <Link to="/resources/course" className="flip-box-button">Access</Link>
+          <Link to={linkTo} className="flip-box-button">Access</Link>
         </div>
       </div>
     </div>
