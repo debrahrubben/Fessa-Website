@@ -1,5 +1,4 @@
 import './ResourcesPage.css';
-import { Link } from 'react-router-dom';
 
 function ResourcesPage() {
   return (
@@ -10,6 +9,7 @@ function ResourcesPage() {
       'https://res.cloudinary.com/dgpxvazru/image/upload/v1703425767/level/level100_dqxgia.jpg',
       'Level 100',
       'Find all the electronic materials you need.',
+      'https://drive.google.com/drive/folders/1gEn4tBZeH2rFAo9hv2JfuMCqXC1EavJO?usp=drive_link'
     )}
   </div>
   <div className="box-item">
@@ -17,6 +17,7 @@ function ResourcesPage() {
       'https://res.cloudinary.com/dgpxvazru/image/upload/v1703383163/level/level200_adgtxy.jpg',
       'Level 200',
       'Find all the electronic materials you need.',
+      'https://drive.google.com/drive/folders/1--_HIn58bDlEJc09HPVQnDOPgdchb2xP?usp=drive_link'
     )}
   </div>
   <div className="box-item">
@@ -24,6 +25,7 @@ function ResourcesPage() {
       'https://res.cloudinary.com/dgpxvazru/image/upload/v1703425768/level/level300_dmvwwe.jpg',
       'Level 300',
       'Find all the electronic materials you need.',
+      'https://drive.google.com/drive/folders/1-1vTnCxjYiiE-pxC56BWYBfPbxHkbaLK?usp=drive_link'
     )}
   </div>
   <div className="box-item">
@@ -31,6 +33,7 @@ function ResourcesPage() {
      'https://res.cloudinary.com/dgpxvazru/image/upload/v1703425767/level/level400_rh8yg7.jpg',
       'Level 400',
       'Find all the electronic materials you need.',
+      'https://drive.google.com/drive/folders/1--vTmpI3yNo8sRF8SXtmC35eJsawpB9y?usp=drive_link'
     )}
   </div>
 </div>
@@ -39,7 +42,7 @@ function ResourcesPage() {
   );
 }
 
-function renderFlipBox(imageUrl, header, description, ) {
+function renderFlipBox(imageUrl, header, description, link) {
   return (
     <div className="flip-box">
       <div
@@ -67,7 +70,7 @@ function renderFlipBox(imageUrl, header, description, ) {
         <div className="inner color-white">
           <h3 className="flip-box-header">{header}</h3>
           <p>{description}</p>
-          <Link to="/resources/course" className="flip-box-button">Access</Link>
+          <a href={link} className="flip-box-button">Access</a>
         </div>
       </div>
     </div>
