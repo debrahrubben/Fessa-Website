@@ -6,7 +6,7 @@ const coursesData = [
   { code: 'LIS J 353', category:'firstsem', title: 'ENGLISH CURRICULUM FOR JHS' , Link:'https://drive.google.com/drive/folders/1_xtWVdzLE3yNPtmuUBN6CmM2z0d56hPo?usp=drive_link'},
   { code: 'MATH J',category:'firstsem', title: 'MATHEMATICS SPECIALIZATION' , Link:'https://drive.google.com/drive/folders/1SKmz3hgN4omhtO6O5ta1Ro-8SyxqQIXn?usp=drive_link'},
   { code: 'SCI J 353',category:'firstsem', title: 'SCIENCE SPECIALIZATION', Link:'https://drive.google.com/drive/folders/1SdTfOTMkKBkU7SNFQw8di1EwSZURcTgb?usp=drive_link' },
-  { code: '',category:'sts', title: 'STS Embedded Teaching', Link:'https://drive.google.com/drive/folders/1CZzJtw43zJs5h38q3-HAUhV77sUp7MpN?usp=drive_link' },
+  { code: '',category:'sts', title: 'STS: EMBEDDING TEACHING', Link:'https://drive.google.com/drive/folders/1CZzJtw43zJs5h38q3-HAUhV77sUp7MpN?usp=drive_link' },
   // Add more courses as needed
 ];
 
