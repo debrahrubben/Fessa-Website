@@ -21,12 +21,14 @@ const coursesData = [
   { code: '', category:'secondsem', title: 'ICT SPECIALIZATION', Link:'https://drive.google.com/drive/folders/1PFN-NPqUscvNFAcmQ5GD8cedHA6TDcH9?usp=drive_link' },
   { code: '', category:'secondsem', title: 'SOCIAL STUDIES AND HISTORY SPECIALIZATION', Link:'https://drive.google.com/drive/folders/1-23YVlxEmSol2PdjWVNbnavbk4vBiDHr?usp=drive_link' },
   { code: '', category:'secondsem', title: 'VISUAL ARTS SPECIALIZATION', Link:'https://drive.google.com/drive/folders/1-6YrOJatcN-ZpAYhKV-BKUt-ujiWP5Me?usp=drive_link' },
+  { code: '', category:'sts', title: 'STS: DEVELOPING TEACHING', Link:'https://drive.google.com/drive/folders/1YIsvZng3SRAR55qFrrlTAnCa0YjoPIQ1?usp=drive_link' },
   // Add more courses as needed
 ];
 
 const Level200 = () => {
   const firstSemesterCourses = coursesData.filter(course => course.category === 'firstsem');
   const secondSemesterCourses = coursesData.filter(course => course.category === 'secondsem');
+  const sts = coursesData.filter(course => course.category === 'sts');
 
   return (
     <div style={{ paddingTop: '90px', background: 'rgb(17, 50, 91)', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
@@ -34,6 +36,8 @@ const Level200 = () => {
       <Course courses={firstSemesterCourses} semester="First Semester" />
       <h2 style={{ fontSize: '24px', fontWeight: 'bold', color: 'white' }}>Second Semester</h2>
       <Course courses={secondSemesterCourses} semester="Second Semester" />
+      <h2 style={{ fontSize: '24px', fontWeight: 'bold', color: 'white' }}>STS</h2>
+      <Course courses={sts} semester="sts" />
     </div>
   );
 };

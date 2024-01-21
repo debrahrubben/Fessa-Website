@@ -13,13 +13,14 @@ const coursesData = [
   { code: '', title: 'INTRO. TO ICT' , category:'secondsem', Link:'https://drive.google.com/drive/folders/1Fn2XrD6rXc-4azzge0nyRm02EgXxgUcA?usp=drive_link',},
   { code: '', title: 'LEARNING TEACHING AND APPLYING GEOMETRY &HANDLING DATA' , category:'secondsem', Link:'https://drive.google.com/drive/folders/1H3WuDx_NGIcaKQXrooT_E0rUj8f2F9EI?usp=drive_link',},
   { code: '', title: 'PHYSICAL EDUCATION, MUSIC & DANCE' , category:'secondsem', Link:'https://drive.google.com/drive/folders/1HMtQT9i2O2nIJbAa_7QbI60KPBA3MqBL?usp=drive_link',},
-  { code: '', title: 'PSYCHOLOGY OF HUMAN GROWTH AND LEARNING' , category:'secondsem', Link:'https://drive.google.com/drive/folders/1HHhWe0Db0fyMiyNlY-Jm_uPwtFoXNMiZ?usp=drive_link',},
+  { code: '', title: 'STS; BEGINING TEACHING IN SCHOOLS (I & II)' , category:'sts', Link:'STS; BEGINING TEACHING IN SCHOOLS (I & II)',},
   // Add more courses as needed
 ];
 
 const Level100 = () => {
   const firstSemesterCourses = coursesData.filter(course => course.category === 'firstsem');
   const secondSemesterCourses = coursesData.filter(course => course.category === 'secondsem');
+  const sts = coursesData.filter(course => course.category === 'sts');
 
   return (
     <div style={{ paddingTop: '90px', background: 'rgb(17, 50, 91)', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
@@ -27,6 +28,8 @@ const Level100 = () => {
       <Course courses={firstSemesterCourses} semester="First Semester" />
       <h2 style={{ fontSize: '24px', fontWeight: 'bold', color: 'white' }}>Second Semester</h2>
       <Course courses={secondSemesterCourses} semester="Second Semester" />
+      <h2 style={{ fontSize: '24px', fontWeight: 'bold', color: 'white' }}>STS</h2>
+      <Course courses={sts} semester="sts" />
     </div>
   );
 };
