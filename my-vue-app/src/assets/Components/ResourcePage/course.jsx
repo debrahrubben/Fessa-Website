@@ -2,7 +2,7 @@
 import { Card, Space, Row, Col } from 'antd';
 
 const Course = ({ courses }) => (
-  <div className="app-container" style={{ padding: '90px 5px 5px' }}>
+  <div className="app-container" style={{ padding: '40px 5px 5px' }}>
     <style>{`
       .app-container {
         display: flex;
