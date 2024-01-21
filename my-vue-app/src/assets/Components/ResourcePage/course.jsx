@@ -31,6 +31,7 @@ const Course = ({ courses }) => (
       <Row gutter={[16, 16]}>
         {courses.map((course, index) => (
           <Col key={index} xs={12} sm={12} md={12} lg={12} xl={12}>
+             <a href={course.Link} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
             <Card
               className="custom-card"
               size="small"
@@ -38,6 +39,7 @@ const Course = ({ courses }) => (
             >
               <p style={{ color: 'white' }}>{course.title}</p>
             </Card>
+            </a>
           </Col>
         ))}
       </Row>

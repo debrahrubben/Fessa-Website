@@ -1,7 +1,7 @@
 import Course from "./course";
 
 const coursesData = [
-  { code: 'ENGL 157', title: 'COMMUNICATION SKILLS' },
+  { code: 'ENGL 157', title: 'COMMUNICATION SKILLS', Link:'https://m2.material.io/components/cards/web#api' },
   { code: 'EDU 153', title: 'FOUNDATIONS OF EDUCATION IN GHANA' },
   { code: 'EDU 153', title: 'INCLUSIVE SCHOOL-BASED INQUIRY' },
   { code: 'EDU 155', title: 'STS BEGINNING TEACHING' },

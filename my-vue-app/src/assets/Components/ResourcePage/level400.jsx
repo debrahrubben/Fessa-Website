@@ -1,16 +1,9 @@
 import Course from "./course";
 
 const coursesData = [
-  { code: '', title: '' },
-  { code: '', title: '' },
-  { code: '', title: '' },
-  { code: '', title: '' },
-  { code: '', title: '' },
-  { code: '', title: '' },
-  { code: '', title: '' },
-  { code: '', title: '' },
-  { code: '', title: '' },
-  { code: '', title: '' },
+  { code: 'EDU 451', title: 'STS: EXTENDING TEACHING (INTERNSHIP)' },
+  { code: 'LLSJ 453', title: 'PORTFOLIO DEVELOPMENT' },
+  { code: 'EDU 455', title: 'ACTION RESEARCH PROJECT ' },
   // Add more courses as needed
 ];
 
