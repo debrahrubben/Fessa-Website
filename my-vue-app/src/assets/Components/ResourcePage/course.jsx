@@ -1,57 +1,48 @@
 
-import { styled } from '@mui/material/styles';
+import { Card, Space, Row, Col } from 'antd';
 
-const Card = styled('div')(({ theme }) => ({
-  width: 280,
-  height: 150,
-  borderRadius: 15,
-  boxShadow: theme.shadows[5],
-  display: 'flex',
-  justifyContent: 'center',
-  position: 'relative',
-  flexDirection: 'column',
-  background: 'linear-gradient(to right, rgba(20, 30, 48), rgba(36, 59, 85))',
-  cursor: 'pointer',
-  transition: 'all 0.3s ease-in-out',
-  overflow: 'hidden',
-}));
+const Course = ({ courses }) => (
+  <div className="app-container" style={{ padding: '90px 5px 5px' }}>
+    <style>{`
+      .app-container {
+        display: flex;
+        align-items: center;
+        background: rgb(17, 50, 91);
+        justify-content: center;
+      }
 
-const TimeText = styled('p')(({ theme }) => ({
-  fontSize: 50,
-  marginTop: 0,
-  marginLeft: 15,
-  fontWeight: 600,
-  fontFamily: 'Gill Sans',
-  color: theme.palette.primary.contrastText,
-}));
+      .custom-card {
+        width: 100%;
+        background: linear-gradient(to right, rgba(20, 30, 48), rgba(36, 59, 85));
+        color: white;
+        border: 1px solid white;
+        border-radius: 8px;
+        padding: 16px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
 
-const TimeSubText = styled('span')(({ theme }) => ({
-  fontSize: 15,
-  marginLeft: 5,
-  color: theme.palette.primary.contrastText,
-}));
+      .custom-card:hover {
+        transform: translateY(-4px);
+      }
+    `}</style>
 
-const DayText = styled('p')(({ theme }) => ({
-  fontSize: 18,
-  marginTop: 0,
-  marginLeft: 15,
-  fontWeight: 500,
-  fontFamily: 'Gill Sans',
-  color: theme.palette.primary.contrastText,
-}));
-
-
-const Course = () => {
-  return (
-    <div style={{paddingTop:'90px',}}>
-    <Card>
-      <TimeText>
-        <span>CourseCode</span>
-      </TimeText>
-      <DayText>CourseTitle</DayText>
-    </Card>
-    </div>
-  );
-};
+    <Space>
+      <Row gutter={[16, 16]}>
+        {courses.map((course, index) => (
+          <Col key={index} xs={12} sm={12} md={12} lg={12} xl={12}>
+            <Card
+              className="custom-card"
+              size="small"
+              title={<span style={{ color: 'white' }}>{course.code}</span>}
+            >
+              <p style={{ color: 'white' }}>{course.title}</p>
+            </Card>
+          </Col>
+        ))}
+      </Row>
+    </Space>
+  </div>
+);
 
 export default Course;
