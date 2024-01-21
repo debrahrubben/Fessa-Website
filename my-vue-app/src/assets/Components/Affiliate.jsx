@@ -1,9 +1,9 @@
-
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea, Grid, Link } from '@mui/material';
+import LanguageIcon from '@mui/icons-material/Language';
 
 const cardData = [
   {
@@ -45,6 +45,7 @@ export default function Affiliate() {
     <Grid container spacing={3} style={{ paddingTop: '90px', backgroundColor:'rgb(17, 50, 91)', paddingBottom:'30px',}}>
       {cardData.map((card, index) => (
         <Grid item xs={12} sm={6} md={4} lg={3} key={index} style={{ display: 'flex', justifyContent: 'center', position: 'relative',  }}>
+          <Link href={card.visitUrl} target="_blank" rel="noopener noreferrer"  style={{ textDecoration: 'none', color: 'rgb(188, 196, 214)' }}>
           <Card sx={{ maxWidth: 345 }} style={{backgroundColor:'#17223A',color:'white'}}>
             <CardActionArea>
               <CardMedia
@@ -60,12 +61,13 @@ export default function Affiliate() {
                 <Typography variant="body2" color="rgb(188, 196, 214)">
                   {card.description}
                 </Typography>
-                <Link href={card.visitUrl} target="_blank" rel="noopener noreferrer"  style={{ textDecoration: 'none', color: 'rgb(188, 196, 214)' }}>
-                  Visit
-                </Link>
+                
+                <LanguageIcon /> {/* Globe icon */}
+                
               </CardContent>
             </CardActionArea>
           </Card>
+          </Link>
         </Grid>
       ))}
     </Grid>
