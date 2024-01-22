@@ -13,10 +13,6 @@ const images = [
     imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703585190/Slide/IMG-20231225-WA0017_e3yrfq.jpg',
     imgAlt: "details-slide-5"
   },
-  {
-    imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1704577481/Slide/level_200_regis_jrzmyc.jpg',
-    imgAlt: "details-slide-7"
-  },
     {
       imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703384591/Slide/details-slide-3_buydm4.jpg',
       imgAlt: "details-slide-3"

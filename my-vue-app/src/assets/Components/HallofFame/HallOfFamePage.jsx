@@ -184,7 +184,7 @@ function HallOfFamePage() {
               <div className="row">
                 <div className="col-lg-12">
                   <div
-                    className="card accordion-item product_list" style={{ backgroundColor:'rgb(188, 196, 214)'}}
+                    className="card accordion-item product_list" style={{ backgroundColor:'rgb(188, 196, 214)',paddingRight:'0px', paddingLeft:'0px'}}
                   >
                     <div className="card-header accordion-header" >
                       <div
@@ -206,8 +206,9 @@ function HallOfFamePage() {
                       <div className="card-body">
                         <div className="row">
                           {categoryItemsMap[category].map((item, itemIndex) => (
-                            <div key={itemIndex} className="col-sm-6 col-12">
-                              <ListBlockItem imgSrc={item.imgSrc} title={item.Name} position={item.Position} linkToSite={item.linkToSite}/>
+                            <div key={itemIndex} className="col-md-6 col-6">
+                              {/* Updated the col class to col-md-6 */}
+                              <ListBlockItem imgSrc={item.imgSrc} title={item.Name} position={item.Position} linkToSite={item.linkToSite} />
                             </div>
                           ))}
                         </div>
