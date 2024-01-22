@@ -12,15 +12,12 @@ const coursesData = [
 
 const Level300 = () => {
   const firstSemesterCourses = coursesData.filter(course => course.category === 'firstsem');
-  const secondSemesterCourses = coursesData.filter(course => course.category === 'secondsem');
   const sts = coursesData.filter(course => course.category === 'sts');
 
   return (
     <div style={{ paddingTop: '90px', background: 'rgb(17, 50, 91)', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
       <h2 style={{ fontSize: '24px', fontWeight: 'bold', color: 'white' }}>First Semester</h2>
       <Course courses={firstSemesterCourses} semester="First Semester" />
-      <h2 style={{ fontSize: '24px', fontWeight: 'bold', color: 'white' }}>Second Semester</h2>
-      <Course courses={secondSemesterCourses} semester="Second Semester" />
       <h2 style={{ fontSize: '24px', fontWeight: 'bold', color: 'white' }}>STS</h2>
       <Course courses={sts} semester="sts" />
     </div>
