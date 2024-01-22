@@ -49,7 +49,7 @@ function renderFlipBox(imageUrl, header, description, linkTo) {
       <div
         className="flip-box-front text-center "
         style={{
-          backgroundImage: `url(${imageUrl})`,
+          backgroundImage: `url(${imageUrl})`, 
         }}
       >
         <div className="inner color-white">

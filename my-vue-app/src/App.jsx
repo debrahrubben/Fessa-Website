@@ -15,14 +15,11 @@ import Mech from './assets/Components/Mech';
 import HallOfFamePage from './assets/Components/HallofFame/HallOfFamePage';
 import Explore from './assets/Components/Explore'
 import Affiliate from './assets/Components/Affiliate';
-<<<<<<< HEAD
 
-=======
 import Level100 from './assets/Components/ResourcePage/level100';
 import Level200 from './assets/Components/ResourcePage/level200';
 import Level300 from './assets/Components/ResourcePage/level300';
 import Level400 from './assets/Components/ResourcePage/level400';
->>>>>>> courses-advanced
 
 
 function App() {
@@ -39,15 +36,11 @@ function App() {
 		<Route  path="/Mech" element={<Mech />} />
 		<Route  path="/Hall_of_Fame" element={<HallOfFamePage />} />
 		<Route  path="/Explore" element={<Explore />} />
-<<<<<<< HEAD
-		< Route path='/affiliate-colleges' element={<Affiliate />} />
-=======
 		<Route path='/affiliate-colleges' element={<Affiliate />} />
 		<Route path='/resources/level100' element={<Level100 />} />
 		<Route path='/resources/level200' element={<Level200 />} />
 		<Route path='/resources/level300' element={<Level300 />} />
 		<Route path='/resources/level400' element={<Level400 />} />
->>>>>>> courses-advanced
 				</Routes>
 < Footer/>
 <FloatButton.Group>
