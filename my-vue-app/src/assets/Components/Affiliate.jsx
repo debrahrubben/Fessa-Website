@@ -62,7 +62,7 @@ export default function Affiliate() {
                   {card.description}
                 </Typography>
                 
-                <LanguageIcon />
+                <LanguageIcon /> {/* Globe icon */}
                 
               </CardContent>
             </CardActionArea>
