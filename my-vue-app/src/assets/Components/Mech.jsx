@@ -136,7 +136,7 @@ const Mech = () => {
           },
           {
             title: 'Diary And Pen',
-            price: '45 Cedis',
+            price: '75 Cedis',
           },
         ]}
       />
