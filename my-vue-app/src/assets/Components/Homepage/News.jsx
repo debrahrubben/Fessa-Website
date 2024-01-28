@@ -61,10 +61,9 @@ const NewsTimeline = () => {
       icon: <img src={logo} alt="fessa logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
       title: "FESSA EGM",
       subtitle: "FESSA adminstration",
-      imageSrc: 'https://pbs.twimg.com/media/FmdHwJRX0AMXEtz?format=jpg&name=4096x4096',
+      imageSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1706469904/tinyimages/photo_2024-01-28_11-05-121_iu0wox.jpg',
       content: "All Executives, both elected and appointees should kindly take notice, and obey in accordance.",
       morecontent: 'Lecture Room 2, Faculty of Education Area. 4:00pm prompt on Friday, 2nd February 2024',
-      Weblink:'https://twitter.com/KNUSTNotice/status/1731158737241387207',
     },
     {
       date: <div style={{color:'rgb(188, 196, 214)'}}>20th December</div>,
