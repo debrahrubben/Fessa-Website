@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import{ Suspense } from 'react';
 import { Link } from 'react-router-dom';
 import './ResourcesPage.css';
 
