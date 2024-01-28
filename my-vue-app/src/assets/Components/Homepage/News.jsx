@@ -16,8 +16,6 @@ const TimelineItem = ({ className, date, imageSrc, iconStyle, title, subtitle, c
     setExpanded(!expanded);
   };
 
-  const renderLoader = () => <p>Loading</p>;
-
   return (
     
     <VerticalTimelineElement 
