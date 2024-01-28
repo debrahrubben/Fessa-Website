@@ -7,7 +7,7 @@ import IconButton from '@mui/material/IconButton';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Collapse from '@mui/material/Collapse';
 import CardContent from '@mui/material/CardContent';
-import { Skeleton } from 'antd';
+
 import { Suspense } from 'react';
 
 
@@ -18,6 +18,7 @@ const TimelineItem = ({ className, date, imageSrc, iconStyle, title, subtitle, c
     setExpanded(!expanded);
   };
 
+  const renderLoader = () => <p>Loading</p>;
 
   return (
     
@@ -34,7 +35,7 @@ const TimelineItem = ({ className, date, imageSrc, iconStyle, title, subtitle, c
       <a href={Weblink} style={{ textDecoration: 'none', color: 'black' }}>
       <h4 className="vertical-timeline-element-title">{title}</h4>
       <i className="vertical-timeline-element-subtitle" >{subtitle}</i>
-      <Suspense fallback={ <Skeleton.Image />}>
+      <Suspense fallback={ renderLoader()}>
       <div style={{ backgroundImage: `url(${imageSrc})`, backgroundSize: 'cover', width: 'auto', height:'250px' }} />
       </Suspense>
       </a>
