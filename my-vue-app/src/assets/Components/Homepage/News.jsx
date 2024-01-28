@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import logo from '../../images/logo.png';
@@ -8,6 +8,16 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Collapse from '@mui/material/Collapse';
 import CardContent from '@mui/material/CardContent';
 
+import  { useState, Suspense } from 'react';
+
+
+const Fallback = () => {
+  return (
+    <div style={{ textAlign: 'center', padding: '20px' }}>
+      Loading...
+    </div>
+  );
+};
 
 const TimelineItem = ({ className, date, imageSrc, iconStyle, title, subtitle, content, icon, morecontent, Weblink, }) => {
   const [expanded, setExpanded] = useState(false);
@@ -16,30 +26,25 @@ const TimelineItem = ({ className, date, imageSrc, iconStyle, title, subtitle, c
     setExpanded(!expanded);
   };
 
-  const renderLoader = () => <p>Loading</p>;
-
   return (
-    
     <VerticalTimelineElement 
       className={className}
       date={date}
-      
       iconStyle={iconStyle}
       icon={icon}
-      
     >
       <div>
-      <a href={Weblink} style={{ textDecoration: 'none', color: 'black' }}>
-      <h4 className="vertical-timeline-element-title">{title}</h4>
-      <i className="vertical-timeline-element-subtitle" >{subtitle}</i>
-     
-      <div style={{ backgroundImage: `url(${imageSrc})`, backgroundSize: 'cover', width: 'auto', height:'250px' }} />
-      </a>
-     <p>{content}</p>
-
-     </div>
+        <a href={Weblink} style={{ textDecoration: 'none', color: 'black' }}>
+          <h4 className="vertical-timeline-element-title">{title}</h4>
+          <i className="vertical-timeline-element-subtitle">{subtitle}</i>
+          <Suspense fallback={<Fallback />}>
+            <div style={{ backgroundImage: `url(${imageSrc})`, backgroundSize: 'cover', width: 'auto', height:'250px' }} />
+          </Suspense>
+        </a>
+        <p>{content}</p>
+      </div>
       <div>
-      <IconButton
+        <IconButton
           onClick={handleExpandClick}
           aria-expanded={expanded}
           aria-label="show more"
@@ -49,8 +54,8 @@ const TimelineItem = ({ className, date, imageSrc, iconStyle, title, subtitle, c
       </div>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-      {morecontent}
-      </CardContent>
+          {morecontent}
+        </CardContent>
       </Collapse>
     </VerticalTimelineElement>
   );
