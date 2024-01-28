@@ -1,44 +1,52 @@
-import './ResourcesPage.css';
+import React, { Suspense } from 'react';
 import { Link } from 'react-router-dom';
+import './ResourcesPage.css';
 
 function ResourcesPage() {
   return (
     <>
-    <div className="box-container">
-  <div className="box-item">
-    {renderFlipBox(
-      'https://res.cloudinary.com/dgpxvazru/image/upload/v1703425767/level/level100_dqxgia.jpg',
-      'Level 100',
-      'Find all the electronic materials you need.',
-      '/resources/level100'
-    )}
-  </div>
-  <div className="box-item">
-    {renderFlipBox(
-      'https://res.cloudinary.com/dgpxvazru/image/upload/v1703383163/level/level200_adgtxy.jpg',
-      'Level 200',
-      'Find all the electronic materials you need.',
-      '/resources/level200'
-    )}
-  </div>
-  <div className="box-item">
-    {renderFlipBox(
-      'https://res.cloudinary.com/dgpxvazru/image/upload/v1703425768/level/level300_dmvwwe.jpg',
-      'Level 300',
-      'Find all the electronic materials you need.',
-      '/resources/level300'
-    )}
-  </div>
-  <div className="box-item">
-    {renderFlipBox(
-     'https://res.cloudinary.com/dgpxvazru/image/upload/v1703425767/level/level400_rh8yg7.jpg',
-      'Level 400',
-      'Find all the electronic materials you need.',
-      '/resources/level400'
-    )}
-  </div>
-</div>
-
+      <div className="box-container">
+        <div className="box-item">
+          <Suspense fallback={<LoadingBox />}>
+            {renderFlipBox(
+              'https://res.cloudinary.com/dgpxvazru/image/upload/v1703425767/level/level100_dqxgia.jpg',
+              'Level 100',
+              'Find all the electronic materials you need.',
+              '/resources/level100'
+            )}
+          </Suspense>
+        </div>
+        <div className="box-item">
+          <Suspense fallback={<LoadingBox />}>
+            {renderFlipBox(
+              'https://res.cloudinary.com/dgpxvazru/image/upload/v1703383163/level/level200_adgtxy.jpg',
+              'Level 200',
+              'Find all the electronic materials you need.',
+              '/resources/level200'
+            )}
+          </Suspense>
+        </div>
+        <div className="box-item">
+          <Suspense fallback={<LoadingBox />}>
+            {renderFlipBox(
+              'https://res.cloudinary.com/dgpxvazru/image/upload/v1703425768/level/level300_dmvwwe.jpg',
+              'Level 300',
+              'Find all the electronic materials you need.',
+              '/resources/level300'
+            )}
+          </Suspense>
+        </div>
+        <div className="box-item">
+          <Suspense fallback={<LoadingBox />}>
+            {renderFlipBox(
+              'https://res.cloudinary.com/dgpxvazru/image/upload/v1703425767/level/level400_rh8yg7.jpg',
+              'Level 400',
+              'Find all the electronic materials you need.',
+              '/resources/level400'
+            )}
+          </Suspense>
+        </div>
+      </div>
     </>
   );
 }
@@ -49,7 +57,7 @@ function renderFlipBox(imageUrl, header, description, linkTo) {
       <div
         className="flip-box-front text-center "
         style={{
-          backgroundImage: `url(${imageUrl})`, 
+          backgroundImage: `url(${imageUrl})`,
         }}
       >
         <div className="inner color-white">
@@ -71,16 +79,21 @@ function renderFlipBox(imageUrl, header, description, linkTo) {
         <div className="inner color-white">
           <h3 className="flip-box-header">{header}</h3>
           <p>{description}</p>
-          <Link to={linkTo} className="flip-box-button">Access</Link>
+          <Link to={linkTo} className="flip-box-button">
+            Access
+          </Link>
         </div>
       </div>
     </div>
   );
 }
 
-export default ResourcesPage;
+function LoadingBox() {
+  return (
+    <div className="flip-box-loading">
+      <p>Loading...</p>
+    </div>
+  );
+}
 
-//  https://drive.google.com/drive/folders/1gEn4tBZeH2rFAo9hv2JfuMCqXC1EavJO?usp=drive_link
-// https://drive.google.com/drive/folders/1--_HIn58bDlEJc09HPVQnDOPgdchb2xP?usp=drive_link
-// https://res.cloudinary.com/dgpxvazru/image/upload/v1703425768/level/level300_dmvwwe.jpg
-// https://drive.google.com/drive/folders/1--vTmpI3yNo8sRF8SXtmC35eJsawpB9y?usp=drive_link
+export default ResourcesPage;
