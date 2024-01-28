@@ -31,16 +31,16 @@ const TimelineItem = ({ className, date, imageSrc, iconStyle, title, subtitle, c
       
     >
       <div>
-        
+      <Suspense fallback={renderLoader()}>
       <a href={Weblink} style={{ textDecoration: 'none', color: 'black' }}>
       <h4 className="vertical-timeline-element-title">{title}</h4>
       <i className="vertical-timeline-element-subtitle" >{subtitle}</i>
-      <Suspense fallback={ renderLoader()}>
+     
       <div style={{ backgroundImage: `url(${imageSrc})`, backgroundSize: 'cover', width: 'auto', height:'250px' }} />
-      </Suspense>
+      
       </a>
      <p>{content}</p>
-     
+     </Suspense>
      </div>
       <div>
       <IconButton
