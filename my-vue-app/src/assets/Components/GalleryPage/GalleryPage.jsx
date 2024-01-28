@@ -1,8 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Button } from '@mui/material';
 import './galleryheight.css';
-import { Skeleton } from 'antd';
-import { Suspense } from 'react';
 
 
 function GalleryPage() {
@@ -44,9 +42,8 @@ function GalleryPage() {
       </div>
 
       <div className="container" style={styles.container}>
-      <Suspense fallback={ <Skeleton.Image />}>
         <div ref={galleryRef} />
-        </Suspense>
+
       </div>
 
 
