@@ -57,8 +57,18 @@ const TimelineItem = ({ className, date, imageSrc, iconStyle, title, subtitle, c
 const NewsTimeline = () => {
   const newsData = [
     {
+      date: <div style={{color:'rgb(188, 196, 214)'}}>28th January</div>,
+      icon: <img src={logo} alt="fessa logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
+      title: "FESSA EGM",
+      subtitle: "FESSA adminstration",
+      imageSrc: 'https://pbs.twimg.com/media/FmdHwJRX0AMXEtz?format=jpg&name=4096x4096',
+      content: "All Executives, both elected and appointees should kindly take notice, and obey in accordance.",
+      morecontent: 'Lecture Room 2, Faculty of Education Area. 4:00pm prompt on Friday, 2nd February 2024',
+      Weblink:'https://twitter.com/KNUSTNotice/status/1731158737241387207',
+    },
+    {
       date: <div style={{color:'rgb(188, 196, 214)'}}>20th December</div>,
-      icon: <img src={logo2} alt="fessa logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
+      icon: <img src={logo2} alt="Knust logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
       title: "Arrival of Continuing Students",
       subtitle: "KNUST adminstration",
       imageSrc: 'https://pbs.twimg.com/media/FmdHwJRX0AMXEtz?format=jpg&name=4096x4096',
