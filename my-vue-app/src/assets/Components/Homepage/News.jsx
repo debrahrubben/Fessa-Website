@@ -57,6 +57,14 @@ const TimelineItem = ({ className, date, imageSrc, iconStyle, title, subtitle, c
 const NewsTimeline = () => {
   const newsData = [
     {
+      date: <div style={{color:'rgb(188, 196, 214)'}}>1st February</div>,
+      icon: <img src={logo2} alt="knust logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
+      title: "Available Scholarships",
+      subtitle: "KNUST Adminstration",
+      imageSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1706818373/tinyimages/photo_2024-02-01_12-06-16newnew_qpqmsn.webp',
+      content: "First 3 Scholarships, are still open",
+    },
+    {
       date: <div style={{color:'rgb(188, 196, 214)'}}>28th January</div>,
       icon: <img src={logo} alt="fessa logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
       title: "FESSA EGM",
