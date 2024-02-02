@@ -63,6 +63,7 @@ const NewsTimeline = () => {
       subtitle: "KNUST Adminstration",
       imageSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1706818373/tinyimages/photo_2024-02-01_12-06-16newnew_qpqmsn.webp',
       content: "First 3 Scholarships, are still open",
+Weblink:'www.knust.edu.gh',
     },
     {
       date: <div style={{color:'rgb(188, 196, 214)'}}>28th January</div>,
