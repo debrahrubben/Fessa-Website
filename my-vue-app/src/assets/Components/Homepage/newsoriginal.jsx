@@ -134,4 +134,3 @@ Weblink:'https://www.knust.edu.gh/',
 };
 
 export default NewsTimeline;
-

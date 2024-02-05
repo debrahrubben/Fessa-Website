@@ -1,5 +1,5 @@
 import Header from './Header'
-import News from './News'
+import NewsTimeline from './News';
 import ImageSlider from "./slidercomponents/ImageSlider";
 
 const HomePage = () => {
@@ -14,7 +14,7 @@ const HomePage = () => {
           <ImageSlider /> {/* This is where ImageSlider component should be placed */}
         </div> {/* end of slider-container */}
       </div> {/* end of outer-container */}
-   <News />
+   <NewsTimeline />
    
     </div>
   )
