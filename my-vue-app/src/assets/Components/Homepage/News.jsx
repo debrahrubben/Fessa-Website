@@ -58,6 +58,16 @@ const TimelineItem = ({ className, date, imageSrc, iconStyle, title, subtitle, c
 const NewsTimeline = () => {
   const newsData = [
     {
+      date: <div style={{color:'rgb(188, 196, 214)'}}>6th February</div>,
+      icon: <img src={logo2} alt="knust logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
+      title: "MATRICULATION CEREMONY",
+      subtitle: "KNUST Adminstration",
+      imageSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1707211506/tinyimages/photo_2024-02-06_09-18-29new_hr3thv.webp',
+      content: "The University will be holding a Matriculation Ceremony for all freshers Virtually (Online). After the ceremony students have up to 5:00pm to login to the *Matriculation Oath Submission Portal.*Below is the link for the Matriculation Oath:*matriculation.knust.edu.gh* ",
+      Weblink:'https://matriculation.knust.edu.gh',
+      morecontent: '🗓️ *Tuesday, 6th Feb. 2024* 🕘 *9:00am* *_Via YouTube:_* https://bit.ly/YouTubeTekTv',
+    },
+    {
       date: <div style={{color:'rgb(188, 196, 214)'}}>1st February</div>,
       icon: <img src={logo2} alt="knust logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
       title: "Available Scholarships",
