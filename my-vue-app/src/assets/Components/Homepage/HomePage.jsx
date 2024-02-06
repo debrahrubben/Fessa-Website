@@ -14,6 +14,7 @@ const HomePage = () => {
           <ImageSlider /> {/* This is where ImageSlider component should be placed */}
         </div> {/* end of slider-container */}
       </div> {/* end of outer-container */}
+      
    <NewsTimeline />
    
     </div>

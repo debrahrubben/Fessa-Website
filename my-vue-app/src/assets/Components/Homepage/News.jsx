@@ -110,7 +110,15 @@ Weblink:'https://www.knust.edu.gh/',
 
   return (
     <div style={{ background: '#17223A' }}>
-      <div>
+       <div>
+      <hr style={{ height: '14px', border: 'none', backgroundColor: 'white' }} />
+      <h3 style={{textAlign:'center', color:'white'}}>News</h3>
+      <div style={{ width: '100%', maxWidth: '700px', margin: '0 auto', textAlign: 'center' }}>
+        <div style={{ display: 'inline-block', width: '30%', maxWidth: '240px', height: '1px', marginRight: '5%', backgroundColor: '#ccc' }}></div>
+        <img src="https://res.cloudinary.com/dgpxvazru/image/upload/v1707219355/tinyimages/education_2_fyq1ra.png" alt="News Icon" style={{ display: 'inline-block', margin: '0', width: 'auto', height: '40px' }} />
+        <div style={{ display: 'inline-block', width: '30%', maxWidth: '240px', height: '1px', marginLeft: '5%', backgroundColor: '#ccc' }}></div>
+      </div>
+      <br />
       <VerticalTimeline >
         {newsData.map((newsItem, index) => (
           <TimelineItem key={index} {...newsItem} />
