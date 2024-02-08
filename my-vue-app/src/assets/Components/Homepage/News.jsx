@@ -63,9 +63,9 @@ const NewsTimeline = () => {
       title: "MATRICULATION CEREMONY",
       subtitle: "KNUST Adminstration",
       imageSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1707211506/tinyimages/photo_2024-02-06_09-18-29new_hr3thv.webp',
-      content: "The University will be holding a Matriculation Ceremony for all freshers Virtually (Online). After the ceremony students have up to 5:00pm to login to the *Matriculation Oath Submission Portal.*Below is the link for the Matriculation Oath:*matriculation.knust.edu.gh* ",
+      content: "The University will be holding a Matriculation Ceremony for all freshers Virtually (Online). After the ceremony students have up to 5:00pm to login to the *Matriculation Oath Submission Portal.*Below is the link for the Matriculation Oath:matriculation.knust.edu.gh",
       Weblink:'https://matriculation.knust.edu.gh',
-      morecontent: '🗓️ *Tuesday, 6th Feb. 2024* 🕘 *9:00am* *_Via YouTube:_* https://bit.ly/YouTubeTekTv',
+      morecontent: '🗓️ *Tuesday, 6th Feb. 2024* 🕘 *9:00am* *_Via YouTube: https://bit.ly/YouTubeTekTv',
     },
     {
       date: <div style={{color:'rgb(188, 196, 214)'}}>1st February</div>,
