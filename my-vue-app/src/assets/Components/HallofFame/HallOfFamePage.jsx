@@ -25,7 +25,7 @@ function ListBlockItem({ imgSrc, title, position, linkToSite }) {
           setTapCount((prevCount) => prevCount + 1);
     
           if (tapCount + 1 === 10) {
-            alert(`vera is a pretty girl`);
+            alert(``);
             // Reset tap count after displaying the message
             setTapCount(0);
           }
