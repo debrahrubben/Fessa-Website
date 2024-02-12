@@ -58,6 +58,15 @@ const TimelineItem = ({ className, date, imageSrc, iconStyle, title, subtitle, c
 const NewsTimeline = () => {
   const newsData = [
     {
+      date: <div style={{color:'rgb(188, 196, 214)'}}>12th February</div>,
+      icon: <img src={logo} alt="fessa logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
+      title: "FESSA WEBSITE on your doorstep",
+      subtitle: "FESSA Adminstration",
+      imageSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1707727838/tinyimages/photo_2024-02-12_08-44-52_m0bybr.webp',
+      content: "Attention students, we are glad to announce to you that, from Monday, 12th of February 2024, the FESSA WEBSITE Quick Response (QR) scan code will be pasted in all the lecture rooms in the faculty area, and on the notice board at CCB and KSB for easy access. Thank you",
+      morecontent: 'FESSA IS GREAT  👍💯',
+    },
+    {
       date: <div style={{color:'rgb(188, 196, 214)'}}>6th February</div>,
       icon: <img src={logo2} alt="knust logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
       title: "MATRICULATION CEREMONY",
