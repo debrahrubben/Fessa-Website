@@ -5,18 +5,14 @@ import { Suspense } from 'react';
 
 const ImageSlider = () => {
   return (
+    <Suspense fallback={<Skeleton.Image active />}>
     <div className="App">
-      <Suspense fallback={<Skeleton.Image active />}>
       <CustomSlider>
         {images.map((image, index) => {
           return <img key={index} src={image.imgURL} alt={image.imgAlt} /> ;
         })}
       </CustomSlider>
-      </Suspense>
-    <div style={{textAlign:'center',}}>
-
-</div>
-    </div>
+    </div> </Suspense>
   )
 }
 
