@@ -3,23 +3,27 @@
 const images = [
   {
     imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1707725270/Slide/photo_2024-02-12_08-02-11_s3olrb.webp',
-    imgAlt: "details-slide-9"
+    imgAlt: "labor 1"
   },
   {
     imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1707725270/Slide/photo_2024-02-12_08-02-15_ip6sqj.webp',
-    imgAlt: "details-slide-8"
+    imgAlt: "labor 2"
+  },
+  {
+    imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1708002492/Slide/hive_tepwol.webp',
+    imgAlt: "hive"
   },
   {
     imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703585192/Slide/IMG-20231225-WA0006_hfveoq.jpg',
-    imgAlt: "details-slide-6"
+    imgAlt: "Fk"
   },
   {
     imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703585190/Slide/IMG-20231225-WA0017_e3yrfq.jpg',
-    imgAlt: "details-slide-5"
+    imgAlt: "UCC"
   },
     {
       imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703384592/Slide/details-slide-2_qwtl7d.jpg',
-      imgAlt: "details-slide-2"
+      imgAlt: "Prayer bank"
     },
   
   ];
