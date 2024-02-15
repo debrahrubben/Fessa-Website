@@ -1,21 +1,24 @@
 import Header from './Header'
-import NewsTimeline from './News';
-import ImageSlider from "./slidercomponents/ImageSlider";
+import { Suspense } from 'react';
+import { lazy } from "react";
+const NewsTimeline = lazy(() => import("./News"));
+const ImageSlider = lazy(()=> import('./slidercomponents/ImageSlider'));
 
 const HomePage = () => {
-
-  
   return (
     <div>
          <Header />
-             {/* Image Slider */}
       <div className="outer-container" style={{backgroundColor:'rgb(17, 50, 91)'}} >
         <div className="slider-container">
-          <ImageSlider /> {/* This is where ImageSlider component should be placed */}
-        </div> {/* end of slider-container */}
-      </div> {/* end of outer-container */}
-      
-   <NewsTimeline />
+        <Suspense fallback={<h1>Loading . . .</h1>}>
+          <ImageSlider /> 
+          </Suspense>
+        </div>
+      </div>
+      <Suspense fallback={<h1>Loading . . .</h1>}>
+      <NewsTimeline />
+      </Suspense>
+   
    
     </div>
   )
