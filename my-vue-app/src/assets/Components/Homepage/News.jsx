@@ -8,6 +8,8 @@ import IconButton from '@mui/material/IconButton';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Collapse from '@mui/material/Collapse';
 import CardContent from '@mui/material/CardContent';
+import { Skeleton } from 'antd';
+import { Suspense } from 'react';
 
 
 const TimelineItem = ({ className, date, imageSrc, iconStyle, title, subtitle, content, icon, morecontent, Weblink, }) => {
@@ -18,7 +20,7 @@ const TimelineItem = ({ className, date, imageSrc, iconStyle, title, subtitle, c
   };
 
   return (
-    
+    <Suspense fallback={<Skeleton.Image active  paragraph={{ rows: 4,}} />}>
     <VerticalTimelineElement 
       className={className}
       date={date}
@@ -52,6 +54,7 @@ const TimelineItem = ({ className, date, imageSrc, iconStyle, title, subtitle, c
       </CardContent>
       </Collapse>
     </VerticalTimelineElement>
+    </Suspense>
   );
 };
 
@@ -133,7 +136,6 @@ Weblink:'https://www.knust.edu.gh/',
           <TimelineItem key={index} {...newsItem} />
         ))}
       </VerticalTimeline>
-      
     </div>
     <hr  style={{ height: '14px', border: 'none', backgroundColor: 'white' }}/>
     </div>

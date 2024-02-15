@@ -1,9 +1,6 @@
 import Header from './Header'
-import { Suspense } from 'react';
-import { lazy } from "react";
-const NewsTimeline = lazy(() => import("./News"));
+import NewsTimeline from './News'
 import ImageSlider from './slidercomponents/ImageSlider'
-import { Skeleton } from 'antd';
 
 const HomePage = () => {
   return (
@@ -14,9 +11,7 @@ const HomePage = () => {
           <ImageSlider /> 
         </div>
       </div>
-      <Suspense fallback={<Skeleton.Image active  paragraph={{ rows: 4,}} />}>
       <NewsTimeline />
-      </Suspense>
    
    
     </div>
