@@ -61,6 +61,15 @@ const TimelineItem = ({ className, date, imageSrc, iconStyle, title, subtitle, c
 const NewsTimeline = () => {
   const newsData = [
     {
+      date: <div style={{color:'rgb(188, 196, 214)'}}>22nd February</div>,
+      icon: <img src={logo} alt="fessa logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
+      title: "Hangout and Socialization",
+      subtitle: "FESSA Adminstration",
+      imageSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1708612734/tinyimages/photo_2024-02-22_14-35-00new_nlcbeu.webp',
+      content: "Good day seniors, my name is Fresher, please we want to have fun and also socialize with you on Friday, the 1st of March 2024 at 6:00 pm at Publishing Hall. A lot of excitement to release midsem stress. Come and let us have fun.",
+      morecontent: 'Signed(Entertainment Head) Prince Osei',
+    },
+    {
       date: <div style={{color:'rgb(188, 196, 214)'}}>12th February</div>,
       icon: <img src={logo} alt="fessa logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
       title: "FESSA WEBSITE on your doorstep",
@@ -87,15 +96,6 @@ const NewsTimeline = () => {
       imageSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1706818373/tinyimages/photo_2024-02-01_12-06-16newnew_qpqmsn.webp',
       content: "First 3 Scholarships, are still open",
 Weblink:'https://www.knust.edu.gh/',
-    },
-    {
-      date: <div style={{color:'rgb(188, 196, 214)'}}>28th January</div>,
-      icon: <img src={logo} alt="fessa logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
-      title: "FESSA EGM",
-      subtitle: "FESSA adminstration",
-      imageSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1706469904/tinyimages/photo_2024-01-28_11-05-121_iu0wox.jpg',
-      content: "All Executives, both elected and appointees should kindly take notice, and obey in accordance.",
-      morecontent: 'Lecture Room 2, Faculty of Education Area. 4:00pm prompt on Friday, 2nd February 2024',
     },
     {
       date: <div style={{color:'rgb(188, 196, 214)'}}>20th December</div>,
