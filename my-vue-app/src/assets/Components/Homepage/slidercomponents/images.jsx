@@ -2,8 +2,8 @@
 
 const images = [
   {
-    imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1708613593/Slide/photo_2024-02-22_14-49-21_cqhh0z.webp',
-    imgAlt: "midsem"
+    imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1708002492/Slide/hive_tepwol.webp',
+    imgAlt: "hive"
   },
   {
     imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1707725270/Slide/photo_2024-02-12_08-02-11_s3olrb.webp',
@@ -13,10 +13,7 @@ const images = [
     imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1707725270/Slide/photo_2024-02-12_08-02-15_ip6sqj.webp',
     imgAlt: "labor 2"
   },
-  {
-    imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1708002492/Slide/hive_tepwol.webp',
-    imgAlt: "hive"
-  },
+
   {
     imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703585192/Slide/IMG-20231225-WA0006_hfveoq.jpg',
     imgAlt: "Fk"
