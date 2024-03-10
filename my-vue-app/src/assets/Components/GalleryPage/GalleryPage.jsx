@@ -6,7 +6,7 @@ import './galleryheight.css';
 function GalleryPage() {
     const styles = {
         container: {
-          width: '100',
+          width: '100%',
           maxWidth: '1024px',
 
         },
