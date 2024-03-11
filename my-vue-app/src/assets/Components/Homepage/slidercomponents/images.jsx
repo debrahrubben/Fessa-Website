@@ -2,8 +2,8 @@
 
 const images = [
   {
-    imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1708002492/Slide/hive_tepwol.webp',
-    imgAlt: "hive"
+    imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1710197583/tinyimages/photo_2024-03-11_22-46-48_wo50em.webp',
+    imgAlt: "Vclass"
   },
   {
     imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1707725270/Slide/photo_2024-02-12_08-02-11_s3olrb.webp',
