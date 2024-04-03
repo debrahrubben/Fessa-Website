@@ -2,6 +2,10 @@
 
 const images = [
   {
+    imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1712144399/Slide/photo_2024-04-03_11-37-37_v8fn3f.webp',
+    imgAlt: "boawonua"
+  },
+  {
     imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1711659785/Slide/photo_2024-03-28_20-54-10_kidhxu.webp',
     imgAlt: "excursion"
   },
