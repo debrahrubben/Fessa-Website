@@ -30,8 +30,6 @@ const images = [
       imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703384592/Slide/details-slide-2_qwtl7d.jpg',
       imgAlt: "Prayer bank"
     },
-  
   ];
 
   export default images;
- 
