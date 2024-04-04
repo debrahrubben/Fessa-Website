@@ -2,7 +2,7 @@
 
 const images = [
   {
-    imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1712144399/Slide/photo_2024-04-03_11-37-37_v8fn3f.webp',
+    imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1712222089/Slide/photo_2024-04-04_09-12-57_c9clog.webp',
     imgAlt: "boawonua"
   },
   {
