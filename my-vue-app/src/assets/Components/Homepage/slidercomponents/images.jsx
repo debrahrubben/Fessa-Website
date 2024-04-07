@@ -2,6 +2,10 @@
 
 const images = [
   {
+    imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1712521100/Slide/photo_2024-04-07_19-56-33_sboxlt.webp',
+    imgAlt: "endofsem"
+  },
+  {
     imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1712222089/Slide/photo_2024-04-04_09-12-57_c9clog.webp',
     imgAlt: "boawonua"
   },
@@ -26,10 +30,6 @@ const images = [
     imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703585190/Slide/IMG-20231225-WA0017_e3yrfq.jpg',
     imgAlt: "UCC"
   },
-    {
-      imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703384592/Slide/details-slide-2_qwtl7d.jpg',
-      imgAlt: "Prayer bank"
-    },
   ];
 
   export default images;
