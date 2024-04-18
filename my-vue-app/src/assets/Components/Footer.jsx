@@ -71,11 +71,7 @@ const Footer = () => {
   const handleCancel = () => {
     setOpen(false);
   };
-  const handleBoaWoNuaClick = () => {
-    // Replace 'your-pdf-file.pdf' with the actual path to your PDF file
-    const linkPath = 'https://docs.google.com/forms/d/e/1FAIpQLSdCSn_sjFYJbTojVjGLVNsZLptnwpcx9hJs4j8g1x9yIXPORA/viewform';
-    window.open(linkPath, '_blank');
-  };
+  
   const handleExcursionClick = () => {
     // Replace 'your-pdf-file.pdf' with the actual path to your PDF file
     const linkPath = 'https://docs.google.com/forms/d/e/1FAIpQLSe7U1cSBKZSDZZynY5Ixxxy55dkv3NUt_Q5CRrQz7_b2ezClg/viewform';
@@ -114,7 +110,7 @@ const Footer = () => {
               <span className="material-icons" style={{ fontSize: '1.1em', marginRight: '5px' }}>school</span>
               Access Student Portal / Virtual classroom
             </Button></li><CustomModal open={open} handleOk={handleOk} handleCancel={handleCancel} loading={loading} />
-            <li style={{...liStyle, fontSize:'150%',}} ><a href="#" style={linkStyle} onClick={handleBoaWoNuaClick}>Boa Wo Nua Application forms</a></li>
+       
             <li style={{...liStyle, fontSize:'150%',}} ><a href="#" style={linkStyle} onClick={handleExcursionClick}>SCSC Excursion Form</a></li>
             <li style={{...liStyle, fontSize:'150%',}} ><a href="#" style={linkStyle} onClick={handleAcademicCalendarClick}>Academic Calendar</a></li>
             <li style={{...liStyle, fontSize:'150%',}} ><a href="#" style={linkStyle} onClick={handleTimeTableClick}>Undergraduate Time Table</a></li>
