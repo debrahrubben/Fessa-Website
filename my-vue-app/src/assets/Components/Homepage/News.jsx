@@ -61,6 +61,15 @@ const TimelineItem = ({ className, date, imageSrc, iconStyle, title, subtitle, c
 const NewsTimeline = () => {
   const newsData = [
     {
+      date: <div style={{color:'rgb(188, 196, 214)'}}>22nd February</div>,
+      icon: <img src={logo2} alt="Knust logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
+      title: "Registration Dates for second semester",
+      subtitle: "KNUST Adminstration",
+      imageSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1714759027/tinyimages/photo_2024-05-03_17-55-17_ehs0dv.webp',
+      content: "Students must do both online and biometric Registration to be deemed duly registered.",
+      morecontent: 'To complete course registration, students must send a printout copy to their department.',
+    },
+    {
       date: <div style={{color:'rgb(188, 196, 214)'}}>11th March</div>,
       icon: <img src={logo2} alt="Knust logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
       title: "Compulsory Virtual Training",
