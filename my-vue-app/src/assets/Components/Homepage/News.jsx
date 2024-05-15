@@ -66,6 +66,7 @@ const NewsTimeline = () => {
       icon: <img src={logo2} alt="Knust logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
       title: "KNUST SRC Weekend School",
       subtitle: "KNUST Adminstration",
+      Weblink:'https://forms.gle/A8pdtmmPrBWYpG8g7',
       imageSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1715811032/tinyimages/photo_2024-05-15_22-03-22_gpk4fx.webp',
       content: "Registration is absolutely free tap on this news card to register. The KNUST SRC Weekend School is here!Enroll in any of the courses available and earn a recognized certificate.",
       morecontent: 'Get interactive with the SRC through these social media accounts 🎯● facebook.com/knust_src ● twitter.com/knust_src ● instagram.com/knust_src____________________________*©️ KNUST SRC - 23/24*🔰```YVONNE-NANA KWABENA LED ADMINISTRATION ```',
