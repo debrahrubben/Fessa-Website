@@ -72,7 +72,7 @@ const NewsTimeline = () => {
       morecontent: 'Get interactive with the SRC through these social media accounts 🎯● facebook.com/knust_src ● twitter.com/knust_src ● instagram.com/knust_src ©️ KNUST SRC - 23/24*🔰```YVONNE-NANA KWABENA LED ADMINISTRATION ```',
     },
     {
-      date: <div style={{color:'rgb(188, 196, 214)'}}>22nd February</div>,
+      date: <div style={{color:'rgb(188, 196, 214)'}}>10 May</div>,
       icon: <img src={logo2} alt="Knust logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
       title: "Registration Dates for second semester",
       subtitle: "KNUST Adminstration",
