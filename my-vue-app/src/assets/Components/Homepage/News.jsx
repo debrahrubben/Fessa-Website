@@ -2,7 +2,7 @@
 import  { useState } from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import logo from '../../images/logo.png';
+import logo from '../../images/logo.webp';
 import logo2 from '../../images/logo2.png';
 import IconButton from '@mui/material/IconButton';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
