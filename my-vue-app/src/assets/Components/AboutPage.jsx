@@ -1,5 +1,5 @@
 
-import localLogo from '../images/logo.png';
+import localLogo from '../images/logo.webp';
 
 const AboutPage = () => {
 
