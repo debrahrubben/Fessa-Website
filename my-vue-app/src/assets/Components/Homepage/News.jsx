@@ -72,8 +72,8 @@ const NewsTimeline = () => {
     {
       date: <div style={{color:'rgb(188, 196, 214)'}}>12th June</div>,
       icon: <img src={logo} alt="fessa logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
-      title: "Hangout and Socialization",
-      subtitle: "Leadership Mentor of the Year",
+      title: "Leadership Mentor of the Year",
+      subtitle: "FESSA administration",
       imageSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1718225859/tinyimages/photo_2024-06-12_20-53-35_cssqfs.webp',
       content: "Congratulations, your achievements within the 2023/2024 academic year has earned you recognition in the ongoing Ghana Student Leaders' Awards 2024.",
       morecontent: 'Good day people of FESSA, thank you all for your support. I will need your support on the day of voting 🙏🏼🙏🏼.',
