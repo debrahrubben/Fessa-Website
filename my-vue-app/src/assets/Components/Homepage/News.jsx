@@ -60,7 +60,25 @@ const TimelineItem = ({ className, date, imageSrc, iconStyle, title, subtitle, c
 
 const NewsTimeline = () => {
   const newsData = [
-    
+    {
+      date: <div style={{color:'rgb(188, 196, 214)'}}>12th June</div>,
+      icon: <img src={logo} alt="fessa logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
+      title: "Good day people of FESSA",
+      subtitle: "FESSA Adminstration",
+      imageSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1718225613/tinyimages/photo_2024-06-12_20-49-42_eacnmk.webp',
+      content: "It is with a good pleasure to introduce the newly elected FESSA Executives for the next academic year.",
+      morecontent: 'Congratulations to you all.🥳🥳🥳🥳🥳🥳🥳🥳🥳',
+    },
+    {
+      date: <div style={{color:'rgb(188, 196, 214)'}}>12th June</div>,
+      icon: <img src={logo} alt="fessa logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
+      title: "Hangout and Socialization",
+      subtitle: "Leadership Mentor of the Year",
+      imageSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1718225859/tinyimages/photo_2024-06-12_20-53-35_cssqfs.webp',
+      content: "Congratulations, your achievements within the 2023/2024 academic year has earned you recognition in the ongoing Ghana Student Leaders' Awards 2024.",
+      morecontent: 'Good day people of FESSA, thank you all for your support. I will need your support on the day of voting 🙏🏼🙏🏼.',
+    },
+
     {
       date: <div style={{color:'rgb(188, 196, 214)'}}>15th May</div>,
       icon: <img src={logo2} alt="Knust logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
@@ -71,22 +89,7 @@ const NewsTimeline = () => {
       content: "Registration is absolutely free tap on this news card to register. The KNUST SRC Weekend School is here!Enroll in any of the courses available and earn a recognized certificate.",
       morecontent: 'Get interactive with the SRC through these social media accounts 🎯● facebook.com/knust_src ● twitter.com/knust_src ● instagram.com/knust_src ©️ KNUST SRC - 23/24*🔰```YVONNE-NANA KWABENA LED ADMINISTRATION ```',
     },
-    {
-      date: <div style={{color:'rgb(188, 196, 214)'}}>10 May</div>,
-      icon: <img src={logo2} alt="Knust logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
-      title: "Registration Dates for second semester",
-      subtitle: "KNUST Adminstration",
-      imageSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1714759027/tinyimages/photo_2024-05-03_17-55-17_ehs0dv.webp',
-      content: "Students must do both online and biometric Registration to be deemed duly registered.",
-      morecontent: 'To complete course registration, students must send a printout copy to their department.',
-    },
-    {
-      date: <div style={{color:'rgb(188, 196, 214)'}}>11th March</div>,
-      icon: <img src={logo2} alt="Knust logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
-      title: "Compulsory Virtual Training",
-      subtitle: "KNUST Adminstration",
-      imageSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1710197583/tinyimages/photo_2024-03-11_22-46-48_wo50em.webp',
-    },
+
     {
       date: <div style={{color:'rgb(188, 196, 214)'}}>22nd February</div>,
       icon: <img src={logo} alt="fessa logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
