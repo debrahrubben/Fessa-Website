@@ -1,7 +1,7 @@
 import { Navbar, Nav, } from 'react-bootstrap';
 import { HashLink as Link } from 'react-router-hash-link';
 import logo2 from '../images/logo2.png';
-import logo from '../images/logo.png';
+import logo from '../images/logo.webp';
 import { useState, useEffect, useRef } from 'react';
 import {  Button, Menu, MenuItem } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
