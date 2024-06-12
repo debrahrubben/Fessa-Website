@@ -2,12 +2,20 @@
 
 const images = [
   {
-    imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1712521100/Slide/photo_2024-04-07_19-56-33_sboxlt.webp',
-    imgAlt: "endofsem"
+    imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1718225898/Slide/photo_2024-06-12_20-53-52_blmpyt.webp',
+    imgAlt: "awards"
+  },
+  {
+    imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1718225899/Slide/photo_2024-06-12_20-53-59_no6akv.webp',
+    imgAlt: "jeremiah"
   },
   {
     imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1712222089/Slide/photo_2024-04-04_09-12-57_c9clog.webp',
     imgAlt: "boawonua"
+  },
+  {
+    imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1718225898/Slide/photo_2024-06-12_20-53-39_zlelxa.webp',
+    imgAlt: "career fair"
   },
   {
     imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1711659785/Slide/photo_2024-03-28_20-54-10_kidhxu.webp',
@@ -18,14 +26,6 @@ const images = [
     imgAlt: "labor 1"
   },
 
-  {
-    imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703585192/Slide/IMG-20231225-WA0006_hfveoq.jpg',
-    imgAlt: "Fk"
-  },
-  {
-    imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703585190/Slide/IMG-20231225-WA0017_e3yrfq.jpg',
-    imgAlt: "UCC"
-  },
   ];
 
   export default images;
