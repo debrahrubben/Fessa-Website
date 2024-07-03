@@ -2,7 +2,7 @@
 
 const images = [
   {
-    imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1718225898/Slide/photo_2024-06-12_20-53-52_blmpyt.webp',
+    imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1720002178/Slide/WhatsApp_Image_2024-06-26_at_5.43.55_PM_xff6if.webp',
     imgAlt: "awards"
   },
   {
