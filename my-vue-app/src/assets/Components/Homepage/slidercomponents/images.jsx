@@ -6,7 +6,7 @@ const images = [
     imgAlt: "awards"
   },
   {
-    imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1720002178/Slide/WhatsApp_Image_2024-06-26_at_5.43.55_PM_xff6if.webp',
+    imgURL: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1718225899/Slide/photo_2024-06-12_20-53-59_no6akv.webp',
     imgAlt: "jeremiah"
   },
   {
