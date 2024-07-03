@@ -61,6 +61,33 @@ const TimelineItem = ({ className, date, imageSrc, iconStyle, title, subtitle, c
 const NewsTimeline = () => {
   const newsData = [
     {
+      date: <div style={{color:'rgb(188, 196, 214)'}}>7th July</div>,
+      icon: <img src={logo} alt="fessa logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
+      title: "GILDED GLAMOUR DINNER AND AWARDS NIGHT 🏅",
+      subtitle: "FESSA Adminstration",
+      imageSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1720028748/tinyimages/WhatsApp_Image_2024-06-26_at_5.43.55_PM_unmmgf.webp',
+      content: "GILDED GLAMOUR will be a majestic celebration, a night to remember!",
+      morecontent: 'The venue will be transformed into a fairytale setting, with sparkling decorations and elegant attire. The music will be enchanting, the food will be exquisite, and the company will be divine. Everyone will come together to dance, laugh, and make unforgettable memories. It will be a night of joy, love, and celebration, a true masterpiece of merriment!.',
+    },
+    {
+      date: <div style={{color:'rgb(188, 196, 214)'}}>7th July</div>,
+      icon: <img src={logo} alt="fessa logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
+      title: "FESSA Week Celebration",
+      subtitle: "FESSA Adminstration",
+      imageSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1720028748/tinyimages/WhatsApp_Image_2024-07-01_at_9.00.37_AM_w4qjrk.webp',
+      content: "The most exciting week of the semester is coming again",
+      morecontent: 'There will be a lot of activities and fun, educative and opportunities.Anticipate the 3rd FESSA Week Celebrations.',
+    },
+    {
+      date: <div style={{color:'rgb(188, 196, 214)'}}>7th July</div>,
+      icon: <img src={logo} alt="fessa logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
+      title: " Anticipate Movie Night",
+      subtitle: "FESSA Adminstration",
+      imageSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1720028748/tinyimages/WhatsApp_Image_2024-07-01_at_7.00.56_PM_hjm5lw.webp',
+      content: "A night of love, a night of joy, a night of socializing, and many more.",
+      morecontent: 'fessaweekcelebration',
+    },
+    {
       date: <div style={{color:'rgb(188, 196, 214)'}}>12th June</div>,
       icon: <img src={logo} alt="fessa logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
       title: "Good day people of FESSA",
