@@ -24,10 +24,9 @@ const TimelineItem = ({ className, date, imageSrc, iconStyle, title, subtitle, c
     <VerticalTimelineElement 
       className={className}
       date={date}
-      
+
       iconStyle={iconStyle}
       icon={icon}
-      
     >
       <div>
       <a href={Weblink} style={{ textDecoration: 'none', color: 'black' }}>
@@ -60,6 +59,15 @@ const TimelineItem = ({ className, date, imageSrc, iconStyle, title, subtitle, c
 
 const NewsTimeline = () => {
   const newsData = [
+    {
+      date: <div style={{color:'rgb(188, 196, 214)'}}>22nd August</div>,
+      icon: <img src={logo} alt="fessa logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
+      title: "GILDED GLAMOUR DINNER AND AWARDS NIGHT 🏅",
+      subtitle: "FESSA Adminstration",
+      imageSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1724352206/tinyimages/photo_2024-08-22_18-25-05_elj2lj.webp',
+      content: "Ready For De  Most Popular  Dinner & Awards Night In KNUST",
+      morecontent: 'The venue will be transformed into a fairytale setting, with sparkling decorations and elegant attire. The music will be enchanting, the food will be exquisite, and the company will be divine. Everyone will come together to dance, laugh, and make unforgettable memories. It will be a night of joy, love, and celebration, a true masterpiece of merriment!.',
+    },
     {
       date: <div style={{color:'rgb(188, 196, 214)'}}>7th July</div>,
       icon: <img src={logo} alt="fessa logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
