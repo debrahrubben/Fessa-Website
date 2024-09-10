@@ -58,7 +58,26 @@ const TimelineItem = ({ className, date, imageSrc, iconStyle, title, subtitle, c
 };
 
 const NewsTimeline = () => {
+  
   const newsData = [
+    {
+      date: <div style={{color:'rgb(188, 196, 214)'}}>22nd August</div>,
+      icon: <img src={logo} alt="fessa logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
+      title: "SCSC T-shirt",
+      subtitle: "FESSA Adminstration",
+      imageSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1725927787/tinyimages/photo_2024-09-10_00-16-50_pl6lac.webp',
+      content: "The Social and Community Service Club (SCSC) has officially launched its T-shirt which will be in used beginning from next academic year.",
+      
+    },
+    {
+      date: <div style={{color:'rgb(188, 196, 214)'}}>22nd August</div>,
+      icon: <img src={logo} alt="fessa logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
+      title: "FESSA CLOTHE 2024",
+      subtitle: "FESSA Adminstration",
+      imageSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1725927787/tinyimages/photo_2024-09-10_00-16-58_xsseb4.webp',
+      content: "Embrace the new FESSA Clothe",
+      
+    },
     {
       date: <div style={{color:'rgb(188, 196, 214)'}}>22nd August</div>,
       icon: <img src={logo} alt="fessa logo" style={{ width: '100%', height: 'fit', objectFit: 'cover' }} />,
