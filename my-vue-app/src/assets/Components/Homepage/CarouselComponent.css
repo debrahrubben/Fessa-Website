@@ -1,0 +1,24 @@
+/* CarouselComponent.css */
+.carousel-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: object-fit 0.3s ease;
+  }
+  
+  /* Adjust object-fit for larger screens */
+  @media (min-width: 768px) {
+    .carousel-image {
+      object-fit: contain;
+      height: 500px; /* Adjust height if needed */
+    }
+  }
+  

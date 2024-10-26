@@ -1,21 +1,20 @@
-import Header from './Header'
-import NewsTimeline from './News'
-import ImageSlider from './slidercomponents/ImageSlider'
+
+import Header from './Header';
+import NewsTimeline from './News';
+import CarouselComponent from './CarouselComponent';
 
 const HomePage = () => {
   return (
     <div>
-         <Header />
-      <div className="outer-container" style={{backgroundColor:'rgb(17, 50, 91)'}} >
+      <Header />
+      <div className="outer-container" style={{ backgroundColor: 'rgb(17, 50, 91)' }}>
         <div className="slider-container">
-          <ImageSlider /> 
+          <CarouselComponent />
         </div>
       </div>
       <NewsTimeline />
-   
-   
     </div>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;
