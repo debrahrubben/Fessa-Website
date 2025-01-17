@@ -76,7 +76,11 @@ function ListBlockItem({ imgSrc, title, position, linkToSite }) {
 // ... (imports and ListBlockItem component)
 function HallOfFamePage() {
     const itemsData = [
-
+      //2024/2025 Executives
+        { imgSrc:'https://res.cloudinary.com/dgpxvazru/image/upload/v1736444017/HallofFame/IMG-20250103-WA0044_lwcxkk.jpg', category: '2024/2025 Executives', Name: 'TEST 1', Position: 'OK' },
+        { imgSrc:'', category: '2024/2025 Executives', Name: '', Position: '' },
+        { imgSrc:'', category: '2024/2025 Executives', Name: '', Position: '' },
+        { imgSrc:'', category: '2024/2025 Executives', Name: '', Position: '' },
 
       // 2022/2023 Executives
       { imgSrc:'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341042/HallofFame/Dennis_Asare_ejqgpo.jpg', category: '2023/2024 Executives', Name: 'Dennis Asare', Position: 'President' },
