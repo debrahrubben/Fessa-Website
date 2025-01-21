@@ -77,8 +77,8 @@ function ListBlockItem({ imgSrc, title, position, linkToSite }) {
 function HallOfFamePage() {
     const itemsData = [
       //2024/2025 Executives
-        { imgSrc:'https://res.cloudinary.com/dgpxvazru/image/upload/v1736444017/HallofFame/IMG-20250103-WA0044_lwcxkk.jpg', category: '2024/2025 Executives', Name: 'TEST 1', Position: 'OK' },
-        { imgSrc:'', category: '2024/2025 Executives', Name: '', Position: '' },
+        { imgSrc:'https://res.cloudinary.com/dgpxvazru/image/upload/v1736444017/HallofFame/IMG-20250103-WA0044_lwcxkk.jpg', category: '2024/2025 Executives', Name: '', Position: '' },
+        { imgSrc:'https://res.cloudinary.com/dgpxvazru/image/upload/v1737428157/HallofFame/IMG-20250103-WA0060_natdw1.jpg', category: '2024/2025 Executives', Name: '', Position: '' },
         { imgSrc:'', category: '2024/2025 Executives', Name: '', Position: '' },
         { imgSrc:'', category: '2024/2025 Executives', Name: '', Position: '' },
 
