@@ -102,7 +102,7 @@ function HallOfFamePage() {
 
 
       // 2023/2024 Executives
-      { imgSrc:'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341042/HallofFame/Dennis_Asare_ejqgpo.jpg', category: '2023/2024 Executives', Name: 'Dennis Asare', Position: 'President' },
+      { imgSrc:'https://res.cloudinary.com/dgpxvazru/image/upload/v1737429734/HallofFame/IMG_9556_xkp63j.jpg', category: '2023/2024 Executives', Name: 'Dennis Asare', Position: 'President' },
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341045/HallofFame/Jeremiah_Ampah_mllnrz.jpg', category: '2023/2024 Executives', Name: 'Jeremiah Ampah', Position: 'Vice President' },
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341042/HallofFame/Naomi_Nartey_Mateykie_vy2guc.jpg', category: '2023/2024 Executives', Name: 'Naomi Nartey Mateykie', Position: 'General Secretary' },
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341046/HallofFame/Frimpong_Eric_Osei_sojptm.jpg', category: '2023/2024 Executives', Name: 'Frimpong Eric Osei', Position: 'Financial Secretary' },
