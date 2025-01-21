@@ -77,12 +77,31 @@ function ListBlockItem({ imgSrc, title, position, linkToSite }) {
 function HallOfFamePage() {
     const itemsData = [
       //2024/2025 Executives
-        { imgSrc:'https://res.cloudinary.com/dgpxvazru/image/upload/v1736444017/HallofFame/IMG-20250103-WA0044_lwcxkk.jpg', category: '2024/2025 Executives', Name: '', Position: '' },
         { imgSrc:'https://res.cloudinary.com/dgpxvazru/image/upload/v1737428157/HallofFame/IMG-20250103-WA0060_natdw1.jpg', category: '2024/2025 Executives', Name: '', Position: '' },
-        { imgSrc:'', category: '2024/2025 Executives', Name: '', Position: '' },
-        { imgSrc:'', category: '2024/2025 Executives', Name: '', Position: '' },
+        { imgSrc:'https://res.cloudinary.com/dgpxvazru/image/upload/v1736444017/HallofFame/IMG-20250103-WA0044_lwcxkk.jpg', category: '2024/2025 Executives', Name: '', Position: '' },
+        { imgSrc:'https://res.cloudinary.com/dgpxvazru/image/upload/v1737428160/HallofFame/IMG-20250103-WA0056_m69j1k.jpg', category: '2024/2025 Executives', Name: '', Position: '' },
+        { imgSrc:'https://res.cloudinary.com/dgpxvazru/image/upload/v1737428157/HallofFame/IMG-20250103-WA0059_gfzpkj.jpg', category: '2024/2025 Executives', Name: '', Position: '' },
+        { imgSrc:'https://res.cloudinary.com/dgpxvazru/image/upload/v1737428156/HallofFame/IMG-20250103-WA0057_z1vlkv.jpg', category: '2024/2025 Executives', Name: '', Position: '' },
+        { imgSrc:'https://res.cloudinary.com/dgpxvazru/image/upload/v1737428160/HallofFame/IMG-20250103-WA0054_lchz3r.jpg', category: '2024/2025 Executives', Name: '', Position: '' },
+        { imgSrc:'https://res.cloudinary.com/dgpxvazru/image/upload/v1737428160/HallofFame/IMG-20250103-WA0053_aeyui8.jpg', category: '2024/2025 Executives', Name: '', Position: '' },
+        { imgSrc:'https://res.cloudinary.com/dgpxvazru/image/upload/v1737428157/HallofFame/IMG-20250103-WA0058_cksrlk.jpg', category: '2024/2025 Executives', Name: '', Position: '' },
+        { imgSrc:'https://res.cloudinary.com/dgpxvazru/image/upload/v1737428155/HallofFame/IMG-20250103-WA0048_e32jov.jpg', category: '2024/2025 Executives', Name: '', Position: '' },
+        { imgSrc:'https://res.cloudinary.com/dgpxvazru/image/upload/v1737428156/HallofFame/IMG-20250103-WA0055_qdyst9.jpg', category: '2024/2025 Executives', Name: '', Position: '' },
+        { imgSrc:'https://res.cloudinary.com/dgpxvazru/image/upload/v1737428154/HallofFame/IMG-20250103-WA0047_i9rucu.jpg', category: '2024/2025 Executives', Name: '', Position: '' },
+        { imgSrc:'https://res.cloudinary.com/dgpxvazru/image/upload/v1737428154/HallofFame/IMG-20250103-WA0051_s6jypk.jpg', category: '2024/2025 Executives', Name: '', Position: '' },
+        { imgSrc:'https://res.cloudinary.com/dgpxvazru/image/upload/v1737428153/HallofFame/IMG-20250103-WA0046_tifnmd.jpg', category: '2024/2025 Executives', Name: '', Position: '' },
+        { imgSrc:'https://res.cloudinary.com/dgpxvazru/image/upload/v1737428155/HallofFame/IMG-20250103-WA0052_qwobrr.jpg', category: '2024/2025 Executives', Name: '', Position: '' },
+        { imgSrc:'https://res.cloudinary.com/dgpxvazru/image/upload/v1737428152/HallofFame/IMG-20250103-WA0045_omroff.jpg', category: '2024/2025 Executives', Name: '', Position: '' },
+        { imgSrc:'https://res.cloudinary.com/dgpxvazru/image/upload/v1737428152/HallofFame/IMG-20250103-WA0043_cedetr.jpg', category: '2024/2025 Executives', Name: '', Position: '' },
+        { imgSrc:'https://res.cloudinary.com/dgpxvazru/image/upload/v1737428152/HallofFame/IMG-20250103-WA0050_lvqbm9.jpg', category: '2024/2025 Executives', Name: '', Position: '' },
+        { imgSrc:'https://res.cloudinary.com/dgpxvazru/image/upload/v1737428152/HallofFame/IMG-20250103-WA0049_psav3v.jpg', category: '2024/2025 Executives', Name: '', Position: '' },
+        { imgSrc:'https://res.cloudinary.com/dgpxvazru/image/upload/v1737428150/HallofFame/IMG-20250103-WA0042_njahlz.jpg', category: '2024/2025 Executives', Name: '', Position: '' },
+        
 
-      // 2022/2023 Executives
+
+
+
+      // 2023/2024 Executives
       { imgSrc:'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341042/HallofFame/Dennis_Asare_ejqgpo.jpg', category: '2023/2024 Executives', Name: 'Dennis Asare', Position: 'President' },
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341045/HallofFame/Jeremiah_Ampah_mllnrz.jpg', category: '2023/2024 Executives', Name: 'Jeremiah Ampah', Position: 'Vice President' },
       { imgSrc: 'https://res.cloudinary.com/dgpxvazru/image/upload/v1703341042/HallofFame/Naomi_Nartey_Mateykie_vy2guc.jpg', category: '2023/2024 Executives', Name: 'Naomi Nartey Mateykie', Position: 'General Secretary' },
